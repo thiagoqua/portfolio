@@ -1,0 +1,38 @@
+.navbar{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right: 0;
+    margin-right:2%;
+}
+
+/* init section */
+.start{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    height: 100vh;
+    
+}
+
+.whoami{
+    text-align: center;
+    width: 100%;
+}
+
+.name{
+    font-size: 600%;
+}
+
+.profession{
+    margin-left: 30%;
+    font-size: 250%;
+}
+
+/* about me section */
+.about{
+    font-size: large;
+}
