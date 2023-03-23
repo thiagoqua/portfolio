@@ -1,3 +1,9 @@
+/* elements style */
+ul{
+    list-style-type: none;
+}
+
+/* navigation bar */
 .navbar{
     display:flex;
     flex-direction: column;
@@ -15,7 +21,6 @@
     align-items: center;
     position: static;
     height: 100vh;
-    
 }
 
 .whoami{
@@ -35,4 +40,29 @@
 /* about me section */
 .about{
     font-size: large;
+}
+
+/* personal info section */
+.section{
+    margin-top:10%;
+}
+
+/* skills section */
+.skills_header{
+    text-align: center;
+}
+
+/* equivale al sm de bootstrap */
+@media (max-width: 540px){
+
+}
+
+/* equivale al md de bootstrap */
+@media (max-width: 720px){
+
+}
+
+/* equivale al lg de bootstrap */
+@media (max-width: 960px){
+
 }
