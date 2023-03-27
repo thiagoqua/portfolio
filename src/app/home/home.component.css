@@ -1,0 +1,192 @@
+/* elements style */
+ul{
+    list-style-type: none;
+}
+
+/* navigation bar */
+.navbar{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right: 0;
+    margin-right:2%;
+}
+
+/* init section */
+.start{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    height: 100vh;
+}
+
+.whoami{
+    text-align: center;
+    width: 100%;
+}
+
+.name{
+    font-size: 600%;
+}
+
+.profession{
+    margin-left: 30%;
+    font-size: 250%;
+}
+
+/* about me section */
+.about{
+    font-size: large;
+}
+
+/* personal info section */
+.section{
+    margin-top:10%;
+}
+
+/* skills section */
+.skills_header{
+    text-align: center;
+}
+
+/* contact section */
+.contact{
+    text-align: center;
+}
+
+.icon{
+    width: 20%;
+    margin-top:20px;
+    border-radius: 10px;
+    margin-bottom:50px;
+}
+
+    .icon:hover{
+        background-color: rgb(141, 199, 250);
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    margin-right: 6%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    /* margin-top:-15%; */
+}
+      
+.wrapper .icon {
+    position: relative;
+    background: #ffff00;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+    
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+    
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+    
+.wrapper .mail:hover,
+.wrapper .mail:hover .tooltip,
+.wrapper .mail:hover .tooltip::before {
+    background: #5e3434;
+    color: #fff;
+}
+    
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #0e76a8;
+    color: #fff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333;
+    color: #fff;
+}
+  
+  @-webkit-keyframes rainbow-text {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+  
+  @-moz-keyframes rainbow-text {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+  
+  @keyframes rainbow-text {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+  }
+
+
+/* equivale al sm de bootstrap */
+@media (max-width: 540px){
+
+}
+
+/* equivale al md de bootstrap */
+@media (max-width: 720px){
+
+}
+
+/* equivale al lg de bootstrap */
+@media (max-width: 960px){
+
+}
