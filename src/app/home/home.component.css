@@ -48,8 +48,13 @@ ul{
 }
 
 /* skills section */
-.skills_header{
+.section_header{
     text-align: center;
+}
+
+/* proyects section */
+.project{
+    margin-top:5%;
 }
 
 /* contact section */

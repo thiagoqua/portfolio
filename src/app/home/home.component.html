@@ -3,7 +3,7 @@
     <a href="#about">about</a>
     <a href="#personal">personal info</a>
     <a href="#skills">skills</a>
-    <a routerLink="/proyects">proyectos</a>
+    <a href="#proyects">proyectos</a>
   </div>
 
   <div class="start">
@@ -15,7 +15,7 @@
 
   <div class="about" id="about">
     <p>
-      Me llamo Thiago Quaglia. Desde pequeño que soy muy aficionado a la
+      Me llamo Thiago Quaglia y desde pequeño que soy muy aficionado a la
       tecnología, lo que me ha permitido inclinarme por la programación a la
       hora de comenzar con los estudios.
     </p>
@@ -106,7 +106,7 @@
   </div>
 
   <div class="section" id="skills">
-    <h1 class="skills_header">Habilidades</h1>
+    <h1 class="section_header">Habilidades</h1>
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
         <circle-progress
@@ -258,6 +258,41 @@
           [showSubtitle]="false">
         </circle-progress>
       </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1 class="section_header" id="proyects">Proyectos</h1>
+    <div class="project">
+      <h2>Aplicación de turnos médicos</h2>
+      <p>
+          Sistema de gestión de turnos médicos, tanto web como de escritorio para sistemas Windows.
+          En colaboración con Esteban Tosoni y Florencia Galván, compañeros de cursado.
+      </p>
+      <a routerLink="proyects/1">ver proyecto</a>
+    </div>
+    <div class="project">
+      <h2>Página web para tienda de ropa</h2>
+      <p>
+        Sistema web para una tienda de indumentaria. En colaboración con Esteban Tosoni, 
+        compañero de cursado.
+      </p>
+      <a routerLink="proyects/2">ver proyecto</a>
+    </div>
+    <div class="project">
+      <h2>Juego del truco</h2>
+      <p>
+        Aplicación de escritorio que consta del juego de cartas "truco" contra una IA, para sistemas Windows o Linux.
+        En colaboración con Esteban Tosoni, compañero de cursado.
+      </p>
+      <a routerLink="proyects/3">ver proyecto</a>
+    </div>
+    <div class="project">
+      <h2>Protocolo FTP</h2>
+      <p>
+        Imitación del funcionamiento del protocolo FTP de redes.
+      </p>
+      <a routerLink="proyects/4">ver proyecto</a>
     </div>
   </div>
 

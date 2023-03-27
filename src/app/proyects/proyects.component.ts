@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-proyects',
@@ -7,8 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./proyects.component.css']
 })
 export class ProyectsComponent implements OnInit {
+  proyectNro:string;
 
-  constructor() { }
+  constructor(private route:ActivatedRoute,private router:Router) {
+    this.proyectNro = this.route.snapshot.paramMap.get('number')!;
+    const proyectNroNumber = parseInt(this.proyectNro);
+    if(proyectNroNumber < 1 || proyectNroNumber > 4)
+      this.router.navigate(['']);
+  }
 
   ngOnInit(): void {}
 
