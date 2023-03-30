@@ -1,18 +1,3 @@
-/* elements style */
-ul{
-    list-style-type: none;
-}
-
-/* navigation bar */
-.navbar{
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    top:0;
-    right: 0;
-    margin-right:2%;
-}
-
 /* init section */
 .start{
     display:flex;
@@ -29,12 +14,16 @@ ul{
 }
 
 .name{
+    font-family: 'Righteous', cursive;
     font-size: 600%;
+    color:#151E3F;
 }
 
 .profession{
     margin-left: 30%;
     font-size: 250%;
+    font-family: 'Outfit', sans-serif;
+    color:#DC9E82
 }
 
 /* about me section */
@@ -45,16 +34,36 @@ ul{
 /* personal info section */
 .section{
     margin-top:10%;
+    color:#151E3F;
+}
+
+.section_item{
+    color:#DC9E82;
+}
+
+.grade{
+    color:#C16E70;
 }
 
 /* skills section */
 .section_header{
     text-align: center;
+    font-size: 350%;
+    font-weight: 900;
+    color:#C16E70;
 }
 
 /* proyects section */
 .project{
     margin-top:5%;
+}
+
+.project h2{
+    color:#C16E70;
+}
+
+.project a{
+    color:#C16E70;
 }
 
 /* contact section */
@@ -88,7 +97,7 @@ ul{
       
 .wrapper .icon {
     position: relative;
-    background: #ffff00;
+    background: #151E3F;
     border-radius: 50%;
     margin: 10px;
     width: 50px;
@@ -144,7 +153,7 @@ ul{
 .wrapper .mail:hover,
 .wrapper .mail:hover .tooltip,
 .wrapper .mail:hover .tooltip::before {
-    background: #5e3434;
+    background: #C16E70;
     color: #fff;
 }
     
@@ -183,15 +192,18 @@ ul{
 
 /* equivale al sm de bootstrap */
 @media (max-width: 540px){
-
+    .circle{
+        text-align: center;
+    }
 }
 
 /* equivale al md de bootstrap */
 @media (max-width: 720px){
-
 }
 
 /* equivale al lg de bootstrap */
 @media (max-width: 960px){
-
+    .circle{
+        margin-bottom: 4%;   
+    }
 }

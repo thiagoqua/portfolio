@@ -1,5 +1,5 @@
 <div class="container" [ngSwitch]="this.proyectNro">
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <a href="#about">about</a>
         <a href="#personal">personal info</a>
         <a href="#skills">skills</a>
@@ -8,10 +8,10 @@
 
     <!-- Aplicación de turnos médicos -->
     <div *ngSwitchCase="1">
-        <h1 class="proyect-header">Aplicación de turnos médicos</h1>
+        <h1 class="project_header">Aplicación de turnos médicos</h1>
         <a target="_blank" href="https://github.com/thiagoqua/TurnosMedicos">GitHub</a>
         <div class="section">
-            <h2>Descripción</h2>
+            <h1>Descripción</h1>
             <p>
                 Tanto la versión web como la de escritorio se encuentran en la misma solución y en el mismo repositorio de GitHub.
                 <br>
@@ -38,13 +38,13 @@
                 <h1>Tecnologías utilizadas</h1>
                 <ul>
                     <li>
-                        <h4>.NET FRAMEWORK</h4>
+                        <h4 class="tech">.NET FRAMEWORK</h4>
                     </li>
                     <li>
-                        <h4>ASP .NET (versión web)</h4>
+                        <h4 class="tech">ASP .NET (versión web)</h4>
                     </li>
                     <li>
-                        <h4>LINQ to SQL</h4>
+                        <h4 class="tech">LINQ to SQL</h4>
                     </li>
                 </ul>
             </div>
@@ -52,13 +52,13 @@
                 <h1>Lenguajes utilizados</h1>
                 <ul>
                     <li>
-                        <h4>C#</h4>
+                        <h4 class="tech">C#</h4>
                     </li>
                     <li>
-                        <h4>ASPX (versión web)</h4>
+                        <h4 class="tech">ASPX (versión web)</h4>
                     </li>
                     <li>
-                        <h4>CSS (versión web)</h4>
+                        <h4 class="tech">CSS (versión web)</h4>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
                 <h1>Bases de datos</h1>
                 <ul>
                     <li>
-                        <h4>SQL Server</h4>
+                        <h4 class="tech">SQL Server</h4>
                     </li>
                 </ul>
             </div>
@@ -75,10 +75,10 @@
 
     <!-- Tienda de ropa -->
     <div *ngSwitchCase="2">
-        <h1 class="proyect-header">Página web para tienda de ropa</h1>
+        <h1 class="project_header">Página web para tienda de ropa</h1>
         <a target="_blank" href="https://github.com/estebantosoni/TiendaDigital">GitHub</a>
         <div class="section">
-            <h2>Descripción</h2>
+            <h1>Descripción</h1>
             <p>
                 Tanto el apartado backend como frontend se encuentran en distintos directorios pero 
                 en el mismo repositorio subido a GitHub.
@@ -102,13 +102,13 @@
                 <h1>Tecnologías utilizadas</h1>
                 <ul>
                     <li>
-                        <h4>ANGULAR</h4>
+                        <h4 class="tech">ANGULAR</h4>
                     </li>
                     <li>
-                        <h4>SPRING</h4>
+                        <h4 class="tech">SPRING</h4>
                     </li>
                     <li>
-                        <h4>RestFull App</h4>
+                        <h4 class="tech">RestFull App</h4>
                     </li>
                 </ul>
             </div>
@@ -116,16 +116,16 @@
                 <h1>Lenguajes utilizados</h1>
                 <ul>
                     <li>
-                        <h4>JAVA (backend)</h4>
+                        <h4 class="tech">JAVA (backend)</h4>
                     </li>
                     <li>
-                        <h4>HTML (frontend)</h4>
+                        <h4 class="tech">HTML (frontend)</h4>
                     </li>
                     <li>
-                        <h4>CSS (frontend)</h4>
+                        <h4 class="tech">CSS (frontend)</h4>
                     </li>
                     <li>
-                        <h4>TypeScript (frontend)</h4>
+                        <h4 class="tech">TypeScript (frontend)</h4>
                     </li>
                 </ul>
             </div>
@@ -133,7 +133,7 @@
                 <h1>Bases de datos</h1>
                 <ul>
                     <li>
-                        <h4>MySQL</h4>
+                        <h4 class="tech">MySQL</h4>
                     </li>
                 </ul>
             </div>
@@ -142,10 +142,10 @@
 
     <!-- Truco -->
     <div *ngSwitchCase="3">
-        <h1 class="proyect-header">Juego del truco</h1>
+        <h1 class="project_header">Juego del truco</h1>
         <a target="_blank" href="https://github.com/thiagoqua/envido">GitHub</a>
         <div class="section">
-            <h2>Descripción</h2>
+            <h1>Descripción</h1>
             <p>
                 Este juego no tiene ningún tipo de logueo ni registro, ya que fue entregado para el final
                 de las primeras materias de la carrera.
@@ -164,7 +164,7 @@
             <h1>Lenguaje utilizado</h1>
             <ul>
                 <li>
-                    <h4>JAVA</h4>
+                    <h4 class="tech">JAVA</h4>
                 </li>
             </ul>
         </div>
@@ -172,10 +172,10 @@
 
     <!-- FTP -->
     <div *ngSwitchCase="4">
-        <h1 class="proyect-header">Imitación del protocolo FTP</h1>
+        <h1 class="project_header">Imitación del protocolo FTP</h1>
         <a target="_blank" href="https://github.com/thiagoqua/FTPredes">GitHub</a>
         <div class="section">
-            <h2>Descripción</h2>
+            <h1>Descripción</h1>
             <p>
                 Este proyecto fue realizado para el final de la materia <i>Redes de computadoras</i>.
                 <br>
@@ -189,7 +189,7 @@
             <h1>Lenguaje utilizado</h1>
             <ul>
                 <li>
-                    <h4>C</h4>
+                    <h4 class="tech">C</h4>
                 </li>
             </ul>
         </div>

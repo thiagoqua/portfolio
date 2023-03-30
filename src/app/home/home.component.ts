@@ -12,5 +12,17 @@ export class HomeComponent implements OnInit {
     this.copied = false;
   }
 
-  ngOnInit(): void {}
+  ngOnInit():void {
+    const navbar:HTMLElement = document.getElementById("navbar") as HTMLElement;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 600){
+        navbar!.classList.add("scrolled");
+        navbar!.classList.remove("scroll_on_top");
+      }
+      else{
+        navbar!.classList.remove("scrolled");
+        navbar!.classList.add("scroll_on_top");
+      }
+    });
+  }
 }

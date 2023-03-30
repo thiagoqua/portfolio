@@ -1,34 +1,26 @@
-ul{
-    list-style-type: none;
-}
-
-li{
-    margin-top: 5%;
-    margin-left:-10%;
-}
-
-/* navigation bar */
-.navbar{
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    top:0;
-    right: 0;
-    margin-right:2%;
-}
-
 .container{
     text-align: center;
-}
-
-.proyect-header{
-    margin-top:5%;
 }
 
 .section{
     margin-top: 5%;
 }
 
+.project_header{
+    margin-top:5%;
+    text-align: center;
+    font-size: 350%;
+    font-weight: 900;
+    color:#C16E70;
+}
+
 .accent{
-    color:#ffff00;
+    color:#DC9E82;
+    font-style:normal;
+}
+
+.tech{
+    margin-top:5%;
+    font-weight: 600;
+    color:#C16E70;
 }
