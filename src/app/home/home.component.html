@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="navbar" id="navbar">
+  <div class="navbar blur_in" id="navbar">
     <a href="#about">about</a>
     <a href="#personal">personal info</a>
     <a href="#skills">skills</a>
     <a href="#proyects">proyectos</a>
   </div>
 
-  <div class="start">
+  <div class="start" transition-style="in:circle:center">
     <div class="whoami">
       <h1 class="name">Thiago Quaglia</h1>
       <h2 class="profession">Junior Software Developer</h2>
@@ -107,7 +107,7 @@
 
   <div class="section" id="skills">
     <h1 class="section_header">Habilidades</h1>
-    <div class="row">
+    <div class="row skills">
       <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 circle">
         <circle-progress
           [percent]="80"
@@ -336,24 +336,24 @@
     </div>
   </div>
 
-  <div class="section contact">
+  <div class="contact">
     <ul class="wrapper">
      <a href="mailto:thiagoqua16@gmail.com">
         <li class="icon mail" style="text-align: center;">
-          <span id="mail" class="tooltip" style="font-weight: 600;">Email</span>
-          <span><i class="fab fa-facebook-f"></i></span>
+            <img class="tooltip" style="font-weight: 600;" 
+                 src="/assets/email.png" class="contact_image">
         </li>
       </a>
       <a target="_blank" href="https://www.linkedin.com/in/thiagoquaglia">
         <li class="icon linkedin">
-          <div class="tooltip" style="font-weight: 600;">Linkedin</div>
-          <span><i class="fab fa-twitter"></i></span>
+          <img class="tooltip" style="font-weight: 600;"
+               src="/assets/linkedin.png" class="contact_image">
         </li>
       </a>
       <a target="_blank" href="https://github.com/thiagoqua">
         <li class="icon github">
-          <span class="tooltip" style="font-weight: 600;">GitHub</span>
-          <span><i class="fab fa-instagram"></i></span>
+          <img class="tooltip" style="font-weight: 600;"
+               src="/assets/github.png" class="contact_image">
         </li>
       </a>
     </ul>

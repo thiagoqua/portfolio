@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit():void {
     const navbar:HTMLElement = document.getElementById("navbar") as HTMLElement;
+    
+    setTimeout(() =>{
+      navbar!.classList.remove("blur_in");
+    }, 2000);
+
     window.addEventListener("scroll", () => {
       if (window.scrollY > 600){
         navbar!.classList.add("scrolled");

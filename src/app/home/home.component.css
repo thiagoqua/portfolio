@@ -53,6 +53,14 @@
     color:#C16E70;
 }
 
+.skills{
+    margin-top:4%;
+}
+
+.circle{
+    margin-top:3%;
+}
+
 /* proyects section */
 .project{
     margin-top:5%;
@@ -69,6 +77,11 @@
 /* contact section */
 .contact{
     text-align: center;
+    margin-top:4%;
+}
+
+.contact_image{
+    width: 100%;
 }
 
 .icon{
@@ -92,12 +105,11 @@
     padding-top: 40px;
     font-family: "Poppins", sans-serif;
     justify-content: center;
-    /* margin-top:-15%; */
+    background-color: #F2F3D9;
 }
       
 .wrapper .icon {
     position: relative;
-    background: #151E3F;
     border-radius: 50%;
     margin: 10px;
     width: 50px;
@@ -110,32 +122,6 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-    
-.wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 20px;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-    
-.wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
     
 .wrapper .icon:hover .tooltip {
@@ -153,41 +139,23 @@
 .wrapper .mail:hover,
 .wrapper .mail:hover .tooltip,
 .wrapper .mail:hover .tooltip::before {
-    background: #C16E70;
+    background: #DB4437;
     color: #fff;
 }
     
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-    background: #0e76a8;
+    background: #0072b1;
     color: #fff;
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-    background: #333;
+    background: #666666;
     color: #fff;
 }
-  
-  @-webkit-keyframes rainbow-text {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-  }
-  
-  @-moz-keyframes rainbow-text {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-  }
-  
-  @keyframes rainbow-text {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-  }
 
 
 /* equivale al sm de bootstrap */
