@@ -92,7 +92,6 @@
 }
 
     .icon:hover{
-        background-color: rgb(141, 199, 250);
         -webkit-animation: fadeIn 1s;
         animation: fadeIn 1s;
     }
@@ -154,6 +153,13 @@
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
     background: #666666;
+    color: #fff;
+}
+
+.wrapper .curriculum:hover,
+.wrapper .curriculum:hover .tooltip,
+.wrapper .curriculum:hover .tooltip::before {
+    background: #ff0000;
     color: #fff;
 }
 
