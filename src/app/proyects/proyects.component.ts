@@ -14,7 +14,7 @@ export class ProyectsComponent implements OnInit {
     const proyectNroNumber = parseInt(this.proyectNro);
 
     if(proyectNroNumber < 1 || proyectNroNumber > 4)
-      this.router.navigate(['']);
+      this.router.navigate(['/not-found']);
   }
 
   ngOnInit(): void {
