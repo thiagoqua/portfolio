@@ -19,15 +19,17 @@ export class HomeComponent implements OnInit {
       navbar!.classList.remove("blur_in");
     }, 2000);
 
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 600){
-        navbar!.classList.add("scrolled");
-        navbar!.classList.remove("scroll_on_top");
-      }
-      else{
-        navbar!.classList.remove("scrolled");
-        navbar!.classList.add("scroll_on_top");
-      }
-    });
+    if(window.innerWidth > 540){
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 600){
+          navbar!.classList.add("scrolled");
+          navbar!.classList.remove("scroll_on_top");
+        }
+        else{
+          navbar!.classList.remove("scrolled");
+          navbar!.classList.add("scroll_on_top");
+        }
+      });
+    }
   }
 }
