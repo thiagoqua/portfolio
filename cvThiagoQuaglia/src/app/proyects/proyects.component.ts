@@ -13,7 +13,7 @@ export class ProyectsComponent implements OnInit {
     this.proyectNro = this.route.snapshot.paramMap.get('number')!;
     const proyectNroNumber = parseInt(this.proyectNro);
 
-    if(proyectNroNumber < 1 || proyectNroNumber > 4)
+    if(proyectNroNumber < 1 || proyectNroNumber > 5)
       this.router.navigate(['/not-found']);
   }
 
@@ -21,5 +21,4 @@ export class ProyectsComponent implements OnInit {
     const navbar:HTMLElement = document.getElementById("navbar") as HTMLElement;
     navbar.classList.add("scrolled");
   }
-
 }

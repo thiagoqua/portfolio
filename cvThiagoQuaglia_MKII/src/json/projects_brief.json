@@ -1,0 +1,27 @@
+[
+  {
+    "title":"Sistema web de renta de autos",
+    "description":"Sistema fullstack web para empresa de renta de vehiculos en la ciudad de Rosario.",
+    "projectId":"5"
+  },
+  {
+    "title":"Aplicación de turnos médicos",
+    "description":"Sistema de gestión de turnos médicos, tanto web como de escritorio para sistemas Windows.En colaboración con Esteban Tosoni y Florencia Galván, compañeros de cursado.",
+    "projectId":"4"
+  },
+  {
+    "title":"Web para tienda de ropa",
+    "description":"Sistema fullstack web para una tienda de indumentaria. En colaboración con Esteban Tosoni, compañero de cursado.",
+    "projectId":"3"
+  },
+  {
+    "title":"Juego del truco",
+    "description":"Aplicación de escritorio que consta del juego de cartas 'truco' contra una IA, para sistemas Windows o Linux.En colaboración con Esteban Tosoni, compañero de cursado.",
+    "projectId":"2"
+  },
+  {
+    "title":"Protocolo FTP",
+    "description":"Imitación del funcionamiento del protocolo de redes FTP.",
+    "projectId":"1"
+  }
+]

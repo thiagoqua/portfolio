@@ -1,0 +1,33 @@
+.start{
+  margin-top:20vh;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: static;
+  height:80vh;
+}
+
+.whoami{
+  text-align: center;
+  width: 100%;
+}
+
+.name{
+  font-family: 'Righteous', cursive;
+  font-size: 600%;
+}
+
+.profession{
+  margin-left: 30%;
+  font-size: 250%;
+  font-family: 'Outfit', sans-serif;
+}
+
+.about{
+  font-size: large;
+}
+
+.about div{
+  width:80%;
+  margin-left:10%;
+}
