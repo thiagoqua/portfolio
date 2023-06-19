@@ -1,0 +1,41 @@
+.main{
+  text-align: center;
+}
+
+.main h2, .main h1{
+  margin:2%;
+}
+
+h1, h2{
+  font-family: 'Geologica', sans-serif;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 65px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+.accent{
+  font-style: normal;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.used-things{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section{
+  width:100%;
+}
+
+.section  h4{
+  font-size: 170%;
+  color: var(--secondary)
+}

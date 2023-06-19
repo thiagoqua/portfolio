@@ -1,6 +1,7 @@
 import './Projects.css'
 import data from '../../json/projects_brief.json';
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface projectBrief{
   title:string;
@@ -25,19 +26,19 @@ export default function Projects():JSX.Element{
   
   return (
     <div className='projects' id='projects'>
-      <h1 className="section_header">Proyectos</h1>
+      <h1 className='section_header'>Proyectos</h1>
       {listing.map((project:projectBrief) => (
         <div className='project' key={project.projectId}>
-          <h2>{project.title}</h2>
+          <h2 className='project_title'>{project.title}</h2>
           <p>{project.description}</p>
-          {/* <Link to={`/project/${project.projectId}`}>
+          <Link to={`/project/${project.projectId}`}>
             <a>ver proyecto</a>
-          </Link> */}
+          </Link>
         </div>
         )
       )}
       {!seeingAll && 
-        <button onClick={() => setSeingAll(true)}>
+        <button onClick={() => setSeingAll(true)} className='button'>
           Ver todos
         </button>
       }

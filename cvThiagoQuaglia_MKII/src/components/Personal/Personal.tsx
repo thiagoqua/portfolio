@@ -3,12 +3,12 @@ import './Personal.css'
 export default function Personal():JSX.Element{
   return (
     <div className="personal" id="personal">
-      <div className="block-info">
-        <h2>Formación académica</h2>
+      <div className="block-info-larger">
+        <h2>Formacion academica</h2>
         <ul>
           <li>
             <h3 className="item">Secundario</h3>
-            <div>
+            <div className='description'>
               <b>“Instituto Santa María Goretti E.E.S.O.P.I. 8097”</b> , Arroyo
               Seco, Santa Fe, Argentina.
               <br />
@@ -19,7 +19,7 @@ export default function Personal():JSX.Element{
           </li>
           <li>
             <h3 className="item">Terciario</h3>
-            <div>
+            <div className='description'>
               <b>"Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,
               Argentina.
               <br />
@@ -34,7 +34,7 @@ export default function Personal():JSX.Element{
       </div>
       <div className="block-info">
         <h2>Idiomas</h2>
-        <div>
+        <div className='description'>
           <ul>
             <li>
               <h3 className="item">Castellano</h3>
@@ -51,30 +51,34 @@ export default function Personal():JSX.Element{
           </ul>
         </div>
       </div>
-      <div className="block-info">
+      <div className="block-info-1">
         <h2>Disponibilidad</h2>
-        <ul>
-          <li>
-            <h3 className="item">Full-Time.</h3>
-          </li>
-        </ul>
+        <div className='description'>
+          <ul>
+            <li>
+              <h3 className="item">Full-Time.</h3>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="block-info">
+      <div className="block-info-larger-1">
         <h2>Intereses</h2>
-        <ul>
-          <li>
-            <h3 className="item">Desarrollo de apps en general.</h3>
-          </li>
-          <li>
-            <h3 className="item">A nivel desarrollo web</h3>
-            <div>
-              <b>Full Stack.</b>
-            </div>
-            <div>
-              <b>Backend.</b>
-            </div>
-          </li>
-        </ul>
+        <div className='description'> 
+          <ul>
+            <li>
+              <h3 className="item">Desarrollo de apps en general.</h3>
+            </li>
+            <li>
+              <h3 className="item">A nivel desarrollo web</h3>
+              <div>
+                <b>Full Stack.</b>
+              </div>
+              <div>
+                <b>Backend.</b>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
   </div>
 

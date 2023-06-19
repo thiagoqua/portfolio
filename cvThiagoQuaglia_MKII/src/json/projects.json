@@ -1,0 +1,59 @@
+[
+  {
+    "projectId":5,
+    "projectName":"Renta de autos",
+    "githubLink":"https://github.com/thiagoqua/RentalCarApp",
+    "description":"Tanto el apartado frontend como backend se encuentran en el directorio raíz de GitHub. <br /> El sistema cuenta con dos roles de usuario: rol adminisitrador y rol cliente. <br /> Un usuario <i class='accent'>cliente</i> podrá ver la galería de autos que posee la empresa y rentar el que desee con el previo registro y logueo en el sistema. Además, tendrá un apartado donde ver su historial de rentas con la opción de cancelar aquellas que estén vigentes. <br /> Un usuario <i class='accent'>administrador</i> podrá confirmar o negar desde su interfaz el pago del cliente para así validar la renta o cancelarla respectivamente. <br /> Todo el proyecto se encuentra <i class='accent'>dockerizado</i>. Obligatoriamente la base de datos debe ser corrida en Docker exclusivamente para facilidad del usuario que prueba el sistema. <br /> Luego, tiene la opción de correr el frontend y el backend con Node y Java respectivamente si posee dichos intérpretes instalados. De lo contrario, puede correr ambos en containers aislados.",
+    "techUsed":[
+      "SpringBoot","React","Docker","Microservicios","Rest API"
+    ],
+    "langUsed":[
+      "JAVA","HTML","CSS","TypeScript"
+    ],
+    "databaseUsed":"MySQL"
+  },
+  {
+    "projectId":4,
+    "projectName":"Aplicación de turnos médicos",
+    "githubLink":"https://github.com/thiagoqua/TurnosMedicos",
+    "description":"Tanto la versión web como la de escritorio se encuentran en la misma solución y en el mismo repositorio de GitHub. <br /> <br /> El sistema cuenta con dos roles de usuarios: rol de paciente y rol de médico. <br /> Un usuario <i class='accent'>paciente</i> podrá sacar turnos, visualizarlos con sus revspectivos detalles y eliminarlos. El sistema le permitirá emitir un reporte PDF con el listado de todos sus turnos sacados vigentes. <br /> Un usuario <i class='accent'>médico</i> podrá definir su disponibilidad en cada sucursal de la compañía médica, modificarla, eliminarla y ver los turnos que los pacientes tienen con él/ella en un día determinado. El sistema le permitirá emitir un reporte PDF con el listado de todos los turnos vigentes que los pacientes tienen con el médico en cuestión para una fecha en específico. <br /> <br /> La estructura está pensada para que el sanatorio (o ente que use el sistema) trabaje con obras sociales, brindándoles éstas acceso a una base de datos o un listado donde se encuentran todos los pacientes afiliados a dicha obra social. <br /> Debido a que ésto no está implementado, la creación de los usuarios primero debe hacerse de manera manual a la DB, insertando a la tabla <i class='accent'>afiliados</i> los datos necesarios para proceder al registro del paciente. <br /> Una realizado, ya se puede continuar con el registro del usuario desde el apartado <i class='accent'>registrarse</i> del sistema. <br /> Cabe aclarar que el sistema solo permite registros de ésta manera para pacientes. Para agregar médicos, se tiene que hacer de manera manual a la DB insertando primero en la tabla <i class='accent'>afiliados</i>, luego en la tabla <i class='accent'>usuarios</i> y por último en la tabla <i class='accent'>medico</i> con los datos correspondientes.",
+    "techUsed":[
+      ".NET","ASP.NET","LINQ to SQL"
+    ],
+    "langUsed":[
+      "C#","ASPX","CSS"
+    ],
+    "databaseUsed":"SQL Server"
+  },
+  {
+    "projectId":3,
+    "projectName":"Página web para tienda de ropa",
+    "githubLink":"https://github.com/estebantosoni/TiendaDigital",
+    "description":"Tanto el apartado backend como frontend se encuentran en distintos directorios pero en el mismo repositorio subido a GitHub. <br /> <br /> El sistema cuenta con dos roles de usuarios: rol de administrador y rol de cliente. Pero a su vez, cualquier persona sin registrarse también podrá ser capaz de ver el contenido de la página. <br /> Un usuario <i class='accent'>sin loguearse</i> podrá ver todos los productos que tiene disponible la tienda, con opciones de filtrado. <br /> Un usuario <i class='accent'>cliente</i> logueado, podrá ver todos los productos que tiene disponible la tienda agregando de la posibilidad de utilizar una lista de favoritos, donde podrá ir agregando los items que más le interesa de la tienda y luego poder verlos con un solo click. <br /> Un usuario <i class='accent'>administrador</i> podrá agregar prendas y/o perfumes al catálogo web, quitarlos o modificarlos.",
+    "techUsed":[
+      "SpringBoot","Angular","Rest API"
+    ],
+    "langUsed":[
+      "JAVA","HTML","CSS","TypeScript"
+    ],
+    "databaseUsed":"MySQL"
+  },
+  {
+    "projectId":2,
+    "projectName":"Juego del truco",
+    "githubLink":"https://github.com/thiagoqua/envido",
+    "description":"Este juego no tiene ningún tipo de logueo ni registro, ya que fue entregado como final de una de las primeras materias de la carrera. <br /> <br /> En el apartado <i class='accent'>configuración</i>, podremos poner nuestro nombre de usuario a la hora de jugar. <br /> <br /> También cuenta con una aplicación de mensajería, donde podremos chatear con otra computadora que esté corriendo el programa poniendo su dirección IP. <br /> Este ultimo apartado fue desarrollado debido a que uno de los requerimientos del trabajo final era utilizar sockets en JAVA. La idea original era la de realizar una versión online para el juego del truco, pero debido a la falta de tiempo improvisamos realizando un chat.",
+    "langUsed":[
+      "JAVA"
+    ]
+  },
+  {
+    "projectId":1,
+    "projectName":"Imitación del protocolo FTP",
+    "githubLink":"https://github.com/thiagoqua/FTPredes",
+    "description":"Este proyecto fue realizado para el final de la materia <i class='accent'>Redes de computadoras</i>. <br /> <br /> El fin era desarrollar un protocolo similar al funcionamiento del <i class='accent'>File Transfer Protocol</i> para lograr comprenderlo. <br /> Posee implementados una pequeña cantidad de comandos que básicamente permiten pedir la transferencia de archivos, listar los archivos de un directorio y cambiar de directorio en el servidor.",
+    "langUsed":[
+      "C"
+    ]
+  }
+]
