@@ -1,0 +1,34 @@
+img {
+  width: 22%;
+  height: auto;
+  object-fit: contain;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1100px) {
+  img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 850px) {
+  img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 540px) {
+  img {
+    width: 70%;
+  }
+
+  .photos {
+    justify-content: center;
+    gap: 2rem;
+  }
+}

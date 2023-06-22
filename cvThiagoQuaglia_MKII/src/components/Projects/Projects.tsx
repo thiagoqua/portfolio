@@ -32,7 +32,7 @@ export default function Projects():JSX.Element{
           <h2 className='project_title'>{project.title}</h2>
           <p>{project.description}</p>
           <Link to={`/project/${project.projectId}`}>
-            <a>ver proyecto</a>
+            <p className='link'>ver proyecto</p>
           </Link>
         </div>
         )

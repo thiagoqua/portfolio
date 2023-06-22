@@ -50,13 +50,37 @@ h2{
   font-size: 110%;
 }
 
+@media (max-width: 850px){
+  .block-info, .block-info-1, .block-info-larger, .block-info-larger-1{
+    width: 50%;
+  }
+
+  .block-info, .block-info-larger-1{
+    text-align: right;
+  }
+}
+
 @media(max-width:560px){
   .personal{
     flex-direction: column;
   }
-
   .block-info, .block-info-1, .block-info-larger, .block-info-larger-1{
     width:100%;
     text-align: center;
+  }
+
+}
+
+@media (max-width: 360px){
+  .personal {
+    font-size:100%;
+  }
+
+  .personal h2{
+    font-size:275%;
+  }
+
+  .personal h3{
+    font-size:175%;
   }
 }

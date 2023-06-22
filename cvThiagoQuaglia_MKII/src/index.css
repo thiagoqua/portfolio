@@ -1,9 +1,21 @@
+::selection{
+  background-color: #8fbeba;
+  color:#FEF9EF;
+}
+
 :root{
   --primary:#FE6D73;
   --secondary:#17C3B2;
   --background:#FEF9EF;
   --text:#18566d;
   --extra:#FFCB77;
+
+  /* 
+  --primary-darker:#6B2D30;
+  --secondary-darker:#0A5B53;
+  --extra-darker:#8F7243;
+  --icon:#DBD6CD;
+  */
 }
 
 html {
@@ -30,12 +42,12 @@ ul{
   padding-left: 0;
 }
 
-a{
+a, .link{
   text-decoration: none;
   color:var(--primary);
 }
 
-a:hover, .navbar a:hover{
+a:hover, .link:hover, .navbar a:hover{
   color: var(--extra);
 }
 
@@ -56,6 +68,7 @@ p{
   right: 0;
   margin-right:2%;
   text-align: center;
+  z-index: 1;
 }
 
 .navbar:hover{
@@ -92,6 +105,48 @@ p{
 
 .circle-in-animation-shorter {
   animation:5s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}
+
+.button {
+  margin-top:3%;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  color:var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color:var(--primary);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: var(--text);
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
 }
 
 /* animations definitions */

@@ -40,7 +40,7 @@
   },
   {
     "projectId":2,
-    "projectName":"Juego del truco",
+    "projectName":"Juego de truco",
     "githubLink":"https://github.com/thiagoqua/envido",
     "description":"Este juego no tiene ningún tipo de logueo ni registro, ya que fue entregado como final de una de las primeras materias de la carrera. <br /> <br /> En el apartado <i class='accent'>configuración</i>, podremos poner nuestro nombre de usuario a la hora de jugar. <br /> <br /> También cuenta con una aplicación de mensajería, donde podremos chatear con otra computadora que esté corriendo el programa poniendo su dirección IP. <br /> Este ultimo apartado fue desarrollado debido a que uno de los requerimientos del trabajo final era utilizar sockets en JAVA. La idea original era la de realizar una versión online para el juego del truco, pero debido a la falta de tiempo improvisamos realizando un chat.",
     "langUsed":[

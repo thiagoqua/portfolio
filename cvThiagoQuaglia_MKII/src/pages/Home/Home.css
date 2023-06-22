@@ -37,9 +37,21 @@
   font-size: large;
 }
 
+
+@media (max-width: 850px){
+  .start{
+    height: 100vh;
+  }
+}
 /* phone screen */
 @media (max-width: 540px){
   .start{
     height: 100vh;
+  }
+}
+
+@media (max-width: 360px){
+  .start,.sections{
+    font-size: 80%;
   }
 }

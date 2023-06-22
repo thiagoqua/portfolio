@@ -52,16 +52,6 @@ export default function Personal():JSX.Element{
         </div>
       </div>
       <div className="block-info-1">
-        <h2>Disponibilidad</h2>
-        <div className='description'>
-          <ul>
-            <li>
-              <h3 className="item">Full-Time.</h3>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="block-info-larger-1">
         <h2>Intereses</h2>
         <div className='description'> 
           <ul>
@@ -76,6 +66,16 @@ export default function Personal():JSX.Element{
               <div>
                 <b>Backend.</b>
               </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="block-info-larger-1">
+        <h2>Disponibilidad</h2>
+        <div className='description'>
+          <ul>
+            <li>
+              <h3 className="item">Full-Time.</h3>
             </li>
           </ul>
         </div>
