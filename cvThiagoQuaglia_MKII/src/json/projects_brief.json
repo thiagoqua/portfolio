@@ -1,5 +1,15 @@
 [
   {
+    "title":"Sistema web de asegurados",
+    "description":"Sistema web para gestión de asegurados.",
+    "projectId":"7"
+  },
+  {
+    "title":"API de seguros",
+    "description":"Desarrollo de API para la gestión de clientes de una compañía u oficina de seguros.",
+    "projectId":"6"
+  },
+  {
     "title":"Sistema web de renta de autos",
     "description":"Sistema fullstack web para empresa de renta de vehiculos en la ciudad de Rosario.",
     "projectId":"5"

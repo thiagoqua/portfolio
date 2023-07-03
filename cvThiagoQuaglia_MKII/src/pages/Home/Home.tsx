@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
         <div className="about" id="about">
           <div>
             <p>
-              Mi nombre es Thiago Quaglia y desde pequeño que soy muy aficionado
+              Mi nombre es Thiago Quaglia. Desde pequeño que soy muy aficionado
               a la tecnología, lo que me ha permitido inclinarme por la
               programación a la hora de comenzar con los estudios.
             </p>
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
             <p>
               Estoy en busca de mi primer experiencia laboral en el ámbito de
               desarrollo de software, que me permita incorporar conocimientos
-              nuevos y ampliar y profundizar los adquiridos.
+              nuevos y profundizar los adquiridos.
             </p>
           </div>
         </div>

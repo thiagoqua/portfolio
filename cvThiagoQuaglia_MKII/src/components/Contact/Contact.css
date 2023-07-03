@@ -33,14 +33,21 @@
   100% { opacity: 1; }
 }
 
+
+@media(max-width:900px){
+  .contacts{
+    width: 100%;
+  }
+}
+
 @media(max-width:700px){
   .contacts-ctx{
     height: 3rem;
   }
 }
 
-@media(max-width:900px){
-  .contacts{
-    width: 100%;
+@media(max-width:700px){
+  .contacts-ctx{
+    height: 2rem;
   }
 }

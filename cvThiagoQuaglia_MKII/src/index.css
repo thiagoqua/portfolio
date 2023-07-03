@@ -59,6 +59,11 @@ p{
   color:var(--text);
 }
 
+/* para webhost */
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+  display:none;
+}
+
 /* navigation bar */
 .navbar{
   display:flex;
@@ -78,6 +83,10 @@ p{
 
 .navbar a{
   color:var(--primary);
+}
+
+.navbar-project{
+  text-align: right;
 }
 
 .blur_in{
@@ -198,7 +207,21 @@ p{
       width: 95%;
   }
 
+  .navbar-project{
+    text-align: center;
+  }
+
   .section_header{
-    font-size: 350%;
+    font-size:280%;
+  }
+}
+
+@media (max-width: 360px){
+  .navbar{
+    font-size:5vw;
+  }
+
+  .section_header{
+    font-size: 10vw;
   }
 }

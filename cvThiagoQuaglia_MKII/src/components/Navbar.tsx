@@ -23,16 +23,17 @@ export default function Navbar({inProjectPage}:{inProjectPage:boolean}): JSX.Ele
     },[]);
 
     return (
-    <div className='navbar blur_in' id="navbar">
-      {!inProjectPage 
-      ? <>
-        <a href="#about">about</a>
-        <a href="#personal">personal info</a>
-        <a href="#skills">skills</a>
-        <a href="#projects">proyects</a>
-      </>
-      : <a href="/" className="unique">home</a>
+      <> {!inProjectPage 
+      ? <div className='navbar blur_in' id="navbar">
+          <a href="#about">about</a>
+          <a href="#personal">personal info</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">proyects</a>
+        </div>
+      : <div className="navbar-project">
+          <a href="/" className="navbar-project" id="navbar">home</a>
+        </div>
       }
-    </div>
+    </>
   );
 }
