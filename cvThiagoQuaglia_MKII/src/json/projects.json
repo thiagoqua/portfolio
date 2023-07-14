@@ -4,17 +4,16 @@
     "projectName": "Aplicación de escritorio Windows para gestión de asegurados",
     "githubLink": "",
     "description": "",
-    "techUsed": [
-      ".NET Framework", "WinForms"
-    ],
+    "techUsed": [".NET Framework", "WinForms"],
     "langUsed": ["C#"],
     "developing":true
   },
   {
     "projectId": 8,
     "projectName": "Aplicación Android para gestión de asegurados",
-    "githubLink": "",
-    "description": "",
+    "githubLink": "https://github.com/thiagoqua/InsuranceMobileApp.git",
+    "description": "Esta app permite consumir algunos de los endpoints que provee la <a href='/project/6'>API de seguros</a>. <br/>Una vez logueado el ususario administrador, va a poder visualizar todos los asegurados, con sus respectivos detalles y con opciones de filtrado, de una manera bastante comprensiva. <br/>El proyecto está en los primeros pasos de su desarrollo.",
+    "techUsed": ["Jetpack Compose","MVVM"],
     "langUsed": ["Kotlin"],
     "developing":true
   },
@@ -22,12 +21,9 @@
     "projectId": 7,
     "projectName": "Sistema web para gestión de asegurados",
     "githubLink": "https://github.com/thiagoqua/InsuranceWebApp",
-    "description": "Este sistema consta de una interfaz visual web utilizando la <a href='/project/6'>API de seguros</a>. Los demás usos de la API en otros proyectos están descriptos allí. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.",
-    "techUsed": [
-      "Angular"
-    ],
-    "langUsed": ["TypeScript","HTML","CSS"],
-    "developing":true
+    "description": "Este sistema consta de una interfaz visual web consumiendo la <a href='/project/6'>API de seguros</a>. Los demás usos de la API en otros proyectos están descriptos allí. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.<br/>Cabe aclarar que la interfaz no es responsive al 100% ya que para vista desde teléfonos está realizada la app. De todas formas, se adapta correctamente a cualquier tipo de pantalla de PC o tablet.",
+    "techUsed": ["Angular"],
+    "langUsed": ["TypeScript","HTML","CSS"]
   },
   {
     "projectId": 6,

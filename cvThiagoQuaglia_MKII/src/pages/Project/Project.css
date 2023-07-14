@@ -55,6 +55,7 @@ h2 {
 .flicker {
   animation: flicker 4s linear infinite both;
 }
+
 @keyframes flicker {
   0%,
   100% {
@@ -109,5 +110,21 @@ h2 {
 
   .used-things{
     flex-direction: column;
+  }
+}
+
+@media(max-width: 500px){
+  .disabled {
+    font-size: 300%;
+  }
+
+  h1 .flicker{
+    font-size:13vw;
+  }
+}
+
+@media(max-width: 280px){
+  .disabled {
+    font-size: 13vw;
   }
 }
