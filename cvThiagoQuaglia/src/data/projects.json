@@ -2,9 +2,14 @@
   {
     "projectId": 9,
     "projectName": "Aplicación de escritorio Windows para gestión de asegurados",
-    "githubLink": "",
-    "description": "",
-    "techUsed": [".NET Framework", "WinForms"],
+    "githubLink": "https://github.com/thiagoqua/InsuranceDesktopApp",
+    "description": "Esta sistema de escritorio permite consumir todos los endpoints que provee la <a href='/project/6'>API de seguros</a>. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.<br/>App construida utilizando el patrón de diseño <i class='accent'>MVP</i> (Model-View-Presenter).",
+    "techUsed": [
+      ".NET Framework", 
+      "WinForms",
+      "DataProtection API",
+      "Inyección de Dependencias con Autofac"
+    ],
     "langUsed": ["C#"],
     "developing":true
   },
@@ -12,21 +17,21 @@
     "projectId": 8,
     "projectName": "Aplicación Android para gestión de asegurados",
     "githubLink": "https://github.com/thiagoqua/InsuranceMobileApp.git",
-    "description": "Esta app permite consumir algunos de los endpoints que provee la <a href='/project/6'>API de seguros</a>. <br/>Una vez logueado el ususario administrador, va a poder visualizar todos los asegurados con opciones de filtrado y ver sus respectivos detalles, de una manera bastante sencilla y comprensiva. <br/>",
+    "description": "Esta app permite consumir algunos de los endpoints que provee la <a href='/project/6'>API de seguros</a>. <br/>Una vez logueado el ususario administrador, va a poder visualizar todos los asegurados con opciones de filtrado y ver sus respectivos detalles, de una manera bastante sencilla y comprensiva. <br/> App construida utilizando el patrón de diseño <i class='accent'>MVVM</i> (Model-View-ViewModel).",
     "techUsed": [
       "JetPack Compose",
-      "MVVM",
-      "DI"
+      "Navigation Compose",
+      "Peticiones HTTP con Retrofit",
+      "Inyección de Dependencias con Hilt"
     ],
     "langUsed": ["Kotlin"],
-    "developing":true,
     "demo":"https://we.tl/t-5HCdFHEud3"
   },
   {
     "projectId": 7,
     "projectName": "Sistema web para gestión de asegurados",
     "githubLink": "https://github.com/thiagoqua/InsuranceWebApp",
-    "description": "Este sistema consta de una interfaz visual web consumiendo la <a href='/project/6'>API de seguros</a>. Los demás usos de la API en otros proyectos están descriptos allí. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.<br/>Cabe aclarar que la interfaz no es responsive al 100% ya que para vista desde teléfonos está realizada la app. De todas formas, se adapta correctamente a cualquier tipo de pantalla de PC o tablet.",
+    "description": "Este sistema consta de una interfaz visual web consumiendo la <a href='/project/6'>API de seguros</a>. Los demás usos de la API en otros proyectos están descriptos allí. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.<br/>Cabe aclarar que la interfaz no es responsive al 100% ya que para vista desde teléfonos está realizada la <a href='/project/8'>app mobile</a>. De todas formas, se adapta correctamente a cualquier tipo de pantalla de PC o tablet.",
     "techUsed": ["Angular"],
     "langUsed": ["TypeScript","HTML","CSS"]
   },
@@ -34,7 +39,7 @@
     "projectId": 6,
     "projectName": "API para seguros",
     "githubLink": "https://github.com/thiagoqua/InsuranceAPI",
-    "description": "Esta API permite hacer consultas de todo tipo a la base de datos de los clientes de una compañía de seguros.<br/> Su acceso está restringido únicamente a <i class='accent'>usuarios administradores</i>, o sea, los propietarios de la compañía u oficina de seguros. Por lo tanto, por temas de seguridad, la API no contiene endpoints que permitan la inserión de usuarios administradores al sistema. <br/>Más allá de las operaciones CRUD, permite la <i class='accent'>importación</i> masiva de datos de asegurados a partir de un archivo Excel, cumpliendo con el formato especificado <a href='https://github.com/thiagoqua/InsuranceAPI#structure-of-the-excel-file-to-parse' target='_blank'>aquí</a>, simplificando el proceso de carga de información.<br/>También permite la generación de <i class='accent'>reportes</i>, tanto en formatos PDF como XLSX, a partir de la exportación de los registros de la base de datos.<br/>Este proyecto es parte de un conjunto de proyectos relacionados, que incluye una <a href='/project/7'>interfaz web frontend</a>, una <a href='/project/9'>aplicación de escritorio</a> para sistemas Windows y una <a href='/project/8'>aplicación mobil Android</a>, brindando una solución integral y obviamente consumiendo de esta API.",
+    "description": "Esta API permite hacer consultas de todo tipo a la base de datos de los clientes de una compañía de seguros.<br/> Su acceso está restringido únicamente a <i class='accent'>usuarios administradores</i>, o sea, los propietarios de la compañía u oficina de seguros. Por lo tanto, por temas de seguridad, la API no contiene endpoints que permitan la inserión de usuarios administradores al sistema. <br/>Más allá de las operaciones CRUD, permite la <i class='accent'>importación</i> masiva de datos de asegurados a partir de un archivo Excel, cumpliendo con el formato especificado <a href='https://github.com/thiagoqua/InsuranceAPI#structure-of-the-excel-file-to-parse' target='_blank'>aquí</a>, simplificando el proceso de carga de información.<br/>También permite la generación de <i class='accent'>reportes</i>, tanto en formatos PDF como XLSX, a partir de la exportación de los registros de la base de datos.<br/>Este proyecto es parte de un conjunto de proyectos relacionados, que incluye una <a href='/project/7'>interfaz web frontend</a>, una <a href='/project/9'>aplicación de escritorio</a> para sistemas Windows y una <a href='/project/8'>aplicación mobil Android</a>, brindando una solución integral y obviamente consumiendo de esta API.<br/> API construida utilizando el patrón de diseño <i class='accent'>MVC</i> (Model-View-Controller).",
     "techUsed": [
       "ASP.NET",
       ".NET Framework",
@@ -51,7 +56,7 @@
     "projectId": 5,
     "projectName": "Renta de autos",
     "githubLink": "https://github.com/thiagoqua/RentalCarApp",
-    "description": "Tanto el apartado frontend como backend se encuentran en el directorio raíz de GitHub. <br /> El sistema cuenta con dos roles de usuario: rol adminisitrador y rol cliente. <br /> Un usuario <i class='accent'>cliente</i> podrá ver la galería de autos que posee la empresa y rentar el que desee con el previo registro y logueo en el sistema. Además, tendrá un apartado donde ver su historial de rentas con la opción de cancelar aquellas que estén vigentes. <br /> Un usuario <i class='accent'>administrador</i> podrá confirmar o negar desde su interfaz el pago del cliente para así validar la renta o cancelarla respectivamente. <br /> Todo el proyecto se encuentra <i class='accent'>dockerizado</i>. Obligatoriamente la base de datos debe ser corrida en Docker exclusivamente para facilidad del usuario que prueba el sistema. <br /> Luego, tiene la opción de correr el frontend y el backend con Node y Java respectivamente si posee dichos intérpretes instalados. De lo contrario, puede correr ambos en containers aislados.",
+    "description": "Tanto el apartado frontend como backend se encuentran en el directorio raíz de GitHub. <br /> El sistema cuenta con dos roles de usuario: rol adminisitrador y rol cliente. <br /> Un usuario <i class='accent'>cliente</i> podrá ver la galería de autos que posee la empresa y rentar el que desee con el previo registro y logueo en el sistema. Además, tendrá un apartado donde ver su historial de rentas con la opción de cancelar aquellas que estén vigentes. <br /> Un usuario <i class='accent'>administrador</i> podrá confirmar o negar desde su interfaz el pago del cliente para así validar la renta o cancelarla respectivamente. <br /> Todo el proyecto se encuentra <i class='accent'>dockerizado</i>. Obligatoriamente la base de datos debe ser corrida en Docker exclusivamente para facilidad del usuario que prueba el sistema. <br /> Luego, tiene la opción de correr el frontend y el backend con Node y Java respectivamente si posee dichos intérpretes instalados. De lo contrario, puede correr ambos en containers aislados.<br/> API construida utilizando el patrón de diseño <i class='accent'>MVC</i> (Model-View-Controller).",
     "techUsed": [
       "SpringBoot",
       "React",
@@ -76,7 +81,7 @@
     "projectId": 3,
     "projectName": "Página web para tienda de ropa",
     "githubLink": "https://github.com/estebantosoni/TiendaDigital",
-    "description": "Tanto el apartado backend como frontend se encuentran en distintos directorios pero en el mismo repositorio subido a GitHub. <br /> <br /> El sistema cuenta con dos roles de usuarios: rol de administrador y rol de cliente. Pero a su vez, cualquier persona sin registrarse también podrá ser capaz de ver el contenido de la página. <br /> Un usuario <i class='accent'>sin loguearse</i> podrá ver todos los productos que tiene disponible la tienda, con opciones de filtrado. <br /> Un usuario <i class='accent'>cliente</i> logueado, podrá ver todos los productos que tiene disponible la tienda agregando de la posibilidad de utilizar una lista de favoritos, donde podrá ir agregando los items que más le interesa de la tienda y luego poder verlos con un solo click. <br /> Un usuario <i class='accent'>administrador</i> podrá agregar prendas y/o perfumes al catálogo web, quitarlos o modificarlos.",
+    "description": "Tanto el apartado backend como frontend se encuentran en distintos directorios pero en el mismo repositorio subido a GitHub. <br /> <br /> El sistema cuenta con dos roles de usuarios: rol de administrador y rol de cliente. Pero a su vez, cualquier persona sin registrarse también podrá ser capaz de ver el contenido de la página. <br /> Un usuario <i class='accent'>sin loguearse</i> podrá ver todos los productos que tiene disponible la tienda, con opciones de filtrado. <br /> Un usuario <i class='accent'>cliente</i> logueado, podrá ver todos los productos que tiene disponible la tienda agregando de la posibilidad de utilizar una lista de favoritos, donde podrá ir agregando los items que más le interesa de la tienda y luego poder verlos con un solo click. <br /> Un usuario <i class='accent'>administrador</i> podrá agregar prendas y/o perfumes al catálogo web, quitarlos o modificarlos.<br/> API construida utilizando el patrón de diseño <i class='accent'>MVC</i> (Model-View-Controller).",
     "techUsed": ["SpringBoot", "Angular", "Rest API"],
     "langUsed": ["JAVA", "HTML", "CSS", "TypeScript"],
     "databaseUsed": "MySQL"

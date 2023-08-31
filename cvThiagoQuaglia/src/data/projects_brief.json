@@ -1,5 +1,10 @@
 [
   {
+    "title":"Aplicación de escritorio de asegurados",
+    "description":"App de escritorio para sistemas Windows para gestión de asegurados.",
+    "projectId":"9"
+  },
+  {
     "title":"Aplicación mobile de asegurados",
     "description":"App android para gestión general de asegurados.",
     "projectId":"8"
@@ -16,7 +21,7 @@
   },
   {
     "title":"Sistema web de renta de autos",
-    "description":"Sistema fullstack web para empresa de renta de vehiculos en la ciudad de Rosario.",
+    "description":"Sistema FullStack web para empresa de renta de vehiculos en la ciudad de Rosario.",
     "projectId":"5"
   },
   {

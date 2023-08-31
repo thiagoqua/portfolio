@@ -59,10 +59,10 @@ export default function Personal():JSX.Element{
         <div className='description'> 
           <ul>
             <li>
-              <h3 className="item">Desarrollo de apps en general.</h3>
+              <h3 className="item">Desarrollo de apps de escritorio y mobile.</h3>
             </li>
             <li>
-              <h3 className="item">A nivel desarrollo web</h3>
+              <h3 className="item">Desarrolo web</h3>
               <div>
                 <b>Full Stack.</b>
               </div>

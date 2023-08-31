@@ -4,7 +4,7 @@ import data from "../../data/projects.json";
 import "./Project.css";
 import Navbar from "../../components/Navbar";
 import { StillDev } from "./components/StillDev";
-import { Demo } from "./components/Demo";
+import { Demo, Snapshot } from "./components/Links";
 
 type Project = {
   projectId: number;
@@ -16,6 +16,7 @@ type Project = {
   databaseUsed?: string;
   developing?:boolean;
   demo?:string;
+  snapshot?:string;
 };
 
 export default function Project(): JSX.Element {
@@ -45,6 +46,7 @@ export default function Project(): JSX.Element {
           <div className="links">
             <a href={project?.githubLink} target="_blank">GitHub</a>
             {project?.demo != undefined && <Demo link={project?.demo}/>}
+            {project?.snapshot != undefined && <Snapshot link={project?.snapshot}/>}
           </div>
             {project?.developing && <StillDev/>}
           <div className="project-description">
