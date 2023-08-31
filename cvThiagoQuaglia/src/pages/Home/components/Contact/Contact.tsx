@@ -1,7 +1,7 @@
-import lnkdn from '../../assets/icons/linkedin.png'
-import ghub from '../../assets/icons/github.png'
-import email from '../../assets/icons/email.svg'
-import pdf from '../../assets/icons/resume.svg'
+import lnkdn from '../../../../assets/icons/linkedin.png'
+import ghub from '../../../../assets/icons/github.png'
+import email from '../../../../assets/icons/email.svg'
+import pdf from '../../../../assets/icons/resume.svg'
 import './Contact.css'
 
 export default function Contact():JSX.Element{

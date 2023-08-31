@@ -1,0 +1,81 @@
+h1{
+  color:var(--primary);
+  font-family: 'Moirai One', cursive;
+  font-size:300%;
+}
+
+p{
+  font-size: 110%;
+}
+
+.link {
+  color:var(--secondary);
+}
+
+.project{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project_info_container{
+  width: 85%;
+}
+
+.project_things_container{
+  width:12%;
+  display:flex;
+  align-items: center;
+}
+
+
+.project_title{
+  color:var(--secondary);
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.projects{
+  margin-top:10%;
+}
+
+@media (max-width: 1000px){
+  .project_info_container{
+    width: 82%;
+  }
+  
+  .project_things_container{
+    width:17%;
+  }
+}
+
+@media (max-width: 750px){
+  .project_info_container{
+    width: 75%;
+  }
+  
+  .project_things_container{
+    width:22%;
+  }
+}
+
+@media (max-width: 500px){
+  .project_info_container{
+    width:100%;
+  }
+  
+  .project_things_container{
+    display:none;
+  }
+}
+
+@media (max-width: 360px){
+  .project_title{
+    font-size: 175%;
+  }
+
+  .section_header{
+    font-size:275%;
+  }
+}

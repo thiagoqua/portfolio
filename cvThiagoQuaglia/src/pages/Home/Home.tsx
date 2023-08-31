@@ -1,8 +1,8 @@
-import Contact from "../../components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import Navbar from "../../components/Navbar";
-import Personal from "../../components/Personal/Personal";
-import Projects from "../../components/Projects/Projects";
-import Skills from "../../components/Skills/Skills";
+import Personal from "./components/Personal/Personal"
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
 import "./Home.css";
 
 export default function Home(): JSX.Element {

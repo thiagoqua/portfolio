@@ -2,46 +2,88 @@
   {
     "title":"Aplicación de escritorio de asegurados",
     "description":"App de escritorio para sistemas Windows para gestión de asegurados.",
-    "projectId":"9"
+    "projectId":"9",
+    "techs":[
+      "frame-.net",
+      "lang-csh"
+    ]
   },
   {
     "title":"Aplicación mobile de asegurados",
     "description":"App android para gestión general de asegurados.",
-    "projectId":"8"
+    "projectId":"8",
+    "techs":[
+      "frame-android",
+      "lang-kt"
+    ]
   },
   {
     "title":"Sistema web de asegurados",
     "description":"Sistema web para gestión de asegurados.",
-    "projectId":"7"
+    "projectId":"7",
+    "techs":[
+      "frame-angular",
+      "lang-ts"
+    ]
   },
   {
     "title":"API de seguros",
     "description":"Desarrollo de API para la gestión de clientes de una compañía u oficina de seguros.",
-    "projectId":"6"
+    "projectId":"6",
+    "techs":[
+      "frame-asp.net",
+      "lang-csh",
+      "db-sqlsrv"
+    ]
   },
   {
     "title":"Sistema web de renta de autos",
     "description":"Sistema FullStack web para empresa de renta de vehiculos en la ciudad de Rosario.",
-    "projectId":"5"
+    "projectId":"5",
+    "techs":[
+      "frame-spring",
+      "lang-java",
+      "frame-react",
+      "lang-ts",
+      "db-mysql"
+    ]
   },
   {
     "title":"Aplicación de turnos médicos",
-    "description":"Sistema de gestión de turnos médicos, tanto web como de escritorio para sistemas Windows.En colaboración con Esteban Tosoni y Florencia Galván, compañeros de cursado.",
-    "projectId":"4"
+    "description":"Sistema de gestión de turnos médicos, tanto web como de escritorio para sistemas Windows. En colaboración con Esteban Tosoni y Florencia Galván, compañeros de cursado.",
+    "projectId":"4",
+    "techs":[
+      "frame-asp.net",
+      "lang-csh",
+      "db-sqlsrv"
+    ]
   },
   {
     "title":"Web para tienda de ropa",
     "description":"Sistema fullstack web para una tienda de indumentaria. En colaboración con Esteban Tosoni, compañero de cursado.",
-    "projectId":"3"
+    "projectId":"3",
+    "techs":[
+      "frame-spring",
+      "frame-angular",
+      "lang-java",
+      "lang-ts",
+      "db-mysql"
+    ]
   },
   {
     "title":"Juego de truco",
     "description":"Aplicación de escritorio que consta del juego de cartas 'truco' contra una IA, para sistemas Windows o Linux.En colaboración con Esteban Tosoni, compañero de cursado.",
-    "projectId":"2"
+    "projectId":"2",
+    "techs":[
+      "lang-java"
+    ]
   },
   {
     "title":"Protocolo FTP",
     "description":"Imitación del funcionamiento del protocolo de redes FTP.",
-    "projectId":"1"
+    "projectId":"1",
+    "techs":[
+      "lang-c"
+    ]
   }
 ]
