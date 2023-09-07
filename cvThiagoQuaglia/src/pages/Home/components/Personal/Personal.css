@@ -34,12 +34,9 @@ h2{
 }
 
 .item{
+  color:var(--secondary);
   font-size: 27px;
   font-family: 'Geologica', sans-serif;
-}
-
-.item{ 
-  color:var(--secondary);
 }
 
 .grade{

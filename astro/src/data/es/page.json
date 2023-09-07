@@ -1,0 +1,46 @@
+{
+  "about": "<p>  Mi nombre es Thiago Quaglia. Desde pequeño que soy muy aficionado a latecnología, lo que me ha permitido inclinarme por la programación a lahora de comenzar con los estudios.</p><p>Actualmente, finalizando la carrera de <b class='grade'>Analista Universitario en  Sistemas</b>.</p><p>Estoy en busca de mi primer experiencia laboral en el ámbito de  desarrollo de software, que me permita incorporar conocimientos nuevos y  profundizar los adquiridos.</p>",
+  "academies": {
+    "title": "Formación académica",
+    "content": {
+      "secondary": {
+        "title": "Secundario",
+        "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b> , ArroyoSeco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachiller en Ciencias Sociales.</b>"
+      },
+      "tertirary": {
+        "title": "Terciario",
+        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /> Me queda una materia para recibirme.<br /><b class='grade'>Analista Universitario en Sistemas.</b>",
+        "academic_history": "Historia académica"
+      }
+    }
+  },
+  "languages": {
+    "title": "Idiomas",
+    "content": {
+      "spanish": {
+        "title": "Castellano",
+        "content": "Nativo."
+      },
+      "english": {
+        "title": "Inglés",
+        "content": "Intermedio B2."
+      }
+    }
+  },
+  "interests": {
+    "title": "Intereses",
+    "content": [
+      { "title": "Desarrollo de apps de escritorio y mobile." },
+      { "title": "Desarrollo web", "content": ["Full Stack", "Backend"] }
+    ]
+  },
+  "disponibility": {
+    "title": "Disponibilidad",
+    "content": "Full-Time."
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "see_project": "ver proyecto",
+  "see_all": "ver todos"
+}
