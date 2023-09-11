@@ -1,0 +1,68 @@
+---
+const { lang } = Astro.params;
+const oppositeLang: string = lang == "es" ? "english" : "castellano";
+const oppositeLocal: string = lang == "es" ? "en" : "es";
+const oppositeURL: string = Astro.url.pathname.replace(lang!, oppositeLocal);
+const className:string = oppositeLocal == "es" ? "argentina-lang" : "yankee-lang";
+const changeTo:string = oppositeLocal == "es" ? "cambiar a " : "change to ";
+---
+
+<a class="lang-changer blur_in" href={oppositeURL}>
+  {changeTo} <i class={className}>{oppositeLang}</i>
+</a>
+
+<style>
+  .argentina-lang{
+    font-style: normal;
+    animation: flicker-arg 5s linear infinite both;
+  }
+
+  .yankee-lang{
+    font-style: normal;
+    animation: flicker-usa 5s linear infinite both;
+  }
+
+  @keyframes flicker-arg {
+  0%,
+  100% {
+    opacity: 1;
+    color: #73c3ce;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  43.01% {
+    opacity: 1;
+    color:#8888886c;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  49.01% {
+    opacity: 1;
+    color:#73c3ce;
+  }
+  }
+
+  @keyframes flicker-usa {
+  0%,
+  100% {
+    opacity: 1;
+    color: #555baf;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  43.01% {
+    opacity: 1;
+    color:#8888886c;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  49.01% {
+    opacity: 1;
+    color:#974747;
+  }
+}
+</style>

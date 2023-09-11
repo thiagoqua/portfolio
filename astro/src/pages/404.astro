@@ -1,0 +1,112 @@
+---
+import "../styles/global.css"
+---
+  <main>
+    <div>
+      <h1>Whoops!</h1>
+      <h2>Parece que te perdiste..</h2>
+      <a href='/'>
+        <button class='button'>volver a la pantalla principal</button>
+      </a>
+    </div>
+    <div class='image-ctx'>
+      <img src="/public/icons/not_found.png" alt='404 image' class='wobble-vertical-left'/>
+    </div>
+  </main>
+
+<style>
+  main {
+  display: flex;
+  height: 90vh;
+  justify-content: space-evenly;
+}
+
+main div {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main h1 {
+  margin: 0;
+  font-size: 700%;
+  color:#058fff;
+}
+
+main h2 {
+  margin: 0;
+  font-size: 300%;
+  color:#9fc76b;
+}
+
+.image-ctx img {
+  width: 100%;
+}
+
+.wobble-vertical-left {
+  animation: wobble-vertical-left 9s infinite linear both;
+}
+
+/* animations */
+@keyframes wobble-vertical-left {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+
+@media(max-width:1000px){
+  main h1 {
+    font-size: 600%;
+  }
+  
+  main h2 {
+    font-size: 200%;
+  }
+}
+
+@media(max-width: 850px){
+  main{
+    flex-direction: column;
+    gap:5rem;
+    margin-top:10%;
+    text-align: center;
+  }
+
+  main div{
+    width:100%;
+  }
+
+  .image-ctx img{
+    margin-left:25%;
+    width:50%;
+  }
+}
+
+@media(max-width:540px){
+  main h1 {
+    font-size: 500%;
+  }
+  
+  main h2 {
+    font-size: 170%;
+  }
+}
+</style>

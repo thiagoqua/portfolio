@@ -1,8 +1,8 @@
 ---
-import Layout from "../../components/layout.astro";
+import Layout from "../../layout/layout.astro";
 import Projects from "../../components/Projects";
-import type {LangContent} from "../../data/schema";
-import "../../styles/index.css";
+import type {LangContent} from "../../data/pageSchema";
+import "../../styles/home.css";
 import es from "../../data/es/page.json"
 import en from "../../data/en/page.json"
 
@@ -15,7 +15,6 @@ export function getStaticPaths(){
 
 const { lang } = Astro.params;
 const langData:LangContent = lang == 'es' ? es : en;
-console.log(langData)
 ---
 <Layout>
   <div class="start circle-in-animation">
@@ -60,7 +59,7 @@ console.log(langData)
             <li>
               <h3 class="item">{langData.languages.content.spanish.title}</h3>
               <div>
-                <b>{langData.languages.content.spanish.title}</b>
+                <b>{langData.languages.content.spanish.content}</b>
               </div>
             </li>
             <li>
@@ -122,7 +121,7 @@ console.log(langData)
     </div>
 
     <!-- Projects brief -->
-    <Projects client:visible />
+    <Projects client:load lang={lang!} />
 
     <!-- Contact -->
     <div class="contacts-ctx">

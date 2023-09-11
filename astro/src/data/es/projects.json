@@ -34,7 +34,8 @@
     "githubLink": "https://github.com/thiagoqua/InsuranceWebApp",
     "description": "Este sistema consta de una interfaz visual web consumiendo la <a href='/project/6'>API de seguros</a>. Los demás usos de la API en otros proyectos están descriptos allí. <br/>Una vez logueado el usuario administrador, va a poder utilizar <i class='accent'>todas</i> las funciones disponibles en la API, dentro de las cuales se encuentran la vista de todos los clientes, el alta, baja y modificación de los mismos de manera individual, la importación masiva a través de un archivo Excel y la exportación de los registros en formato PDF o Excel también.<br/>Cabe aclarar que la interfaz no es responsive al 100% ya que para vista desde teléfonos está realizada la <a href='/project/8'>app mobile</a>. De todas formas, se adapta correctamente a cualquier tipo de pantalla de PC o tablet.",
     "techUsed": ["Angular"],
-    "langUsed": ["TypeScript","HTML","CSS"]
+    "langUsed": ["TypeScript","HTML","CSS"],
+    "demo":"https://insurancesweb.netlify.app/"
   },
   {
     "projectId": 6,
@@ -51,7 +52,7 @@
     ],
     "langUsed": ["C#"],
     "databaseUsed": "SQL Server",
-    "demo":"http://insuranceapi.somee.com/swagger/index.html"
+    "demo":"https://insurance-api-v2.onrender.com/swagger/index.html"
   },
   {
     "projectId": 5,

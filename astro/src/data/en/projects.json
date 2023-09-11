@@ -1,0 +1,106 @@
+[
+  {
+    "projectId": 9,
+    "projectName": "Windows Desktop Application for Insured Management",
+    "githubLink": "https://github.com/thiagoqua/InsuranceDesktopApp",
+    "description": "This desktop system allows consumption of all endpoints provided by the <a href='/project/6'>Insurance API</a>. <br/>Once the admin user is logged in, they can utilize <i class='accent'>all</i> functions available in the API, including viewing all clients, adding, removing, and modifying them individually, bulk importing via an Excel file, and exporting records in PDF or Excel format.<br/>App built using the <i class='accent'>MVP</i> (Model-View-Presenter) design pattern.",
+    "techUsed": [
+      ".NET Framework", 
+      "WinForms",
+      "DataProtection API",
+      "Dependency Injection with Autofac"
+    ],
+    "langUsed": ["C#"],
+    "developing":true
+  },
+  {
+    "projectId": 8,
+    "projectName": "Android Application for Insured Management",
+    "githubLink": "https://github.com/thiagoqua/InsuranceMobileApp.git",
+    "description": "This app allows consumption of some of the endpoints provided by the <a href='/project/6'>Insurance API</a>. <br/>Once the admin user is logged in, they can view all insured with filtering options and see their respective details in a simple and comprehensive manner. <br/> App built using the <i class='accent'>MVVM</i> (Model-View-ViewModel) design pattern.",
+    "techUsed": [
+      "JetPack Compose",
+      "Navigation Compose",
+      "HTTP Requests with Retrofit",
+      "Dependency Injection with Hilt"
+    ],
+    "langUsed": ["Kotlin"],
+    "demo":"https://easyupload.io/t7xfpv",
+    "snapshot":"https://drive.google.com/drive/folders/17-NL_Q-ChvSKyQnJbV_rbyzC-3jeucVb?usp=sharing"
+  },
+  {
+    "projectId": 7,
+    "projectName": "Web System for Insured Management",
+    "githubLink": "https://github.com/thiagoqua/InsuranceWebApp",
+    "description": "This system consists of a web visual interface consuming the <a href='/project/6'>Insurance API</a>. Other uses of the API in other projects are described there. <br/>Once the admin user is logged in, they can utilize <i class='accent'>all</i> functions available in the API, including viewing all clients, adding, removing, and modifying them individually, bulk importing via an Excel file, and exporting records in PDF or Excel format. It should be noted that the interface is not 100% responsive since there's a specific <a href='/project/8'>mobile app</a> for phone views. However, it adapts correctly to any PC or tablet screen.",
+    "techUsed": ["Angular"],
+    "langUsed": ["TypeScript","HTML","CSS"],
+    "demo":"https://insurancesweb.netlify.app/"
+  },
+  {
+    "projectId": 6,
+    "projectName": "API for Insurances",
+    "githubLink": "https://github.com/thiagoqua/InsuranceAPI",
+    "description": "This API allows all types of queries to the client database of an insurance company. <br/> Access is restricted only to <i class='accent'>admin users</i>, meaning the owners of the insurance company or office. Therefore, for security reasons, the API does not have endpoints that allow the insertion of admin users into the system. <br/>Beyond CRUD operations, it allows for <i class='accent'>bulk import</i> of insured data from an Excel file, complying with the format specified <a href='https://github.com/thiagoqua/InsuranceAPI#structure-of-the-excel-file-to-parse' target='_blank'>here</a>, simplifying the data loading process.<br/>It also enables the generation of <i class='accent'>reports</i>, in both PDF and XLSX formats, from the export of the database records.<br/>This project is part of a set of related projects, which includes a <a href='/project/7'>frontend web interface</a>, a <a href='/project/9'>desktop application</a> for Windows systems, and an <a href='/project/8'>Android mobile application</a>, providing a comprehensive solution and naturally consuming from this API.<br/> API built using the <i class='accent'>MVC</i> (Model-View-Controller) design pattern.",
+    "techUsed": [
+      "ASP.NET",
+      ".NET Framework",
+      "Docker",
+      "Microservices",
+      "Rest API",
+      "Swagger UI"
+    ],
+    "langUsed": ["C#"],
+    "databaseUsed": "SQL Server",
+    "demo":"https://insurance-api-v2.onrender.com/swagger/index.html"
+  },
+  {
+    "projectId": 5,
+    "projectName": "Car Rentals",
+    "githubLink": "https://github.com/thiagoqua/RentalCarApp",
+    "description": "Both the frontend and backend sections are located in the GitHub root directory. <br /> The system has two user roles: admin role and client role. <br /> A <i class='accent'>client</i> user can see the company's car gallery and rent the one they wish after registering and logging into the system. They also have a section to view their rental history with the option to cancel those that are active. <br /> An <i class='accent'>admin</i> user can confirm or deny the client's payment from their interface to validate or respectively cancel the rental. <br /> The entire project is <i class='accent'>dockerized</i>. The database must be run on Docker exclusively for user convenience. <br /> Then, there's the option to run the frontend and backend with Node and Java respectively if those interpreters are installed. Otherwise, both can run in isolated containers.<br/> API built using the <i class='accent'>MVC</i> (Model-View-Controller) design pattern.",
+    "techUsed": [
+      "SpringBoot",
+      "React",
+      "Docker",
+      "Microservices",
+      "Rest API",
+      "Swagger UI"
+    ],
+    "langUsed": ["JAVA", "HTML", "CSS", "TypeScript"],
+    "databaseUsed": "MySQL"
+  },
+  {
+    "projectId": 4,
+    "projectName": "Medical Appointments Application",
+    "githubLink": "https://github.com/thiagoqua/TurnosMedicos",
+    "description": "Both the web and desktop versions are located in the same solution and in the same GitHub repository. <br /> The system has two user roles: patient role and doctor role. <br /> A <i class='accent'>patient</i> user can book appointments, view them with their respective details, and delete them. The system will allow them to generate a PDF report listing all their current booked appointments. <br /> A <i class='accent'>doctor</i> user can define their availability at each branch of the medical company, modify it, delete it, and view the appointments patients have with him/her on a given day. The system will allow them to generate a PDF report listing all current appointments that patients have with the doctor in question for a specific date. <br /> The structure is designed for the health center (or entity using the system) to work with health insurance providers, giving them access to a database or a list where all patients affiliated with that health insurance are located. <br /> As this is not implemented, creating users must first be done manually to the DB by inserting the necessary data into the <i class='accent'>affiliates</i> table to proceed with the patient's registration. <br /> Once done, user registration can continue from the system's <i class='accent'>register</i> section. It should be noted that the system only allows registrations in this way for patients. To add doctors, it has to be done manually to the DB first in the <i class='accent'>affiliates</i> table, then in the <i class='accent'>users</i> table, and finally in the <i class='accent'>doctor</i> table with the corresponding data.",
+    "techUsed": [".NET", "ASP.NET", "LINQ to SQL"],
+    "langUsed": ["C#", "ASPX", "CSS"],
+    "databaseUsed": "SQL Server"
+  },
+  {
+    "projectId": 3,
+    "projectName": "Website for Clothing Store",
+    "githubLink": "https://github.com/estebantosoni/TiendaDigital",
+    "description": "Both the backend and frontend sections are located in different directories but in the same uploaded GitHub repository. <br /> The system has two user roles: administrator role and client role. However, any person without registering will also be able to view the page content. <br /> An <i class='accent'>unregistered</i> user can see all the products available in the store, with filtering options. <br /> A logged-in <i class='accent'>client</i> user can see all available store products and also use a favorites list, adding the items they are most interested in and viewing them with a single click. <br /> An <i class='accent'>administrator</i> user can add clothes and/or perfumes to the web catalog, remove them or modify them.<br/> API built using the <i class='accent'>MVC</i> (Model-View-Controller) design pattern.",
+    "techUsed": ["SpringBoot", "Angular", "Rest API"],
+    "langUsed": ["JAVA", "HTML", "CSS", "TypeScript"],
+    "databaseUsed": "MySQL"
+  },
+  {
+    "projectId": 2,
+    "projectName": "Card Game 'Truco'",
+    "githubLink": "https://github.com/thiagoqua/envido",
+    "description": "This game does not have any login or registration, as it was delivered as the final project for one of the early courses in the program. <br /> In the <i class='accent'>settings</i> section, users can set their username for gameplay. <br /> It also has a messaging application, where users can chat with another computer running the program by entering its IP address. This messaging feature was developed because one of the final project requirements was to use sockets in JAVA. The original idea was to make an online version of the 'truco' game, but due to time constraints, we improvised by creating a chat.",
+    "langUsed": ["JAVA"]
+  },
+  {
+    "projectId": 1,
+    "projectName": "FTP Protocol Imitation",
+    "githubLink": "https://github.com/thiagoqua/FTPredes",
+    "description": "This project was completed for the final exam of the <i class='accent'>Computer Networks</i> course. <br /> The goal was to develop a protocol similar to the workings of the <i class='accent'>File Transfer Protocol</i> to achieve a comprehensive understanding. <br /> It has implemented a small number of commands that primarily allow file transfer requests, list files in a directory, and change directories on the server.",
+    "langUsed": ["C"]
+  }
+]
+

@@ -1,4 +1,5 @@
-import data from "../data/es/projects_brief.json";
+import es from "../data/es/projects_brief.json";
+import en from "../data/en/projects_brief.json";
 import { useEffect, useRef, useState } from "react";
 import { TechsGallery } from "./TechsGallery";
 
@@ -9,7 +10,29 @@ interface projectBrief {
   techs?: string[];
 }
 
-export default function Projects() {
+interface Props{
+  lang:string
+}
+
+function evalLang(lang:string){
+  if(lang == 'es')
+    return {
+      data:es,
+      projectsTitle: "Proyectos",
+      seeAll: "Ver todos",
+      seeProject: "ver proyecto"
+    }
+  else 
+    return {
+      data:en,
+      projectsTitle: "Projects",
+      seeAll: "See all",
+      seeProject: "see project"
+    }
+}
+
+export default function Projects(prop:Props) {
+  const {data,projectsTitle,seeAll,seeProject} = evalLang(prop.lang);
   const [seeingAll, setSeingAll] = useState<boolean>(false);
   const [listing, setListing] = useState<projectBrief[]>([]);
   const allProjects = useRef<projectBrief[]>([]);
@@ -25,14 +48,14 @@ export default function Projects() {
 
   return (
     <div className="projects" id="projects">
-      <h1 className="section_header">Proyectos</h1>
+      <h1 className="section_header">{projectsTitle}</h1>
       {listing.map((project: projectBrief) => (
         <div className="project" key={project.projectId}>
           <div className="project_info_container">
             <h2 className="project_title">{project.title}</h2>
             <p>{project.description}</p>
-            <a href={`/project/${project.projectId}`}>
-              ver proyecto
+            <a href={`/${prop.lang}/project/${project.projectId}`}>
+              {seeProject}
             </a>
           </div>
           {project.techs && (
@@ -44,7 +67,7 @@ export default function Projects() {
       ))}
       {!seeingAll && (
         <button onClick={() => setSeingAll(true)} className="button">
-          Ver todos
+          {seeAll}
         </button>
       )}
     </div>

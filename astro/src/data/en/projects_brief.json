@@ -1,0 +1,89 @@
+[
+  {
+    "title":"Insured Desktop Application",
+    "description":"Desktop App for Windows systems for insured management.",
+    "projectId":"9",
+    "techs":[
+      "frame-.net",
+      "lang-csh"
+    ]
+  },
+  {
+    "title":"Insured Mobile Application",
+    "description":"Android App for general insured management.",
+    "projectId":"8",
+    "techs":[
+      "frame-android",
+      "lang-kt"
+    ]
+  },
+  {
+    "title":"Insured Web System",
+    "description":"Web system for insured management.",
+    "projectId":"7",
+    "techs":[
+      "frame-angular",
+      "lang-ts"
+    ]
+  },
+  {
+    "title":"Insurance API",
+    "description":"API development for client management of an insurance company or office.",
+    "projectId":"6",
+    "techs":[
+      "frame-asp.net",
+      "lang-csh",
+      "db-sqlsrv"
+    ]
+  },
+  {
+    "title":"Car Rental Web System",
+    "description":"FullStack web system for a car rental company in the city of Rosario.",
+    "projectId":"5",
+    "techs":[
+      "frame-spring",
+      "lang-java",
+      "frame-react",
+      "lang-ts",
+      "db-mysql"
+    ]
+  },
+  {
+    "title":"Medical Appointment Application",
+    "description":"Medical appointment management system, both web and desktop for Windows systems. In collaboration with Esteban Tosoni and Florencia Galván, fellow students.",
+    "projectId":"4",
+    "techs":[
+      "frame-asp.net",
+      "lang-csh",
+      "db-sqlsrv"
+    ]
+  },
+  {
+    "title":"Clothing Store Website",
+    "description":"Fullstack web system for a clothing store. In collaboration with Esteban Tosoni, fellow student.",
+    "projectId":"3",
+    "techs":[
+      "frame-spring",
+      "frame-angular",
+      "lang-java",
+      "lang-ts",
+      "db-mysql"
+    ]
+  },
+  {
+    "title":"Truco Card Game",
+    "description":"Desktop application consisting of the 'truco' card game against an AI, for Windows or Linux systems. In collaboration with Esteban Tosoni, fellow student.",
+    "projectId":"2",
+    "techs":[
+      "lang-java"
+    ]
+  },
+  {
+    "title":"FTP Protocol",
+    "description":"Imitation of the FTP network protocol operation.",
+    "projectId":"1",
+    "techs":[
+      "lang-c"
+    ]
+  }
+]

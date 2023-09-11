@@ -1,0 +1,15 @@
+---
+import "../styles/project.css";
+
+interface Props{
+  projectName:string;
+}
+
+const {projectName}:Props = Astro.props;
+const {lang} = Astro.params;
+const next:string = lang == 'es' ? "Proximamente" : "Coming soon";
+---
+<div class="non-implemented">
+  <h1 class="disabled">{projectName}</h1>
+  <h1 class="flicker">{next}</h1>
+</div>

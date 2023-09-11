@@ -1,9 +1,33 @@
 import { useEffect } from "react";
 
-export default function Navbar({ inProjectPage }: { inProjectPage: boolean }) {
+interface Props{
+  inProjectPage:boolean;
+  lang:string;
+}
+
+function evalLang(lang:string){
+  if(lang == 'es')
+    return {
+      about:"sobre mi",
+      personal:"info personal",
+      skills:"habilidades",
+      projects: "proyectos"
+    }
+  else 
+    return {
+      about:"about me",
+      personal:"personal info",
+      skills:"skills",
+      projects: "projects"
+    }
+}
+
+export default function Navbar(props:Props) {
+  const {about,personal,skills,projects} = evalLang(props.lang);
+
   useEffect(() => {
     const navbar: HTMLElement = document.getElementById("navbar") as HTMLElement;
-    const hideOnHeight: number = inProjectPage ? 80 : 600;
+    const hideOnHeight: number = props.inProjectPage ? 80 : 600;
 
     setTimeout(() => {
       navbar!.classList.remove("blur_in");
@@ -22,16 +46,16 @@ export default function Navbar({ inProjectPage }: { inProjectPage: boolean }) {
     }
   }, []);
 
-  return !inProjectPage ? 
+  return !(props.inProjectPage) ? 
         <div className="navbar blur_in" id="navbar">
-          <a href="#about">about</a>
-          <a href="#personal">personal info</a>
-          <a href="#skills">skills</a>
-          <a href="#projects">proyects</a>
+          <a href="#about">{about}</a>
+          <a href="#personal">{personal}</a>
+          <a href="#skills">{skills}</a>
+          <a href="#projects">{projects}</a>
         </div> : 
         
-        <div className="navbar-project">
-          <a href="/" className="navbar-project" id="navbar">
+        <div className="navbar blur_in">
+          <a href="/" id="navbar">
             home
           </a>
         </div>

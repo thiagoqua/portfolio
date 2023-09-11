@@ -1,14 +1,14 @@
 ---
 import "../styles/global.css";
 import Navbar from '../components/Navbar';
+import LangChanger from "../components/langChanger.astro";
 
 const inProjectPage:boolean = Astro.url.href.includes("project");
-const redirect:boolean = Astro.url.pathname == '/';
+const {lang} = Astro.params;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    {redirect && <meta http-equiv="refresh" content="0;url=/es/" />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,8 @@ const redirect:boolean = Astro.url.pathname == '/';
     <title>Thiago Quaglia</title>
   </head>
   <body>
-    <Navbar inProjectPage={inProjectPage} client:load/>
+    <LangChanger inProjectPage={inProjectPage}/>
+    <Navbar inProjectPage={inProjectPage} lang={lang!} client:load/>
     <slot />
   </body>
 </html>

@@ -68,12 +68,20 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
   display: none;
 }
 
+/* language changer */
+.lang-changer{
+  margin-top: 0px;
+  margin-left: 2%;
+  text-align: center;
+  z-index: 1;
+}
+
 /* navigation bar */
 .navbar {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 0;
+  top: 7px;
   right: 0;
   margin-right: 2%;
   text-align: center;
@@ -87,10 +95,6 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 
 .navbar a {
   color: var(--primary);
-}
-
-.navbar-project {
-  text-align: right;
 }
 
 .blur_in {
@@ -227,6 +231,12 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 95%;
+  }
+
+  .lang-changer{
+    top:50px;
+    position:absolute;
     width: 95%;
   }
 

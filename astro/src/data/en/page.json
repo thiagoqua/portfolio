@@ -1,46 +1,46 @@
 {
-  "about": "<p>  Mi nombre es Thiago Quaglia. Desde pequeño que soy muy aficionado a latecnología, lo que me ha permitido inclinarme por la programación a lahora de comenzar con los estudios.</p><p>Actualmente, finalizando la carrera de <b class='grade'>Analista Universitario en  Sistemas</b>.</p><p>Estoy en busca de mi primer experiencia laboral en el ámbito de  desarrollo de software, que me permita incorporar conocimientos nuevos y  profundizar los adquiridos.</p>",
+  "about": "<p>My name is Thiago Quaglia. Since I was young, I've been very passionate about technology, which led me to choose programming when I started my studies.</p><p>Currently, I'm about to finish my degree as a <b class='grade'>University Systems Analyst</b>.</p><p>I'm looking for my first work experience in the software development field, which allows me to gain new knowledge and deepen what I've already learned.</p>",
   "academies": {
-    "title": "Formación académica",
+    "title": "Academic Background",
     "content": {
       "secondary": {
-        "title": "Secundario",
-        "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b> , ArroyoSeco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachiller en Ciencias Sociales.</b>"
+        "title": "High School",
+        "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b>, Arroyo Seco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachelor in Social Sciences.</b>"
       },
       "tertirary": {
-        "title": "Terciario",
-        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /> Me queda una materia para recibirme.<br /><b class='grade'>Analista Universitario en Sistemas.</b>",
-        "academic_history": "Historia académica"
+        "title": "Tertiary",
+        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe, Argentina.<br /><b>2020</b> - <b>2023</b>.<br /> I have one subject left to graduate.<br /><b class='grade'>University Systems Analyst.</b>",
+        "academic_history": "Academic History"
       }
     }
   },
   "languages": {
-    "title": "Idiomas",
+    "title": "Languages",
     "content": {
       "spanish": {
-        "title": "Castellano",
-        "content": "Nativo."
+        "title": "Spanish",
+        "content": "Native."
       },
       "english": {
-        "title": "Inglés",
-        "content": "Intermedio B2."
+        "title": "English",
+        "content": "Intermediate B2."
       }
     }
   },
   "interests": {
-    "title": "Intereses",
+    "title": "Interests",
     "content": [
-      { "title": "Desarrollo de apps de escritorio y mobile." },
-      { "title": "Desarrollo web", "content": ["Full Stack", "Backend"] }
+      { "title": "Desktop and mobile app development." },
+      { "title": "Web development", "content": ["Full Stack", "Backend"] }
     ]
   },
   "disponibility": {
-    "title": "Disponibilidad",
+    "title": "Availability",
     "content": "Full-Time."
   },
   "skills": {
-    "title": "Habilidades"
+    "title": "Skills"
   },
-  "see_project": "ver proyecto",
-  "see_all": "ver todos"
+  "see_project": "see project",
+  "see_all": "see all"
 }
