@@ -1,0 +1,81 @@
+---
+const { lang } = Astro.params;
+const inProjectPage: boolean = Astro.url.pathname.includes("project");
+const oppositeLang: string = lang == "es" ? "english" : "castellano";
+const oppositeLocal: string = lang == "es" ? "en" : "es";
+const oppositeURL: string = Astro.url.pathname.replace(lang!, oppositeLocal);
+const changeTo: string = oppositeLocal == "es" ? "cambiar a " : "change to ";
+---
+
+<a
+  class:list={[
+    "blur_in",
+    { "lang-changer-project": inProjectPage },
+    { "lang-changer": !inProjectPage },
+  ]}
+  href={oppositeURL}
+>
+  {changeTo}
+  <i
+    class:list={[
+      { "argentina-lang": oppositeLocal == "es" },
+      { "yankee-lang": oppositeLocal == "en" },
+    ]}>{oppositeLang}</i
+  >
+</a>
+
+<style>
+  .argentina-lang {
+    font-style: normal;
+    animation: flicker-arg 5s linear infinite both;
+  }
+
+  .yankee-lang {
+    font-style: normal;
+    animation: flicker-usa 5s linear infinite both;
+  }
+
+  @keyframes flicker-arg {
+    0%,
+    100% {
+      opacity: 1;
+      color: #3eb4c4;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    43.01% {
+      opacity: 1;
+      color: #ffffff;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    49.01% {
+      opacity: 1;
+      color: #fffd71;
+    }
+  }
+
+  @keyframes flicker-usa {
+    0%,
+    100% {
+      opacity: 1;
+      color: #2d36a0;
+    }
+    41.99% {
+      opacity: 1;
+    }
+    43.01% {
+      opacity: 1;
+      color: #ffffff;
+    }
+    47.99% {
+      opacity: 1;
+    }
+    49.01% {
+      opacity: 1;
+      color: #ca2323;
+    }
+  }
+</style>

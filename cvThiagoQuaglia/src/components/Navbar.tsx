@@ -1,14 +1,22 @@
 import { useEffect } from "react";
+import { evalNavbarLang } from "../logic/evalLang";
 
-export default function Navbar({inProjectPage}:{inProjectPage:boolean}): JSX.Element {  
+interface Props{
+  inProjectPage:boolean;
+  lang:string;
+}
+
+export default function Navbar(props:Props) {
+  const {about,personal,skills,projects} = evalNavbarLang(props.lang);
+
   useEffect(() => {
-    const navbar:HTMLElement = document.getElementById('navbar') as HTMLElement;
-    const hideOnHeight:number = inProjectPage ? 80 : 600;
+    const navbar: HTMLElement = document.getElementById("navbar") as HTMLElement;
+    const hideOnHeight: number = props.inProjectPage ? 80 : 600;
 
     setTimeout(() => {
       navbar!.classList.remove("blur_in");
     }, 2000);
-  
+
     if (window.innerWidth > 540) {
       window.addEventListener("scroll", () => {
         if (window.scrollY > hideOnHeight) {
@@ -20,20 +28,19 @@ export default function Navbar({inProjectPage}:{inProjectPage:boolean}): JSX.Ele
         }
       });
     }
-    },[]);
+  }, []);
 
-    return (
-      <> {!inProjectPage 
-      ? <div className='navbar blur_in' id="navbar">
-          <a href="#about">about</a>
-          <a href="#personal">personal info</a>
-          <a href="#skills">skills</a>
-          <a href="#projects">proyects</a>
+  return !(props.inProjectPage) ? 
+        <div className="navbar blur_in" id="navbar">
+          <a href="#about">{about}</a>
+          <a href="#personal">{personal}</a>
+          <a href="#skills">{skills}</a>
+          <a href="#projects">{projects}</a>
+        </div> : 
+        
+        <div className="navbar blur_in">
+          <a href="/" id="navbar">
+            home
+          </a>
         </div>
-      : <div className="navbar-project">
-          <a href="/" className="navbar-project" id="navbar">home</a>
-        </div>
-      }
-    </>
-  );
 }

@@ -1,0 +1,97 @@
+---
+import Layout from "../../../layout/layout.astro";
+import "../../../styles/project.css";
+import type {Project} from "../../../types/projectInfoType";
+import es from "../../../data/es/projects.json";
+import en from "../../../data/en/projects.json";
+import NSProject from "../../../components/NonStartedProject.astro";
+import { evalProjectLang } from "../../../logic/evalLang";
+
+type PathParams = {
+  params:{
+    lang:string,
+    id:number
+  }
+}
+
+export function getStaticPaths(){
+  let paths:PathParams[] = []
+  const totalProjects:number = es.length;
+
+  //pushing all the possible ids for spanish
+  for(let i = 1;i <= totalProjects;++i)
+    paths.push({params:{lang:'es',id:i}});
+
+  //pushing all the possible ids for english
+  for(let i = 1;i <= totalProjects;++i)
+    paths.push({params:{lang:'en',id:i}});
+
+  return paths;
+}
+
+const { lang,id } = Astro.params;
+const projectsLang:Project[] = lang == 'es' ? es : en;
+const project:Project = projectsLang.find(pr => pr.projectId == parseInt(id!))!;
+const started:boolean = project?.githubLink !== "";
+const {description,techUsed,langUsed,dbUsed,stillDev} = evalProjectLang(lang!);
+---
+<Layout>
+  <div class="circle-in-animation-shorter main">
+    {started 
+      ? <>
+        <h1 class="project-name">{project?.projectName}</h1>
+        <div class="links">
+          <a href={project?.githubLink} target="_blank">GitHub</a>
+          {project?.demo && 
+            <a href={project?.demo} target="_blank">demo</a>
+          }
+          {project?.snapshot && 
+            <a href={project?.snapshot} target="_blank">snapshot</a>
+          }
+        </div>
+          {project?.developing && 
+            <p class="flicker">{stillDev}</p>
+          }
+        <div class="project-description">
+          <h2>{description}</h2>
+          <p set:html={project?.description!}/>
+        </div>
+        <div class='used-things'>
+          {project?.techUsed && (
+            <div class="section">
+              <h2>{techUsed}</h2>
+              <ul>
+                {project.techUsed.map((tech: string) => (
+                  <li>
+                    <h4>{tech}</h4>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          <div class="section">
+          <h2>{langUsed}</h2>
+            <ul>
+              {project?.langUsed.map((lang: string) => (
+                <li>
+                  <h4>{lang}</h4>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {project?.databaseUsed && (
+            <div class="section">
+              <h2>{dbUsed}</h2>
+              <ul>
+                <li>
+                  <h4>{project.databaseUsed}</h4>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </>
+      : <NSProject projectName={project?.projectName}/>
+    }
+  </div>
+</Layout>

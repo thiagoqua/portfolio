@@ -1,0 +1,147 @@
+---
+import Layout from "../../layout/layout.astro";
+import Projects from "../../components/Projects";
+import type {LangContent} from "../../types/pageInfoType";
+import "../../styles/home.css";
+import es from "../../data/es/page.json"
+import en from "../../data/en/page.json"
+
+export function getStaticPaths(){
+  return [
+    {params: {lang: 'en'}},
+    {params: {lang: 'es'}}
+  ];
+}
+
+const { lang } = Astro.params;
+const langData:LangContent = lang == 'es' ? es : en;
+---
+<Layout>
+  <div class="start circle-in-animation">
+    <div>
+      <div class="whoami">
+        <h1 class="name">Thiago Quaglia</h1>
+        <h2 class="profession">Junior Software Developer</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="sections">
+    <!-- About me -->
+    <div id="about" set:html={langData.about}/>
+    <!-- Personal info -->
+    <div class="personal" id="personal">
+      <div class="block-info-larger">
+        <h2>{langData.academies.title}</h2>
+        <ul>
+          <li>
+            <h3 class="item">{langData.academies.content.secondary.title}</h3>
+            <div class="description" 
+            set:html={langData.academies.content.secondary.content}/>
+          </li>
+          <li>
+            <h3 class="item">{langData.academies.content.tertirary.title}</h3>
+            <div class="description" 
+            set:html={langData.academies.content.tertirary.content}/>
+            <a
+              href="https://drive.google.com/file/d/19sXyPy5XcyLeO5qZjqhq8nbEpA1X5pJk/view?usp=drive_link"
+              target="_blank"
+            >
+              {langData.academies.content.tertirary.academic_history}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="block-info">
+        <h2>{langData.languages.title}</h2>
+        <div class="description">
+          <ul>
+            <li>
+              <h3 class="item">{langData.languages.content.spanish.title}</h3>
+              <div>
+                <b>{langData.languages.content.spanish.content}</b>
+              </div>
+            </li>
+            <li>
+              <h3 class="item">{langData.languages.content.english.title}</h3>
+              <div>
+                <b>{langData.languages.content.english.content}</b>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block-info-1">
+        <h2>{langData.interests.title}</h2>
+        <div class="description">
+          <ul>
+            <li>
+              <h3 class="item">{langData.interests.content[0].title}</h3>
+            </li>
+            <li>
+              <h3 class="item">{langData.interests.content[1].title}</h3>
+              {langData.interests.content[1].content?.map((content:string) => (
+                <div>
+                  <b>{content}</b> 
+                </div>
+              ))}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block-info-larger-1">
+        <h2>{langData.disponibility.title}</h2>
+        <div class="description">
+          <ul>
+            <li>
+              <h3 class="item">{langData.disponibility.content}</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div id="skills">
+        <h1 class="section_header">{langData.skills.title}</h1>
+        <div class="photos">
+          <img src="/skills/lang-java.png" alt="" class="skill" />
+          <img src="/skills/lang-kt.png" alt="" class="skill" />
+          <img src="/skills/lang-csh.png" alt="" class="skill" />
+          <img src="/skills/lang-c++.png" alt="" class="skill" />
+          <img src="/skills/lang-c.png" alt="" class="skill" />
+          <img src="/skills/frame-spring.png" alt="" class="skill" />
+          <img src="/skills/frame-asp.net.png" alt="" class="skill" />
+          <img src="/skills/frame-.net.png" alt="" class="skill" />
+          <img src="/skills/frame-angular.png" alt="" class="skill" />
+          <img src="/skills/frame-android.png" alt="" class="skill" />
+          <img src="/skills/db-mysql.png" alt="" class="skill" />
+          <img src="/skills/db-sqlsrv.png" alt="" class="skill" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects brief -->
+    <Projects client:load lang={lang!} />
+
+    <!-- Contact -->
+    <div class="contacts-ctx">
+      <div class="contacts">
+        <a href="https://www.linkedin.com/in/thiagoquaglia/" target="_blank">
+          <img src="/linkedin.png" alt="linkedin" class="icon" />
+        </a>
+        <a href="https://github.com/thiagoqua" target="_blank">
+          <img src="/github.png" alt="github" class="icon" />
+        </a>
+        <a href="mailto:thiagoqua16@gmail.com" target="_blank">
+          <img src="/email.svg" alt="email" class="icon" />
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1utlhZa14Va7hFCEMi-zy6O9Zf9d-I7gy?usp=drive_link"
+          target="_blank"
+        >
+          <img src="/resume.svg" alt="download" class="icon" />
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
