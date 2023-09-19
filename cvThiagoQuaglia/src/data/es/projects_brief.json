@@ -1,5 +1,15 @@
 [
   {
+    "title":"Convertidor de YouTube",
+    "description":"Aplicación web para extraer audio de videos de YouTube.",
+    "projectId":"11",
+    "techs":[
+      "lang-ts",
+      "frame-angular",
+      "frame-node"
+    ]
+  },
+  {
     "title":"Aplicación de escritorio de asegurados",
     "description":"App de escritorio para sistemas Windows para gestión de asegurados.",
     "projectId":"10",

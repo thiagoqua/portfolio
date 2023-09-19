@@ -39,7 +39,7 @@ export default function Navbar(props:Props) {
         </div> : 
         
         <div className="navbar blur_in">
-          <a href="/" id="navbar">
+          <a href={`/${props.lang}/`} id="navbar">
             home
           </a>
         </div>

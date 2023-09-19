@@ -72,6 +72,14 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
   display: none;
 }
 
+.welcome{
+  color: var(--extra);
+  font-weight: 900;
+  font-size: 500%;
+  font-weight: 100;
+  animation: fadeIn 2s;
+}
+
 /* language changer */
 .lang-changer{
   margin-top: 0px;

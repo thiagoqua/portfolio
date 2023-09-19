@@ -1,5 +1,19 @@
 [
   {
+    "projectId": 11,
+    "projectName": "MP3 & WAV YouTube audio converter",
+    "githubLink": "https://github.com/thiagoqua/ytConverter",
+    "description": "This web platform provides a straightforward and intuitive way to download audio from YouTube videos in <i class='accent'>MP3</i> and <i class='accent'>WAV</i> formats. It utilizes the <a href='https://www.npmjs.com/package/ytdl-core' target='_blank'>ytdl-core</a> library which natively supports conversion to <i class='accent'>MP3</i>. For the <i class='accent'>WAV</i> format conversion, I integrated the <a href='https://www.npmjs.com/package/fluent-ffmpeg' target='_blank'>fluent-ffmpeg</a> library, which leverages the <i class='accent'>FFMPEG</i> tool for the conversion task.<br/>Given that <i class='accent'>FFMPEG</i> needs to be installed on the server, I opted to dockerize the backend. This ensures the tool is available, facilitating seamless audio conversion.",
+    "techUsed": [
+      "Angular",
+      "Express JS",
+      "Docker",
+      "FFMPEG"
+    ],
+    "langUsed": ["TypeScript","JavaScript"],
+    "demo":"https://youtconverter.netlify.app/"
+  },
+  {
     "projectId": 10,
     "projectName": "Windows Desktop Application for Insured Management",
     "githubLink": "https://github.com/thiagoqua/InsuranceDesktopApp",

@@ -1,5 +1,19 @@
 [
   {
+    "projectId": 11,
+    "projectName": "Convertidor de YouTube a MP3 & WAV",
+    "githubLink": "https://github.com/thiagoqua/ytConverter",
+    "description": "Esta plataforma web permite descargar de manera sencilla e intuitiva el audio de vídeos de YouTube en formatos <i class='accent'>MP3</i> y <i class='accent'>WAV</i>. Se hizo uso de la librería <a href='https://www.npmjs.com/package/ytdl-core' target='_blank'>ytdl-core</a> que, de manera nativa, permite la conversión a <i class='accent'>MP3</i>. Para obtener el formato <i class='accent'>WAV</i>, se integró <a href='https://www.npmjs.com/package/fluent-ffmpeg' target='_blank'>fluent-ffmpeg</a>, una librería que se apoya en la herramienta <i class='accent'>FFMPEG</i> para la conversión.<br/>Dado que <i class='accent'>FFMPEG</i> debe estar presente en el servidor, opté por dockerizar el backend. De esta manera, se garantiza que la herramienta esté disponible, facilitando la conversión de audio sin inconvenientes.",
+    "techUsed": [
+      "Angular",
+      "Express JS",
+      "Docker",
+      "FFMPEG"
+    ],
+    "langUsed": ["TypeScript","JavaScript"],
+    "demo":"https://youtconverter.netlify.app/"
+  },
+  {
     "projectId": 10,
     "projectName": "Aplicación de escritorio Windows para gestión de asegurados",
     "githubLink": "https://github.com/thiagoqua/InsuranceDesktopApp",
