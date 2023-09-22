@@ -6,7 +6,8 @@
     "techs":[
       "lang-ts",
       "frame-angular",
-      "frame-node"
+      "frame-node",
+      "tech-docker"
     ]
   },
   {
@@ -43,7 +44,8 @@
     "techs":[
       "frame-asp.net",
       "lang-csh",
-      "db-sqlsrv"
+      "db-sqlsrv",
+      "tech-docker"
     ]
   },
   {
@@ -55,7 +57,8 @@
       "lang-java",
       "frame-react",
       "lang-ts",
-      "db-mysql"
+      "db-mysql",
+      "tech-docker"
     ]
   },
   {
