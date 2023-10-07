@@ -66,18 +66,14 @@ p {
   font-size: large;
 }
 
-/* para webhost */
-img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]
-{
-  display: none;
+.argentina-lang {
+  font-style: normal;
+  animation: flicker-arg 5s linear infinite both;
 }
 
-.welcome{
-  color: var(--extra);
-  font-weight: 900;
-  font-size: 500%;
-  font-weight: 100;
-  animation: fadeIn 2s;
+.yankee-lang {
+  font-style: normal;
+  animation: flicker-usa 5s linear infinite both;
 }
 
 /* language changer */
@@ -233,6 +229,50 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
   }
   to {
     clip-path: circle(125%);
+  }
+}
+
+@keyframes flicker-arg {
+  0%,
+  100% {
+    opacity: 1;
+    color: #3eb4c4;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  43.01% {
+    opacity: 1;
+    color: #ffffff;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  49.01% {
+    opacity: 1;
+    color: #fffd71;
+  }
+}
+
+@keyframes flicker-usa {
+  0%,
+  100% {
+    opacity: 1;
+    color: #2d36a0;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  43.01% {
+    opacity: 1;
+    color: #ffffff;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  49.01% {
+    opacity: 1;
+    color: #ca2323;
   }
 }
 

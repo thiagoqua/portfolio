@@ -1,0 +1,18 @@
+---
+import FallingName from "../components/FallingName";
+import Welcome from "../components/Welcome";
+import Layout from "../layout/welcome-layout.astro";
+import "../styles/root.css"
+---
+
+<Layout>
+  <main>
+    <Welcome client:load />
+    <div class="lang-ctx">
+      <a href="/es/" class="argentina-lang">Español</a>
+      <b>|</b>
+      <a href="/en/" class="yankee-lang">English</a>
+    </div>
+    <FallingName client:load/>
+  </main>
+</Layout>

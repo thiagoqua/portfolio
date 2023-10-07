@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../styles/global.css"
+import "../styles/root.css"
 
 export default function Welcome(){
   const [welcome,setWelcome] = useState<string>("Bienvenid@ a mi portfolio!");
@@ -26,7 +26,7 @@ export default function Welcome(){
   },[]);
 
   return (
-    <div key={key}>
+    <div key={key} className="welcome-ctx">
       <h1 className="welcome">{welcome}</h1>
       <h2 className="welcome">{selectMessage}</h2>
     </div>
