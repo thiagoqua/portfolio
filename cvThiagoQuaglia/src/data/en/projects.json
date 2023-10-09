@@ -6,25 +6,20 @@
     "description": "This web platform allows users to easily and intuitively download audio from YouTube videos in <i class='accent'>MP3</i> and <i class='accent'>WAV</i> formats. The <a href='https://www.npmjs.com/package/ytdl-core' target='_blank'>ytdl-core</a> library was utilized to fetch the video's bitstream. For the conversion to <i class='accent'>MP3</i> and <i class='accent'>WAV</i> formats, <a href='https://www.npmjs.com/package/fluent-ffmpeg' target='_blank'>fluent-ffmpeg</a> was integrated, a library that leverages the <i class='accent'>FFMPEG</i> tool for the task.<br/>Given that <i class='accent'>FFMPEG</i> needs to be present on the server, I opted to dockerize the backend. This ensures the tool is available, facilitating hassle-free audio conversion.",
     "techUsed": [
       "Angular",
-      "Express JS",
+      "Express",
       "Docker",
       "FFMPEG"
     ],
-    "langUsed": ["TypeScript","JavaScript"],
+    "langUsed": ["TypeScript"],
     "demo":"https://youtconverter.netlify.app/"
   },
   {
     "projectId": 10,
-    "projectName": "Windows Desktop Application for Insured Management",
-    "githubLink": "https://github.com/thiagoqua/InsuranceDesktopApp",
-    "description": "This desktop system allows consumption of all endpoints provided by the <a href='/en/project/7'>Insurance API</a>. <br/>Once the admin user is logged in, he/she can utilize <i class='accent'>all</i> functions available in the API, including viewing all clients, adding, removing, and modifying them individually, bulk importing via an Excel file, and exporting records in PDF or Excel format.<br/>App built using the <i class='accent'>MVP</i> (Model-View-Presenter) design pattern.",
-    "techUsed": [
-      ".NET Framework", 
-      "WinForms",
-      "DataProtection API",
-      "Dependency Injection with Autofac"
-    ],
-    "langUsed": ["C#"],
+    "projectName": "Android App for Card Purchase Logging",
+    "githubLink": "",
+    "description": "",
+    "techUsed": [],
+    "langUsed": [],
     "developing":true
   },
   {
@@ -55,7 +50,7 @@
     "projectId": 7,
     "projectName": "API for Insurances",
     "githubLink": "https://github.com/thiagoqua/InsuranceAPI",
-    "description": "This API allows all types of queries to the client database of an insurance company. <br/> Access is restricted only to <i class='accent'>admin users</i>, meaning the owners of the insurance company or office. Therefore, for security reasons, the API does not have endpoints that allow the insertion of admin users into the system. <br/>Beyond CRUD operations, it allows for <i class='accent'>bulk import</i> of insured data from an Excel file, complying with the format specified <a href='https://github.com/thiagoqua/InsuranceAPI#structure-of-the-excel-file-to-parse' target='_blank'>here</a>, simplifying the data loading process.<br/>It also enables the generation of <i class='accent'>reports</i>, in both PDF and XLSX formats, from the export of the database records.<br/>This project is part of a set of related projects, which includes a <a href='/en/project/8'>frontend web interface</a>, a <a href='/en/project/10'>desktop application</a> for Windows systems, and an <a href='/en/project/9'>Android mobile application</a>, providing a comprehensive solution and naturally consuming from this API.<br/> API built using the <i class='accent'>MVC</i> (Model-View-Controller) design pattern.",
+    "description": "This API allows all types of queries to the client database of an insurance company. <br/> Access is restricted only to <i class='accent'>admin users</i>, meaning the owners of the insurance company or office. Therefore, for security reasons, the API does not have endpoints that allow the insertion of admin users into the system. <br/>Beyond CRUD operations, it allows for <i class='accent'>bulk import</i> of insured data from an Excel file, complying with the format specified <a href='https://github.com/thiagoqua/InsuranceAPI#structure-of-the-excel-file-to-parse' target='_blank'>here</a>, simplifying the data loading process.<br/>It also enables the generation of <i class='accent'>reports</i>, in both PDF and XLSX formats, from the export of the database records.<br/>This project is part of a set of related projects, which includes a <a href='/en/project/8'>frontend web interface</a> and an <a href='/en/project/9'>Android mobile application</a>, providing a comprehensive solution and naturally consuming from this API.<br/> API built using the <i class='accent'>MVC</i> (Model-View-Controller) design pattern.",
     "techUsed": [
       "ASP.NET",
       ".NET Framework",

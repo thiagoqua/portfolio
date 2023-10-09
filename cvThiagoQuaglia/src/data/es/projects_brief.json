@@ -11,12 +11,12 @@
     ]
   },
   {
-    "title":"Aplicación de escritorio de asegurados",
-    "description":"App de escritorio para sistemas Windows para gestión de asegurados.",
+    "title":"Aplicación mobile de registro de compras",
+    "description":"App android para registrar gastos personales con tarjeta de crédito.",
     "projectId":"10",
     "techs":[
-      "frame-.net",
-      "lang-csh"
+      "frame-android",
+      "lang-kt"
     ]
   },
   {

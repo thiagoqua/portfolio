@@ -50,7 +50,7 @@ h2 {
 }
 
 .disabled{
-  color: #9c9c9c;
+  color: var(--disabled);
 }
 
 .flicker {
