@@ -63,7 +63,7 @@
   },
   {
     "title":"Portfolio",
-    "description":"CV online y proyectos realizados.",
+    "description":"Desarrollo de portfolio personal.",
     "projectId":"5",
     "techs":[
       "frame-astro",

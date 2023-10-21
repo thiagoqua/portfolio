@@ -7,7 +7,7 @@ interface Props{
 }
 
 export default function Navbar(props:Props) {
-  const {about,personal,skills,projects} = evalNavbarLang(props.lang);
+  const {about,skills,projects} = evalNavbarLang(props.lang);
 
   useEffect(() => {
     const navbar: HTMLElement = document.getElementById("navbar") as HTMLElement;
@@ -33,7 +33,6 @@ export default function Navbar(props:Props) {
   return !(props.inProjectPage) ? 
         <div className="navbar blur_in" id="navbar">
           <a href="#about">{about}</a>
-          <a href="#personal">{personal}</a>
           <a href="#skills">{skills}</a>
           <a href="#projects">{projects}</a>
         </div> : 

@@ -25,14 +25,12 @@ export function evalNavbarLang(lang:string){
   if(lang == 'es')
     return {
       about:"sobre mi",
-      personal:"info personal",
       skills:"habilidades",
       projects: "proyectos"
     }
   else 
     return {
       about:"about me",
-      personal:"personal info",
       skills:"skills",
       projects: "projects"
     }
@@ -52,5 +50,18 @@ export function evalGalleryLang(lang:string){
       projectsTitle: "Projects",
       seeAll: "See all",
       seeProject: "see project"
+    }
+}
+
+export function evalDownloadCVLang(lang:string){
+  if(lang == 'es')
+    return {
+      downloadText:"descargar CV",
+      downloadLink:"/cvs/CV_ThiagoQuaglia.pdf"
+    }
+  else 
+    return {
+      downloadText:"download CV",
+      downloadLink:"/cvs/CV_ThiagoQuaglia_ENG.pdf"
     }
 }

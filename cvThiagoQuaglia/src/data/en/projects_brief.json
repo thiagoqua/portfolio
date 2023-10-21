@@ -44,7 +44,7 @@
   },
   {
     "title": "Portfolio",
-    "description": "CV online and personal projects done.",
+    "description": "Personal portfolio development.",
     "projectId": "5",
     "techs": ["frame-astro", "lang-ts"]
   },

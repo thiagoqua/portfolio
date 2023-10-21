@@ -116,12 +116,12 @@ h2 {
   height: 100%;
   width: auto;
   object-fit: contain;
+  transition: filter 0.5s;
+  filter: invert(63%) sepia(0%) saturate(6857%) hue-rotate(72deg) brightness(94%) contrast(97%);
 }
 
 .icon:hover {
-  filter: invert(66%) sepia(54%) saturate(505%) hue-rotate(309deg)
-    brightness(106%) contrast(100%);
-  animation: fadeIn 2s;
+  filter: invert(94%) sepia(15%) saturate(1208%) hue-rotate(80deg) brightness(104%) contrast(100%);
 }
 
 @media (max-width: 1100px) {

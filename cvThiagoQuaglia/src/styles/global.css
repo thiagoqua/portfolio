@@ -10,6 +10,7 @@
   --text: #E1E5EE;
   --extra: #F7C59F;
   --disabled: #525252;
+  --touch:#89ffd2;
   /* --primary: #F15152;
   --secondary: #1E555C;
   --background: #3A2E39;
@@ -104,6 +105,15 @@ p {
 
 .navbar a {
   color: var(--primary);
+}
+
+.lang-down{
+  display:flex;
+  gap:1rem;
+}
+
+.down-cv{
+  color:var(--secondary);
 }
 
 .blur_in {
@@ -287,7 +297,8 @@ p {
     width: 95%;
   }
 
-  .lang-changer{
+  .lang-down{
+    justify-content: center;
     top:50px;
     position:absolute;
     width: 95%;
@@ -312,7 +323,7 @@ p {
     font-size: 70%;
   }
 
-  .lang-changer,.lang-changer-project{
+  .lang-changer,.lang-changer-project, .down-cv{
     font-size: 70%;
   }
 
