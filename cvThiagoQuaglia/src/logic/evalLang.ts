@@ -8,7 +8,7 @@ export function evalProjectLang(lang:string){
       description:"Descripción",
       techUsed:"Tecnologías utilizadas",
       langUsed:"Lenguajes utilizados",
-      dbUsed: "Bases de datsos",
+      dbUsed: "Bases de datos",
       stillDev:"Este proyecto continúa bajo desarrollo."
     }
   else 
@@ -63,5 +63,18 @@ export function evalDownloadCVLang(lang:string){
     return {
       downloadText:"download CV",
       downloadLink:"/cvs/CV_ThiagoQuaglia_ENG.pdf"
+    }
+}
+
+export function evalSkillsLang(lang:string){
+  if(lang == 'es')
+    return {
+      lang:"Lenguajes",
+      db:"Bases de datos"
+    }
+  else 
+    return {
+      lang:"Languages",
+      db:"Databases"
     }
 }

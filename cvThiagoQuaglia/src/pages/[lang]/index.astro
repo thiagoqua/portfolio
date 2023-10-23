@@ -1,10 +1,11 @@
 ---
 import Layout from "../../layout/layout.astro";
-import Projects from "../../components/Projects";
+import Projects from "../../components/react/Projects";
 import type {LangContent} from "../../types/pageInfoType";
 import "../../styles/home.css";
 import es from "../../data/es/page.json"
 import en from "../../data/en/page.json"
+import SkillsGallery from "../../components/SkillsGallery.astro";
 
 export function getStaticPaths(){
   return [
@@ -103,21 +104,7 @@ const langData:LangContent = lang == 'es' ? es : en;
       <!-- Skills -->
       <div id="skills">
         <h1 class="section_header">{langData.skills.title}</h1>
-        <div class="photos">
-          <img src="/skills/lang-java.png" alt="" class="skill" />
-          <img src="/skills/lang-kt.png" alt="" class="skill" />
-          <img src="/skills/lang-csh.png" alt="" class="skill" />
-          <img src="/skills/lang-c++.png" alt="" class="skill" />
-          <img src="/skills/lang-c.png" alt="" class="skill" />
-          <img src="/skills/frame-spring.png" alt="" class="skill" />
-          <img src="/skills/frame-asp.net.png" alt="" class="skill" />
-          <img src="/skills/frame-.net.png" alt="" class="skill" />
-          <img src="/skills/frame-angular.png" alt="" class="skill" />
-          <img src="/skills/frame-android.png" alt="" class="skill" />
-          <img src="/skills/db-mysql.png" alt="" class="skill" />
-          <img src="/skills/db-sqlsrv.png" alt="" class="skill" />
-          <img src="/skills/tech-docker.png" alt="" class="skill" style="margin-top:3%" />
-        </div>
+        <SkillsGallery/>
       </div>
     </div>
 

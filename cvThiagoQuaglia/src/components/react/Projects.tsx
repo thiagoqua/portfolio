@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { TechsGallery } from "./TechsGallery";
-import { evalGalleryLang } from "../logic/evalLang";
+import { evalGalleryLang } from "../../logic/evalLang";
 
 interface projectBrief {
   title: string;

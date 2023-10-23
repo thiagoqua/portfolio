@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { evalNavbarLang } from "../logic/evalLang";
+import { evalNavbarLang } from "../../logic/evalLang";
 
 interface Props{
   inProjectPage:boolean;

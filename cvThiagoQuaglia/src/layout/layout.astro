@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Navbar from '../components/Navbar';
+import Navbar from '../components/react/Navbar';
 import LangChanger from "../components/LangChanger.astro";
 import { evalDownloadCVLang } from "../logic/evalLang";
 
@@ -34,7 +34,7 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
   <body>
     <div class="lang-down">
       <LangChanger inProjectPage={inProjectPage}/>
-      <a class="down-cv" href={downloadLink} target="_blank">{downloadText}</a>
+      <a class="down-cv blur_in" href={downloadLink} target="_blank">{downloadText}</a>
     </div>
     <Navbar inProjectPage={inProjectPage} lang={lang!} client:load/>
     <slot />
