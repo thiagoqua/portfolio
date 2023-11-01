@@ -11,15 +11,6 @@
     ]
   },
   {
-    "title":"Aplicación mobile de registro de compras",
-    "description":"App android para registrar gastos personales con tarjeta de crédito.",
-    "projectId":"10",
-    "techs":[
-      "frame-android",
-      "lang-kt"
-    ]
-  },
-  {
     "title":"Aplicación mobile de asegurados",
     "description":"App android para gestión general de asegurados.",
     "projectId":"9",

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../styles/root.css"
+import "../../styles/root.css"
 
 export default function Welcome(){
   const [welcome,setWelcome] = useState<string>("Bienvenid@ a mi portfolio!");

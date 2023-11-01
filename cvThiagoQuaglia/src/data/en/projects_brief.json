@@ -6,12 +6,6 @@
     "techs": ["lang-ts", "frame-angular", "frame-node", "tech-docker"]
   },
   {
-    "title": "Mobile application for purchase registration",
-    "description": "Android app to log personal expenses with a credit card.",
-    "projectId": "10",
-    "techs": ["frame-android", "lang-kt"]
-  },
-  {
     "title": "Insured Mobile Application",
     "description": "Android App for general insured management.",
     "projectId": "9",

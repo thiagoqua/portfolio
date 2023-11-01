@@ -14,15 +14,6 @@
     "demo":"https://youtconverter.netlify.app/"
   },
   {
-    "projectId": 10,
-    "projectName": "Aplicación Android para registrar compras con tarjeta",
-    "githubLink": "",
-    "description": "",
-    "techUsed": [],
-    "langUsed": [],
-    "developing":true
-  },
-  {
     "projectId": 9,
     "projectName": "Aplicación Android para gestión de asegurados",
     "githubLink": "https://github.com/thiagoqua/InsuranceMobileApp.git",

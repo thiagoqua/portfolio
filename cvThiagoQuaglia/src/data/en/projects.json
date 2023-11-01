@@ -14,15 +14,6 @@
     "demo":"https://youtconverter.netlify.app/"
   },
   {
-    "projectId": 10,
-    "projectName": "Android App for Card Purchase Logging",
-    "githubLink": "",
-    "description": "",
-    "techUsed": [],
-    "langUsed": [],
-    "developing":true
-  },
-  {
     "projectId": 9,
     "projectName": "Android Application for Insured Management",
     "githubLink": "https://github.com/thiagoqua/InsuranceMobileApp.git",
