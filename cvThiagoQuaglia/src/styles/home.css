@@ -4,7 +4,7 @@ ul {
 
 h2 {
   color: var(--primary);
-  font-family: 'REM', sans-serif;
+  font-family: "REM", sans-serif;
   font-size: 300%;
 }
 
@@ -90,9 +90,9 @@ h2 {
   align-items: center;
 }
 
-.skills-group{
+.skills-group {
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -102,18 +102,18 @@ h2 {
   object-fit: contain;
 }
 
-.skill[src="/skills/lang-ts.png"]{
+.skill[src="/skills/lang-ts.png"] {
   width: 13%;
-  padding:10px;
+  padding: 10px;
 }
 
-.skill[src="/skills/tech-docker.png"]{
+.skill[src="/skills/tech-docker.png"] {
   width: 33%;
-  margin-top:-3%;
+  margin-top: -3%;
 }
 
-.skill-section{
-  color:var(--touch);
+.skill-section {
+  color: var(--touch);
   text-align: center;
 }
 
@@ -140,43 +140,44 @@ h2 {
   width: auto;
   object-fit: contain;
   transition: filter 0.5s;
-  filter: invert(63%) sepia(0%) saturate(6857%) hue-rotate(72deg) brightness(94%) contrast(97%);
+  filter: invert(63%) sepia(0%) saturate(6857%) hue-rotate(72deg)
+    brightness(94%) contrast(97%);
 }
 
 .icon:hover {
-  filter: invert(94%) sepia(15%) saturate(1208%) hue-rotate(80deg) brightness(104%) contrast(100%);
+  filter: invert(94%) sepia(15%) saturate(1208%) hue-rotate(80deg)
+    brightness(104%) contrast(100%);
 }
 
 .link {
-  color:var(--secondary);
+  color: var(--secondary);
 }
 
-.project{
-  display:flex;
+.project {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.project_info_container{
+.project_info_container {
   width: 85%;
 }
 
-.project_things_container{
-  width:12%;
-  display:flex;
+.project_things_container {
+  width: 12%;
+  display: flex;
   align-items: center;
 }
 
-
-.project_title{
-  color:var(--secondary);
-  font-family: 'Geologica', sans-serif;
+.project_title {
+  color: var(--secondary);
+  font-family: "Geologica", sans-serif;
   font-weight: 500;
   font-size: 40px;
 }
 
-.projects{
-  margin-top:10%;
+.projects {
+  margin-top: 10%;
 }
 
 .tech_image {
@@ -187,13 +188,13 @@ h2 {
   animation: blur-in 1s linear both;
 }
 
-@media (max-width: 1000px){
-  .project_info_container{
+@media (max-width: 1000px) {
+  .project_info_container {
     width: 82%;
   }
-  
-  .project_things_container{
-    width:17%;
+
+  .project_things_container {
+    width: 17%;
   }
 }
 
@@ -218,11 +219,11 @@ h2 {
     width: 20%;
   }
 
-  .skill[src="/skills/lang-ts.png"]{
+  .skill[src="/skills/lang-ts.png"] {
     width: 17%;
   }
 
-  .skill[src="/skills/tech-docker.png"]{
+  .skill[src="/skills/tech-docker.png"] {
     width: 27%;
   }
 
@@ -236,12 +237,22 @@ h2 {
     height: 3rem;
   }
 
-  .project_info_container{
+  .project_info_container {
     width: 75%;
   }
-  
-  .project_things_container{
-    width:22%;
+
+  .project_things_container {
+    width: 22%;
+  }
+}
+
+@media (max-width: 670px) {
+  .block-info,
+  .block-info-1,
+  .block-info-larger,
+  .block-info-larger-1 {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -254,23 +265,16 @@ h2 {
   .personal {
     flex-direction: column;
   }
-  .block-info,
-  .block-info-1,
-  .block-info-larger,
-  .block-info-larger-1 {
-    width: 100%;
-    text-align: center;
-  }
 
   .skill {
     width: 40%;
   }
 
-  .skill[src="/skills/lang-ts.png"]{
+  .skill[src="/skills/lang-ts.png"] {
     width: 30%;
   }
 
-  .skill[src="/skills/tech-docker.png"]{
+  .skill[src="/skills/tech-docker.png"] {
     width: 45%;
   }
 
@@ -279,12 +283,12 @@ h2 {
     gap: 2rem;
   }
 
-  .project_info_container{
-    width:100%;
+  .project_info_container {
+    width: 100%;
   }
-  
-  .project_things_container{
-    display:none;
+
+  .project_things_container {
+    display: none;
   }
 }
 
@@ -306,12 +310,12 @@ h2 {
     font-size: 175%;
   }
 
-  .project_title{
+  .project_title {
     font-size: 175%;
   }
 
-  .section_header{
-    font-size:275%;
+  .section_header {
+    font-size: 275%;
   }
 }
 

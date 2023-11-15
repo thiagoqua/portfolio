@@ -18,20 +18,31 @@ export function getStaticPaths(){
   let paths:PathParams[] = []
   const totalProjects:number = es.length;
 
-  //pushing all the possible ids for spanish
-  for(let i = 1;i <= totalProjects;++i)
-    paths.push({params:{lang:'es',id:i}});
-
-  //pushing all the possible ids for english
-  for(let i = 1;i <= totalProjects;++i)
-    paths.push({params:{lang:'en',id:i}});
+  //pushing all the possible ids
+  for(let i = 0;i < totalProjects;++i){
+    //for spanish
+    paths.push(
+      {params:{
+        lang:'es',
+        id:es[i].projectId
+      }}
+    );
+    
+    //for english
+    paths.push(
+      {params:{
+        lang:'en',
+        id:en[i].projectId
+      }}
+    );
+  }
 
   return paths;
 }
 
 const { lang,id } = Astro.params;
 const projectsLang:Project[] = lang == 'es' ? es : en;
-const project:Project = projectsLang.find(pr => pr.projectId == parseInt(id!))!;
+const project:Project = projectsLang.find(pr => pr.projectId == id!)!;
 const started:boolean = project?.githubLink !== "";
 const {description,techUsed,langUsed,dbUsed,stillDev} = evalProjectLang(lang!);
 ---

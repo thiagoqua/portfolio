@@ -72,34 +72,6 @@ const langData:LangContent = lang == 'es' ? es : en;
           </ul>
         </div>
       </div>
-      <div class="block-info-1">
-        <h2>{langData.interests.title}</h2>
-        <div class="description">
-          <ul>
-            <li>
-              <h3 class="item">{langData.interests.content[0].title}</h3>
-            </li>
-            <li>
-              <h3 class="item">{langData.interests.content[1].title}</h3>
-              {langData.interests.content[1].content?.map((content:string) => (
-                <div>
-                  <b>{content}</b> 
-                </div>
-              ))}
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="block-info-larger-1">
-        <h2>{langData.disponibility.title}</h2>
-        <div class="description">
-          <ul>
-            <li>
-              <h3 class="item">{langData.disponibility.content}</h3>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <!-- Skills -->
       <div id="skills">
