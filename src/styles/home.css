@@ -102,12 +102,12 @@ h2 {
   object-fit: contain;
 }
 
-.skill[src="/skills/lang-ts.png"] {
+.skill[src="/skills/lang-ts.webp"] {
   width: 13%;
   padding: 10px;
 }
 
-.skill[src="/skills/tech-docker.png"] {
+.skill[src="/skills/tech-docker.webp"] {
   width: 33%;
   margin-top: -3%;
 }
@@ -145,8 +145,8 @@ h2 {
 }
 
 .icon:hover {
-  filter: invert(94%) sepia(15%) saturate(1208%) hue-rotate(80deg)
-    brightness(104%) contrast(100%);
+  filter: invert(60%) sepia(85%) saturate(326%) hue-rotate(330deg)
+    brightness(104%) contrast(94%);
 }
 
 .link {
@@ -219,11 +219,11 @@ h2 {
     width: 20%;
   }
 
-  .skill[src="/skills/lang-ts.png"] {
+  .skill[src="/skills/lang-ts.webp"] {
     width: 17%;
   }
 
-  .skill[src="/skills/tech-docker.png"] {
+  .skill[src="/skills/tech-docker.webp"] {
     width: 27%;
   }
 
@@ -270,11 +270,11 @@ h2 {
     width: 40%;
   }
 
-  .skill[src="/skills/lang-ts.png"] {
+  .skill[src="/skills/lang-ts.webp"] {
     width: 30%;
   }
 
-  .skill[src="/skills/tech-docker.png"] {
+  .skill[src="/skills/tech-docker.webp"] {
     width: 45%;
   }
 

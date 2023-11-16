@@ -7,7 +7,7 @@ export function TechsGallery({ techs }: { techs: string[] }) {
 
   useEffect(() => {
     let isMounted: boolean = true;
-    const imageUrl:string = `/skills/${techs[currentIndex]}.png`;
+    const imageUrl:string = `/skills/${techs[currentIndex]}.webp`;
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % techs.length);
     }, 4000);
