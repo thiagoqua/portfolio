@@ -1,8 +1,5 @@
 ---
 import "../styles/global.css";
-
-const inProjectPage:boolean = Astro.url.href.includes("project");
-const {lang} = Astro.params;
 ---
 <html lang="en">
   <head>
@@ -29,6 +26,22 @@ const {lang} = Astro.params;
     <title>Thiago Quaglia</title>
   </head>
   <body>
-    <slot />
+    <script is:inline>
+      const theme = localStorage.getItem('theme');
+      const body = document.body;
+    
+      if(theme) {
+        const tchanger = document.getElementById('toggle');
+    
+        if(theme === 'light'){
+          tchanger.checked = false;
+          body.classList.toggle('light');
+        }
+        else 
+          tchanger.checked = true;
+      }
+      else 
+        tchanger.checked = true;
+    </script>
   </body>
 </html>

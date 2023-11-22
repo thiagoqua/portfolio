@@ -43,17 +43,16 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
     </div>
     <TopPage/>
     <Navbar inProjectPage={inProjectPage} lang={lang!} client:load/>
-    <slot />
+    <slot/>
   </body>
 </html>
 
-<script>
+<script is:inline>
   const theme = localStorage.getItem('theme');
-  const body = document.body;
-
-  if(theme){
-    const tchanger = document.getElementById('toggle') as HTMLInputElement;
-
+  const tchanger = document.getElementById('toggle');
+  
+  if(theme) {
+    const body = document.body;
     if(theme === 'light'){
       tchanger.checked = false;
       body.classList.toggle('light');
@@ -61,7 +60,6 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
     else 
       tchanger.checked = true;
   }
-  else
-    body.classList.toggle('light');
-  
+  else 
+    tchanger.checked = true;
 </script>
