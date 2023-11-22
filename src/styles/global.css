@@ -1,26 +1,28 @@
-::selection {
-  background-color: #f5dd90;
-  color: #303d57;
-}
-
 :root {
-  --primary: #0FA3B1;
-  --secondary: #FF9B42;
-  --background: #D9E5D6;
-  --text: #937866;
-  --extra: #F7A072;
-  --disabled: #525252;
-  --touch: #5b49ad;
+  --light-primary: #0FA3B1;
+  --light-secondary: #FF9B42;
+  --light-background: #D9E5D6;
+  --light-text: #937866;
+  --light-extra: #F7A072;
+  --light-disabled: #525252;
+  --light-touch: #5b49ad;
+  --light-selection-color: #c9ff4a;
+  --light-selection-bground: #64aab1;
+  
+  --dark-primary: #76ce23;
+  --dark-secondary: #A846A0;
+  --dark-background: #272D2D;
+  --dark-text: #F6F8FF;
+  --dark-extra: #53ffaf;
+  --dark-touch: var(--dark-secondary);
+  --dark-selection-color: #127a7e;
+  --dark-selection-bground: #ff6d6d;
+
   /* --primary: #F15152;
   --secondary: #1E555C;
   --background: #3A2E39;
   --text: #F4D8CD;
   --extra: #EDB183; */
-  /* --primary: #76ce23;
-  --secondary: #A846A0;
-  --background: #272D2D;
-  --text: #F6F8FF;
-  --extra: #50514F; */
 }
 
 html {
@@ -35,6 +37,38 @@ body {
   background-color: var(--background);
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+
+  /* defines dark theme */
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --background: var(--dark-background);
+  --text: var(--dark-text);
+  --extra: var(--dark-extra);
+  --disabled: var(--dark-disabled);
+  --touch: var(--dark-touch);
+
+  --selection-color:var(--dark-selection-color);
+  --selection-bground:var(--dark-selection-bground);
+
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.light {
+  /* defines light theme */
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --background: var(--light-background);
+  --text: var(--light-text);
+  --extra: var(--light-extra);
+  --disabled: var(--light-disabled);
+  --touch: var(--light-touch);
+  --selection-color:var(--light-selection-color);
+  --selection-bground:var(--light-selection-bground);
+}
+
+::selection {
+  background-color: var(--selection-bground);
+  color: var(--selection-color);
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -84,6 +118,11 @@ p {
   margin-left: 2%;
   text-align: center;
   z-index: 1;
+}
+
+.theme {
+  width:100%;
+  height: 4rem;
 }
 
 /* navigation bar */
@@ -302,6 +341,13 @@ p {
     top:50px;
     position:absolute;
     width: 95%;
+  }
+
+  .theme{
+    display:flex;
+    margin-top:-3rem;
+    justify-content: center;
+    position: absolute;
   }
 
   .navbar-project {

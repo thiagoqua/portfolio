@@ -27,7 +27,7 @@ h2 {
   font-size: 600%;
   font-weight: 500;
   color: var(--primary);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .profession {
@@ -102,14 +102,25 @@ h2 {
   object-fit: contain;
 }
 
-.skill[src="/skills/lang-ts.webp"] {
+.skill[src="/skills/lang-java.webp"]{
+  max-height: 200px;
+}
+
+.skill[src="/skills/lang-ts.webp"],
+.skill[src="/skills/frame-angular.webp"] {
   width: 13%;
   padding: 10px;
 }
 
 .skill[src="/skills/tech-docker.webp"] {
-  width: 33%;
-  margin-top: -3%;
+  width: 16%;
+  max-height: initial;
+}
+
+.skill[src="/skills/db-mysql.webp"],
+.skill[src="/skills/db-sqlsrv.webp"] {
+  width: 13%;
+  max-height: initial;
 }
 
 .skill-section {
@@ -219,12 +230,18 @@ h2 {
     width: 20%;
   }
 
-  .skill[src="/skills/lang-ts.webp"] {
+  .skill[src="/skills/lang-ts.webp"],
+  .skill[src="/skills/frame-angular.webp"] {
     width: 17%;
   }
 
+  .skill[src="/skills/db-mysql.webp"],
+  .skill[src="/skills/db-sqlsrv.webp"] {
+    width: 20%;
+  }
+
   .skill[src="/skills/tech-docker.webp"] {
-    width: 27%;
+    width: 25%;
   }
 
   .contacts {
@@ -258,6 +275,10 @@ h2 {
 
 /* phone screen */
 @media (max-width: 550px) {
+  .name{
+    margin-top:15%;
+  }
+
   .start {
     height: 100vh;
   }
@@ -270,8 +291,11 @@ h2 {
     width: 40%;
   }
 
-  .skill[src="/skills/lang-ts.webp"] {
-    width: 30%;
+  .skill[src="/skills/lang-ts.webp"],
+  .skill[src="/skills/frame-angular.webp"],
+  .skill[src="/skills/db-mysql.webp"],
+  .skill[src="/skills/db-sqlsrv.webp"] {
+    width: 35%;
   }
 
   .skill[src="/skills/tech-docker.webp"] {

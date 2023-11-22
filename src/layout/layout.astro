@@ -2,7 +2,9 @@
 import "../styles/global.css";
 import Navbar from '../components/react/Navbar';
 import LangChanger from "../components/LangChanger.astro";
+import ThemeChanger from "../components/ThemeChanger.astro";
 import { evalDownloadCVLang } from "../logic/evalLang";
+import TopPage from "../components/TopPage.astro";
 
 const inProjectPage:boolean = Astro.url.href.includes("project");
 const {lang} = Astro.params;
@@ -36,7 +38,30 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
       <LangChanger inProjectPage={inProjectPage}/>
       <a class="down-cv blur_in" href={downloadLink} target="_blank">{downloadText}</a>
     </div>
+    <div class="theme">
+      <ThemeChanger inProjectPage={inProjectPage}/>
+    </div>
+    <TopPage/>
     <Navbar inProjectPage={inProjectPage} lang={lang!} client:load/>
     <slot />
   </body>
 </html>
+
+<script>
+  const theme = localStorage.getItem('theme');
+  const body = document.body;
+
+  if(theme){
+    const tchanger = document.getElementById('toggle') as HTMLInputElement;
+
+    if(theme === 'light'){
+      tchanger.checked = false;
+      body.classList.toggle('light');
+    }
+    else 
+      tchanger.checked = true;
+  }
+  else
+    body.classList.toggle('light');
+  
+</script>
