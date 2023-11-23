@@ -1,6 +1,6 @@
 import type {LangContent} from "../types/pageInfoType"
-import es from "../data/es/projects_brief.json";
-import en from "../data/en/projects_brief.json";
+import es from "../locales/es/projects_brief.json";
+import en from "../locales/en/projects_brief.json";
 
 export function evalProjectLang(lang:string){
   if(lang == 'es')
@@ -56,12 +56,12 @@ export function evalGalleryLang(lang:string){
 export function evalDownloadCVLang(lang:string){
   if(lang == 'es')
     return {
-      downloadText:"descargar CV",
+      downloadText:"curriculum",
       downloadLink:"/cvs/CV_ThiagoQuaglia.pdf"
     }
   else 
     return {
-      downloadText:"download CV",
+      downloadText:"resume",
       downloadLink:"/cvs/CV_ThiagoQuaglia_ENG.pdf"
     }
 }

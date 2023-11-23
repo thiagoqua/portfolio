@@ -59,15 +59,6 @@ h2 {
   width: 70%;
 }
 
-.block-info-1 {
-  flex-grow: 1;
-  width: 45%;
-}
-
-.block-info-larger-1 {
-  width: 55%;
-}
-
 .item {
   font-size: 27px;
   font-family: "Geologica", sans-serif;
@@ -207,23 +198,24 @@ h2 {
   .project_things_container {
     width: 17%;
   }
+
+  .personal{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width:100%;
+  }
+
+  .block-info,
+  .block-info-larger {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 850px) {
   .start {
     height: 100vh;
-  }
-
-  .block-info,
-  .block-info-1,
-  .block-info-larger,
-  .block-info-larger-1 {
-    width: 50%;
-  }
-
-  .block-info,
-  .block-info-larger-1 {
-    text-align: right;
   }
 
   .skill {
@@ -263,16 +255,6 @@ h2 {
   }
 }
 
-@media (max-width: 670px) {
-  .block-info,
-  .block-info-1,
-  .block-info-larger,
-  .block-info-larger-1 {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* phone screen */
 @media (max-width: 550px) {
   .name{
@@ -281,10 +263,6 @@ h2 {
 
   .start {
     height: 100vh;
-  }
-
-  .personal {
-    flex-direction: column;
   }
 
   .skill {

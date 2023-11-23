@@ -3,8 +3,8 @@ import Layout from "../../layout/layout.astro";
 import Projects from "../../components/react/Projects";
 import type {LangContent} from "../../types/pageInfoType";
 import "../../styles/home.css";
-import es from "../../data/es/page.json"
-import en from "../../data/en/page.json"
+import es from "../../locales/es/page.json"
+import en from "../../locales/en/page.json"
 import SkillsGallery from "../../components/SkillsGallery.astro";
 
 export function getStaticPaths(){
@@ -22,7 +22,7 @@ const langData:LangContent = lang == 'es' ? es : en;
     <div>
       <div class="whoami">
         <h1 class="name">Thiago Quaglia</h1>
-        <h2 class="profession">Junior Fullstack Developer</h2>
+        <h2 class="profession">Fullstack Developer</h2>
       </div>
     </div>
   </div>
