@@ -1,5 +1,5 @@
 {
-  "about": "<p>Hola! Soy Thiago Quaglia. Desde pequeño he sido un gran aficionado de la tecnología y el desarrollo, lo que me ha permitido inclinarme hacia el lado de la programación a la hora de comenzar mis estudios.</p><p>Actualmente, estoy finalizando la carrera de <b class='grade'>Analista Universitario en Sistemas</b>.</p><p>Me apasiona el desarrollo backend, es mi área preferida, aunque de todas formas me defiendo cómodamente en el frontend. Adicionalmente, disfruto de las tareas relacionadas con DevOps, siempre entusiasmado con adentrarme más y más a este mundo.</p><p>Siendo una persona comprometida, autodidacta y con un fuerte deseo de aprendizaje constante, busco siempre dar lo mejor de mí en cada proyecto. Mi objetivo es continuar creciendo y contribuyendo al equipo, siempre abierto a aprender de cada experiencia y de quienes me rodean.</p>",
+  "about": "<p>Hola! Soy Thiago Quaglia. Desde pequeño he sido un gran aficionado de la tecnología y el desarrollo, lo que me ha permitido inclinarme hacia el lado de la programación a la hora de comenzar mis estudios.</p><p>Soy <b class='grade'>Analista Universitario en Sistemas</b>.</p><p>Me apasiona el desarrollo backend, es mi área preferida, aunque de todas formas me defiendo cómodamente en el frontend. Adicionalmente, disfruto de las tareas relacionadas con DevOps, siempre entusiasmado con adentrarme más y más a este mundo.</p><p>Siendo una persona comprometida, autodidacta y con un fuerte deseo de aprendizaje constante, busco siempre dar lo mejor de mí en cada proyecto. Mi objetivo es continuar creciendo y contribuyendo al equipo, siempre abierto a aprender de cada experiencia y de quienes me rodean.</p>",
   "academies": {
     "title": "Formación académica",
     "content": {
@@ -9,7 +9,7 @@
       },
       "tertirary": {
         "title": "Terciario",
-        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /> Me queda una materia para recibirme.<br /><b class='grade'>Analista Universitario en Sistemas.</b>",
+        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>Analista Universitario en Sistemas</b>.",
         "academic_history": "Historia académica"
       }
     }

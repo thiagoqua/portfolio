@@ -43,12 +43,6 @@
     "techs": ["frame-astro", "lang-ts"]
   },
   {
-    "title": "Medical Appointment Application",
-    "description": "Medical appointment management system, both web and desktop for Windows systems. In collaboration with Esteban Tosoni and Florencia Galván, fellow students.",
-    "projectId": "4",
-    "techs": ["frame-asp.net", "lang-csh", "db-sqlsrv"]
-  },
-  {
     "title": "Clothing Store Website",
     "description": "Fullstack web system for a clothing store. In collaboration with Esteban Tosoni, fellow student.",
     "projectId": "3",

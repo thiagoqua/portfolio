@@ -25,7 +25,6 @@
       "Dependency Injection with Hilt"
     ],
     "langUsed": ["Kotlin"],
-    "demo":"https://easyupload.io/t7xfpv",
     "snapshot":"https://drive.google.com/drive/folders/17-NL_Q-ChvSKyQnJbV_rbyzC-3jeucVb?usp=sharing"
   },
   {
@@ -52,7 +51,7 @@
     ],
     "langUsed": ["C#"],
     "databaseUsed": "SQL Server",
-    "demo":"https://insurance-api-v2.onrender.com/swagger/index.html"
+    "demo":"http://insuranceapi.somee.com/swagger/index.html"
   },
   {
     "projectId": 6,
@@ -79,15 +78,6 @@
       "Astro"
     ],
     "langUsed": ["TypeScript","HTML", "CSS"]
-  },
-  {
-    "projectId": 4,
-    "projectName": "Medical Appointments Application",
-    "githubLink": "https://github.com/thiagoqua/TurnosMedicos",
-    "description": "Both the web and desktop versions are located in the same solution and in the same GitHub repository. <br /> The system has two user roles: patient role and doctor role. <br /> A <i class='accent'>patient</i> user can book appointments, view them with their respective details, and delete them. The system will allow them to generate a PDF report listing all their current booked appointments. <br /> A <i class='accent'>doctor</i> user can define their availability at each branch of the medical company, modify it, delete it, and view the appointments patients have with him/her on a given day. The system will allow them to generate a PDF report listing all current appointments that patients have with the doctor in question for a specific date. <br /> The structure is designed for the health center (or entity using the system) to work with health insurance providers, giving them access to a database or a list where all patients affiliated with that health insurance are located. <br /> As this is not implemented, creating users must first be done manually to the DB by inserting the necessary data into the <i class='accent'>affiliates</i> table to proceed with the patient's registration. <br /> Once done, user registration can continue from the system's <i class='accent'>register</i> section. It should be noted that the system only allows registrations in this way for patients. To add doctors, it has to be done manually to the DB first in the <i class='accent'>affiliates</i> table, then in the <i class='accent'>users</i> table, and finally in the <i class='accent'>doctor</i> table with the corresponding data.",
-    "techUsed": [".NET", "ASP.NET", "LINQ to SQL"],
-    "langUsed": ["C#", "ASPX", "CSS"],
-    "databaseUsed": "SQL Server"
   },
   {
     "projectId": 3,

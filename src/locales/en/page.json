@@ -1,5 +1,5 @@
 {
-  "about": "<p>Hello! I'm Thiago Quaglia. Since I was young, I've been a huge fan of technology and development, which has led me towards programming when deciding what I wanted to study.</p><p>Currently, I am finishing my university degree in <b class='grade'>Systems Analyst</b>.</p><p>I am passionate about backend development, it's my preferred area, although I feel comfortable navigating through the frontend. Additionally, I enjoy tasks related to DevOps, and I’m always eager to delve deeper into this world.</p><p>I am a dedicated, self-taught individual with a strong desire to constantly learn, I always aim to give my best in every project. My goal is to keep growing and contributing to the team. I'm open to learning from every experience and from those around me.</p>",
+  "about": "<p>Hello! I'm Thiago Quaglia. Since I was young, I've been a huge fan of technology and development, which has led me towards programming when deciding what I wanted to study.</p><p>I am <b class='grade'>Systems Analyst</b>.</p><p>I am passionate about backend development, it's my preferred area, although I feel comfortable navigating through the frontend. Additionally, I enjoy tasks related to DevOps, and I’m always eager to delve deeper into this world.</p><p>I am a dedicated, self-taught individual with a strong desire to constantly learn, I always aim to give my best in every project. My goal is to keep growing and contributing to the team. I'm open to learning from every experience and from those around me.</p>",
   "academies": {
     "title": "Academic Background",
     "content": {
@@ -9,7 +9,7 @@
       },
       "tertirary": {
         "title": "Tertiary",
-        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe, Argentina.<br /><b>2020</b> - <b>2023</b>.<br /> I have one subject left to graduate.<br /><b class='grade'>University Systems Analyst.</b>",
+        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe, Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>University Systems Analyst</b>.",
         "academic_history": "Academic History"
       }
     }

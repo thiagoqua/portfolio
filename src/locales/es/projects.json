@@ -25,7 +25,6 @@
       "Inyección de Dependencias con Hilt"
     ],
     "langUsed": ["Kotlin"],
-    "demo":"https://easyupload.io/t7xfpv",
     "snapshot":"https://drive.google.com/drive/folders/17-NL_Q-ChvSKyQnJbV_rbyzC-3jeucVb?usp=sharing"
   },
   {
@@ -52,7 +51,7 @@
     ],
     "langUsed": ["C#"],
     "databaseUsed": "SQL Server",
-    "demo":"https://insurance-api-v2.onrender.com/swagger/index.html"
+    "demo":"http://insuranceapi.somee.com/swagger/index.html"
   },
   {
     "projectId": 6,
@@ -79,15 +78,6 @@
       "Astro"
     ],
     "langUsed": ["TypeScript","HTML", "CSS"]
-  },
-  {
-    "projectId": 4,
-    "projectName": "Aplicación de turnos médicos",
-    "githubLink": "https://github.com/thiagoqua/TurnosMedicos",
-    "description": "Tanto la versión web como la de escritorio se encuentran en la misma solución y en el mismo repositorio de GitHub. <br /> <br /> El sistema cuenta con dos roles de usuarios: rol de paciente y rol de médico. <br /> Un usuario <i class='accent'>paciente</i> podrá sacar turnos, visualizarlos con sus revspectivos detalles y eliminarlos. El sistema le permitirá emitir un reporte PDF con el listado de todos sus turnos sacados vigentes. <br /> Un usuario <i class='accent'>médico</i> podrá definir su disponibilidad en cada sucursal de la compañía médica, modificarla, eliminarla y ver los turnos que los pacientes tienen con él/ella en un día determinado. El sistema le permitirá emitir un reporte PDF con el listado de todos los turnos vigentes que los pacientes tienen con el médico en cuestión para una fecha en específico. <br /> <br /> La estructura está pensada para que el sanatorio (o ente que use el sistema) trabaje con obras sociales, brindándoles éstas acceso a una base de datos o un listado donde se encuentran todos los pacientes afiliados a dicha obra social. <br /> Debido a que ésto no está implementado, la creación de los usuarios primero debe hacerse de manera manual a la DB, insertando a la tabla <i class='accent'>afiliados</i> los datos necesarios para proceder al registro del paciente. <br /> Una realizado, ya se puede continuar con el registro del usuario desde el apartado <i class='accent'>registrarse</i> del sistema. <br /> Cabe aclarar que el sistema solo permite registros de ésta manera para pacientes. Para agregar médicos, se tiene que hacer de manera manual a la DB insertando primero en la tabla <i class='accent'>afiliados</i>, luego en la tabla <i class='accent'>usuarios</i> y por último en la tabla <i class='accent'>medico</i> con los datos correspondientes.",
-    "techUsed": [".NET", "ASP.NET", "LINQ to SQL"],
-    "langUsed": ["C#", "ASPX", "CSS"],
-    "databaseUsed": "SQL Server"
   },
   {
     "projectId": 3,

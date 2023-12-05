@@ -62,16 +62,6 @@
     ]
   },
   {
-    "title":"Aplicación de turnos médicos",
-    "description":"Sistema de gestión de turnos médicos, tanto web como de escritorio para sistemas Windows. En colaboración con Esteban Tosoni y Florencia Galván, compañeros de cursado.",
-    "projectId":"4",
-    "techs":[
-      "frame-asp.net",
-      "lang-csh",
-      "db-sqlsrv"
-    ]
-  },
-  {
     "title":"Web para tienda de ropa",
     "description":"Sistema fullstack web para una tienda de indumentaria. En colaboración con Esteban Tosoni, compañero de cursado.",
     "projectId":"3",
