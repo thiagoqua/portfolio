@@ -1,5 +1,14 @@
 [
   {
+    "title":"Domain specific language similar to SQL",
+    "description":"DSL and database engine similar to SQL. In collaboration with Esteban Tosoni, fellow student.",
+    "projectId":"12",
+    "techs":[
+      "lang-hs",
+      "tech-docker"
+    ]
+  },
+  {
     "title": "YouTube Converter",
     "description": "Web application to extract audio from YouTube videos.",
     "projectId": "11",

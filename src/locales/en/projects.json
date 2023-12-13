@@ -1,5 +1,13 @@
 [
   {
+    "projectId": 12,
+    "projectName": "MiniSQL DSL",
+    "githubLink": "https://github.com/thiagoqua/MiniSQL",
+    "description": "MiniSQL is a <a href='https://en.wikipedia.org/wiki/Domain-specific_language'>Domain-Specific Language</a> (DSL) <i class='accent'>+</i> database engine that simplifies the SQL language in a replicated manner.<br/>This means it's a language very similar to the original SQL but supports only the commands <i class='accent'>CREATE DATABASE</i>, <i class='accent'>CREATE TABLE</i>, <i class='accent'>INSERT</i>, <i class='accent'>SELECT</i> and <i class='accent'>DELETE</i> along with their respective actions.<br/>For a complete explanation of syntax, documentation, and usage, refer to the GitHub repository.",
+    "techUsed": ["Docker"],
+    "langUsed": ["Haskell"]
+  },
+  {
     "projectId": 11,
     "projectName": "MP3 & WAV YouTube audio converter",
     "githubLink": "https://github.com/thiagoqua/ytConverter",

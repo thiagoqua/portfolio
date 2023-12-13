@@ -1,5 +1,14 @@
 [
   {
+    "title":"Lenguaje específico de dominio similar a SQL",
+    "description":"DSL y motor de base de datos símil SQL. En colaboración con Esteban Tosoni, compañero de cursado.",
+    "projectId":"12",
+    "techs":[
+      "lang-hs",
+      "tech-docker"
+    ]
+  },
+  {
     "title":"Convertidor de YouTube",
     "description":"Aplicación web para extraer audio de videos de YouTube.",
     "projectId":"11",

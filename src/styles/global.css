@@ -146,7 +146,7 @@ p {
   color: var(--primary);
 }
 
-.lang-down{
+.lang-down, .lang-down-project{
   display:flex;
   gap:1rem;
 }
@@ -336,7 +336,7 @@ p {
     width: 95%;
   }
 
-  .lang-down{
+  .lang-down {
     justify-content: center;
     top:50px;
     position:absolute;
@@ -358,6 +358,10 @@ p {
     margin-left:20%;
   }
 
+  .lang-changer,.lang-changer-project, .down-cv{
+    z-index:111;
+  }
+
   .section_header {
     font-size: 280%;
   }
@@ -371,6 +375,10 @@ p {
 
   .lang-changer,.lang-changer-project, .down-cv{
     font-size: 70%;
+  }
+
+  .lang-down-project{
+    margin-top:0.9rem;
   }
 
   .section_header {

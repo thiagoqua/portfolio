@@ -34,7 +34,10 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
     <title>Thiago Quaglia</title>
   </head>
   <body>
-    <div class="lang-down">
+    <div class:list={[
+      { "lang-down-project": inProjectPage },
+      { "lang-down": !inProjectPage },
+    ]}>
       <LangChanger inProjectPage={inProjectPage}/>
       <a class="down-cv blur_in" href={downloadLink} target="_blank">{downloadText}</a>
     </div>
