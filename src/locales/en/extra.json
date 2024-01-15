@@ -1,0 +1,27 @@
+{
+  "project":{
+    "description":"Description",
+    "techUsed":"Techs used",
+    "langUsed":"Languages used",
+    "dbUsed": "Databases",
+    "stillDev":"This project is still in development."
+  },
+  "navbar":{
+    "about":"about me",
+    "skills":"skills",
+    "projects": "projects"
+  },
+  "gallery":{
+    "projectsTitle": "Projects",
+    "seeAll": "See ,all",
+    "seeProject": "see project"
+  },
+  "cv":{
+    "downloadText":"resume",
+    "downloadLink":"/cvs/CV_ThiagoQuaglia_ENG.pdf"
+  },
+  "skills":{
+    "lang":"Languages",
+    "db":"Databases"
+  }
+}

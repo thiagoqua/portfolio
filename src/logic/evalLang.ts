@@ -1,80 +1,57 @@
-import type {LangContent} from "../types/pageInfoType"
-import es from "../locales/es/projects_brief.json";
-import en from "../locales/en/projects_brief.json";
+import projectsBriefES from "../locales/es/projects_brief.json";
+import projectsBriefEN from "../locales/en/projects_brief.json";
+import extraES from "../locales/es/extra.json";
+import extraEN from "../locales/en/extra.json";
+import type { ProjectsBrief } from "../types/projectsBriefType";
+import type { 
+  Gallery, 
+  Cv as CvLang,
+  Navbar as NavbarLang, 
+  Project as ProjectLang, 
+  Skills as SkillsLang
+} from "../types/extraType";
 
-export function evalProjectLang(lang:string){
+interface GalleryLang extends Gallery {
+  data: ProjectsBrief[];
+}
+
+export function evalProjectLang(lang:string):ProjectLang{
+  if(lang == 'es')
+    return extraES.project;
+  else 
+    return extraEN.project;
+}
+
+export function evalNavbarLang(lang:string):NavbarLang{
+  if(lang == 'es')
+    return extraES.navbar;
+  else 
+    return extraEN.navbar;
+}
+
+export function evalGalleryLang(lang:string):GalleryLang{
   if(lang == 'es')
     return {
-      description:"Descripción",
-      techUsed:"Tecnologías utilizadas",
-      langUsed:"Lenguajes utilizados",
-      dbUsed: "Bases de datos",
-      stillDev:"Este proyecto continúa bajo desarrollo."
+      data: projectsBriefES,
+      ...extraES.gallery
     }
   else 
     return {
-      description:"Description",
-      techUsed:"Techs used",
-      langUsed:"Languages used",
-      dbUsed: "Databases",
-      stillDev:"This project is still in development."
+      data: projectsBriefEN,
+      ...extraEN.gallery
     }
 }
 
-export function evalNavbarLang(lang:string){
+export function evalDownloadCVLang(lang:string):CvLang{
   if(lang == 'es')
-    return {
-      about:"sobre mi",
-      skills:"habilidades",
-      projects: "proyectos"
-    }
+    return extraES.cv;
   else 
-    return {
-      about:"about me",
-      skills:"skills",
-      projects: "projects"
-    }
+    return extraEN.cv;
 }
 
-export function evalGalleryLang(lang:string){
+export function evalSkillsLang(lang:string):SkillsLang{
   if(lang == 'es')
-    return {
-      data:es,
-      projectsTitle: "Proyectos",
-      seeAll: "Ver todos",
-      seeProject: "ver proyecto"
-    }
+    return extraES.skills;
   else 
-    return {
-      data:en,
-      projectsTitle: "Projects",
-      seeAll: "See all",
-      seeProject: "see project"
-    }
-}
-
-export function evalDownloadCVLang(lang:string){
-  if(lang == 'es')
-    return {
-      downloadText:"curriculum",
-      downloadLink:"/cvs/CV_ThiagoQuaglia.pdf"
-    }
-  else 
-    return {
-      downloadText:"resume",
-      downloadLink:"/cvs/CV_ThiagoQuaglia_ENG.pdf"
-    }
-}
-
-export function evalSkillsLang(lang:string){
-  if(lang == 'es')
-    return {
-      lang:"Lenguajes",
-      db:"Bases de datos"
-    }
-  else 
-    return {
-      lang:"Languages",
-      db:"Databases"
-    }
+    return extraEN.skills;
 }

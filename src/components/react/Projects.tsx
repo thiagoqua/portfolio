@@ -1,13 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { TechsGallery } from "./TechsGallery";
 import { evalGalleryLang } from "../../logic/evalLang";
-
-interface projectBrief {
-  title: string;
-  description: string;
-  projectId: number;
-  techs?: string[];
-}
+import type { ProjectsBrief } from "../../types/projectsBriefType";
 
 interface Props{
   lang:string
@@ -16,8 +10,8 @@ interface Props{
 export default function Projects(prop:Props) {
   const {data,projectsTitle,seeAll,seeProject} = evalGalleryLang(prop.lang);
   const [seeingAll, setSeingAll] = useState<boolean>(false);
-  const [listing, setListing] = useState<projectBrief[]>([]);
-  const allProjects = useRef<projectBrief[]>([]);
+  const [listing, setListing] = useState<ProjectsBrief[]>([]);
+  const allProjects = useRef<ProjectsBrief[]>([]);
 
   useEffect(() => {
     Object.assign(allProjects.current, data);
@@ -31,7 +25,7 @@ export default function Projects(prop:Props) {
   return (
     <div className="projects" id="projects">
       <h1 className="section_header">{projectsTitle}</h1>
-      {listing.map((project: projectBrief) => (
+      {listing.map((project: ProjectsBrief) => (
         <div className="project" key={project.projectId}>
           <div className="project_info_container">
             <h2 className="project_title">{project.title}</h2>
@@ -40,18 +34,18 @@ export default function Projects(prop:Props) {
               {seeProject}
             </a>
           </div>
-          {project.techs && (
+          {project.techs && 
             <div className="project_things_container">
               <TechsGallery techs={project.techs} />
             </div>
-          )}
+          }
         </div>
       ))}
-      {!seeingAll && (
+      {!seeingAll && 
         <button onClick={() => setSeingAll(true)} className="button">
           {seeAll}
         </button>
-      )}
+      }
     </div>
   );
 }

@@ -26,22 +26,23 @@ import "../styles/global.css";
     <title>Thiago Quaglia</title>
   </head>
   <body>
-    <script is:inline>
-      const theme = localStorage.getItem('theme');
-      const body = document.body;
-    
-      if(theme) {
-        const tchanger = document.getElementById('toggle');
-    
-        if(theme === 'light'){
-          tchanger.checked = false;
-          body.classList.toggle('light');
-        }
-        else 
-          tchanger.checked = true;
-      }
-      else 
-        tchanger.checked = true;
-    </script>
   </body>
 </html>
+
+<script is:inline>
+  const theme = localStorage.getItem('theme');
+  const body = document.body;
+
+  if(theme) {
+    const tchanger = document.getElementById('toggle');
+
+    if(theme === 'light'){
+      tchanger.checked = false;
+      body.classList.toggle('light');
+    }
+    else 
+      tchanger.checked = true;
+  }
+  else 
+    tchanger.checked = true;
+</script>
