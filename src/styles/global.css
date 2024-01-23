@@ -45,6 +45,11 @@ body {
   --selection-bground:var(--dark-selection-bground);
 
   transition: background 0.5s ease, color 0.5s ease;
+  
+  /* invert skills colors for black theme */
+  .skill[src="/skills/tech-aws.webp"]{
+    filter: invert();
+  }
 }
 
 body.light {
@@ -58,6 +63,11 @@ body.light {
   --touch: var(--light-touch);
   --selection-color:var(--light-selection-color);
   --selection-bground:var(--light-selection-bground);
+
+  /* de-invert skills colors for black theme */
+  .skill[src="/skills/tech-aws.webp"]{
+    filter: none;
+  }
 }
 
 ::selection {
