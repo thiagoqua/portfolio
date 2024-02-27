@@ -1,5 +1,15 @@
 :root {
-  --light-primary: #0FA3B1;
+  --light-primary: #EE6C4D;
+  --light-secondary: #3D5A80;
+  --light-background: #E0FBFC;
+  --light-text: #293241;
+  --light-extra: #98C1D9;
+  --light-disabled: #525252;
+  --light-touch: #6894e5;
+  --light-selection-color: var(--light-primary);
+  --light-selection-bground: var(--light-background);
+
+  /* --light-primary: #0FA3B1;
   --light-secondary: #FF9B42;
   --light-background: #D9E5D6;
   --light-text: #937866;
@@ -7,16 +17,24 @@
   --light-disabled: #525252;
   --light-touch: #5b49ad;
   --light-selection-color: #c9ff4a;
-  --light-selection-bground: #64aab1;
+  --light-selection-bground: #64aab1; */
   
-  --dark-primary: #848FA5;
+  --dark-primary: #dff8eb;
+  --dark-secondary: #409162;
+  --dark-background: #0d1522;
+  --dark-text: #cdcdcd;
+  --dark-extra: #365ba1;
+  --dark-touch: var(--dark-secondary);
+  --dark-selection-color: var(--dark-secondary);
+  --dark-selection-bground: var(--dark-background);
+  /* --dark-primary: #848FA5;
   --dark-secondary: #4C4C47;
   --dark-background: #2D2D2A;
   --dark-text: #E5DCC5;
   --dark-extra: #C14953;
   --dark-touch: var(--dark-secondary);
   --dark-selection-color: #127a7e;
-  --dark-selection-bground: #ff6d6d;
+  --dark-selection-bground: #ff6d6d; */
 }
 
 html {
@@ -220,7 +238,7 @@ p {
 }
 
 .button:hover {
-  color: var(--text);
+  color: var(--background);
   scale: 1.1;
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
 }
