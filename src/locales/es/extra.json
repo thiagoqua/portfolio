@@ -8,6 +8,7 @@
   },
   "navbar":{
     "about":"sobre mi",
+    "experience":"experiencia",
     "skills":"habilidades",
     "projects": "proyectos"
   },

@@ -1,0 +1,195 @@
+---
+import type { ExperienceContent } from "../types/pageInfoType";
+
+interface Props {
+  experience: ExperienceContent[];
+}
+
+const { experience: data }: Props = Astro.props;
+---
+
+<div class="timeline">
+  <div class="outer">
+    {
+      data.map((exp: ExperienceContent) => (
+        <div class="card">
+          <div class="info">
+            <h3 class="title">{exp.job}</h3>
+            {exp.where && <span class="where">{exp.where}</span>}
+            <div class="duration">
+              <span>
+                {exp.from} - {exp.to}
+              </span>
+            </div>
+            <ul>
+              {exp.tasks.map((task: string) => (
+                <li>{task}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  li {
+    margin-bottom: 10px;
+  }
+
+  .outer {
+    width: 70%;
+  }
+
+  .where,
+  .duration span {
+    font-weight: bold;
+    position:relative;
+  }
+
+  .where {
+    color: var(--secondary);
+    font-size: 1.2rem;
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  /* Card container */
+  .card {
+    position: relative;
+    max-width: 800px;
+  }
+
+  /* setting padding based on even or odd */
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  /* Global ::before */
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--secondary);
+  }
+
+  /* Setting the border of top, bottom, left */
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+
+  /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+  @media only screen and (max-width: 400px) {
+    .card:nth-child(odd)::before {
+      top: -5px;
+      bottom: -5px;
+    }
+  }
+
+  /* Setting the border of top, bottom, right */
+  .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+
+  /* Removing the border if it is the first card */
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+
+  /* Removing the border if it is the last card  and it's odd */
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* Removing the border if it is the last card  and it's even */
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  /* Title of the card */
+  .title {
+    color: var(--primary);
+    position: relative;
+    font-size: 1.7rem;
+  }
+
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid var(--secondary);
+  }
+
+  /* text right if the card is even  */
+  .card:nth-child(even) {
+    .info { 
+      text-align: right;
+
+      .title {
+        text-align: right;
+      }
+
+      .where, .duration{
+        text-align: right;
+      }
+    }
+  }
+
+  /* setting dot to the left if the card is odd */
+  .card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+  }
+
+  /* setting dot to the right if the card is odd */
+  .card:nth-child(even) > .info > .title::before {
+    right: -45px;
+  }
+
+  @media (max-width: 750px) {
+    .outer {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .title {
+      font-size: 1.4rem;
+    }
+
+    .where {
+      font-size: 1.1rem;
+    }
+  }
+</style>

@@ -1,15 +1,40 @@
 {
   "about": "<p>Hola! Soy Thiago Quaglia. Desde pequeño he sido un gran aficionado de la tecnología y el desarrollo, lo que me ha permitido inclinarme hacia el lado de la programación a la hora de comenzar mis estudios.</p><p>Soy <b class='grade'>Analista Universitario en Sistemas</b>.</p><p>Me apasiona el desarrollo backend, es mi área preferida, aunque de todas formas me defiendo cómodamente en el frontend. Adicionalmente, disfruto de las tareas relacionadas con DevOps, siempre entusiasmado con adentrarme más y más a este mundo.</p><p>Siendo una persona comprometida, autodidacta y con un fuerte deseo de aprendizaje constante, busco siempre dar lo mejor de mí en cada proyecto. Mi objetivo es continuar creciendo y contribuyendo al equipo, siempre abierto a aprender de cada experiencia y de quienes me rodean.</p>",
+  "experience":{
+    "title":"Experiencia",
+    "content": [
+      {
+        "job":"Desarrollador DevOps",
+        "where":"Pasantía en Labtory S.A.",
+        "tasks":[
+          "Trabajé en la creación y ajuste de contenedores Docker para mejorar tanto los ambientes de desarrollo como los de despliegue.",
+          "Contribuí de manera activa en la planificación y ejecución de estrategias para realizar copias de seguridad de bases de datos.",
+          "Llevé a cabo con éxito la migración y el respaldo de bases de datos MongoDB.",
+          "Lleve a cabo diversas tareas en entornos AWS, colaborando en la implementación y administración de recursos en la nube."
+        ],
+        "from":"Octubre 2023",
+        "to":"Enero 2024"
+      },
+      {
+        "job":"Desarrollo FullStack",
+        "tasks":[
+          "Realización de proyectos personales para ampliar mis conocimientos y mejorar mis habilidades."
+        ],
+        "from":"2021",
+        "to":"2023"
+      }
+    ]
+  },
   "academies": {
     "title": "Formación académica",
     "content": {
       "secondary": {
         "title": "Secundario",
-        "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b> , ArroyoSeco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachiller en Ciencias Sociales.</b>"
+        "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b> , Arroyo Seco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachiller en Ciencias Sociales.</b>"
       },
       "tertirary": {
         "title": "Terciario",
-        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>Analista Universitario en Sistemas</b>.",
+        "content": "<b>Instituto Politécnico Superior – UNR</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>Analista Universitario en Sistemas</b>.",
         "academic_history": "Historia académica"
       }
     }

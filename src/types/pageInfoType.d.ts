@@ -1,5 +1,6 @@
 export interface LangContent {
   about:         string;
+  experience:    Experience;
   academies:     Academies;
   languages:     Languages;
   interests:     Interests;
@@ -7,6 +8,19 @@ export interface LangContent {
   skills:        Skills;
   see_project:   string;
   see_all:       string;
+}
+
+export interface Experience{
+  title:    string;
+  content:  ExperienceContent[];
+}
+
+export interface ExperienceContent{
+  job:    string;
+  where?: string;
+  tasks:  string[];
+  from:   string;
+  to:     string;
 }
 
 export interface Academies {

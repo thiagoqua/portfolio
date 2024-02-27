@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layout/layout.astro";
 import Projects from "../../components/react/Projects";
+import ExperienceTimeline from "../../components/ExperienceTimeline.astro";
 import type {LangContent} from "../../types/pageInfoType";
 import "../../styles/home.css";
 import es from "../../locales/es/page.json"
@@ -30,6 +31,11 @@ const langData:LangContent = lang == 'es' ? es : en;
   <div class="sections">
     <!-- About me -->
     <div id="about" set:html={langData.about}/>
+    <!-- Experience -->
+    <div id="experience">
+      <h1 class="section_header">{langData.experience.title}</h1>
+      <ExperienceTimeline experience={langData.experience.content}/>
+    </div>
     <!-- Personal info -->
     <div class="personal" id="personal">
       <div class="block-info-larger">

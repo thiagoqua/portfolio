@@ -18,9 +18,10 @@ export interface Gallery {
 }
 
 export interface Navbar {
-  about:    string;
-  skills:   string;
-  projects: string;
+  about:      string;
+  experience: string;
+  skills:     string;
+  projects:   string;
 }
 
 export interface Project {

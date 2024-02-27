@@ -1,5 +1,30 @@
 {
   "about": "<p>Hello! I'm Thiago Quaglia. Since I was young, I've been a huge fan of technology and development, which has led me towards programming when deciding what I wanted to study.</p><p>I am <b class='grade'>Systems Analyst</b>.</p><p>I am passionate about backend development, it's my preferred area, although I feel comfortable navigating through the frontend. Additionally, I enjoy tasks related to DevOps, and I’m always eager to delve deeper into this world.</p><p>I am a dedicated, self-taught individual with a strong desire to constantly learn, I always aim to give my best in every project. My goal is to keep growing and contributing to the team. I'm open to learning from every experience and from those around me.</p>",
+  "experience":{
+    "title":"Experience",
+    "content":[
+      {
+        "job": "DevOps Developer",
+        "where": "Internship at Labtory S.A.",
+        "tasks": [
+          "Worked on the creation and adjustment of Docker containers to enhance both development and deployment environments.",
+          "Actively contributed to the planning and execution of database backup strategies.",
+          "Successfully carried out the migration and backup of MongoDB databases.",
+          "Performed various tasks in AWS environments, collaborating in the implementation and management of cloud resources."
+        ],
+        "from": "October 2023",
+        "to": "January 2024"
+      },
+      {
+        "job": "FullStack Development",
+        "tasks": [
+          "Completion of personal projects to expand my knowledge and improve my skills."
+        ],
+        "from": "2021",
+        "to": "2023"
+      }
+    ]
+  },
   "academies": {
     "title": "Academic Background",
     "content": {
@@ -9,7 +34,7 @@
       },
       "tertirary": {
         "title": "Tertiary",
-        "content": "<b>Instituto Politécnico Superior – UNR”</b>, Rosario, Santa Fe, Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>University Systems Analyst</b>.",
+        "content": "<b>Instituto Politécnico Superior – UNR</b>, Rosario, Santa Fe, Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>University Systems Analyst</b>.",
         "academic_history": "Academic History"
       }
     }
