@@ -7,6 +7,7 @@ import "../../styles/home.css";
 import es from "../../locales/es/page.json"
 import en from "../../locales/en/page.json"
 import SkillsGallery from "../../components/SkillsGallery.astro";
+import Contact from "../../components/Contact.astro";
 
 export function getStaticPaths(){
   return [
@@ -23,7 +24,7 @@ const langData:LangContent = lang == 'es' ? es : en;
     <div>
       <div class="whoami">
         <h1 class="name">Thiago Quaglia</h1>
-        <h2 class="profession">Fullstack Developer</h2>
+        <h2 class="profession">Backend Developer</h2>
       </div>
     </div>
   </div>
@@ -90,18 +91,5 @@ const langData:LangContent = lang == 'es' ? es : en;
     <Projects client:load lang={lang!} />
 
     <!-- Contact -->
-    <div class="contacts-ctx">
-      <div class="contacts">
-        <a href="https://www.linkedin.com/in/thiagoquaglia/" target="_blank">
-          <img src="/linkedin.svg" alt="linkedin" class="icon" />
-        </a>
-        <a href="https://github.com/thiagoqua" target="_blank">
-          <img src="/github.svg" alt="github" class="icon" />
-        </a>
-        <a href="mailto:thiagoqua16@gmail.com" target="_blank">
-          <img src="/email.svg" alt="email" class="icon" />
-        </a>
-      </div>
-    </div>
-  </div>
+    <Contact/>
 </Layout>

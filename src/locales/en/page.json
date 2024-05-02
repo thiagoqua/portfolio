@@ -4,6 +4,17 @@
     "title":"Experience",
     "content":[
       {
+        "job":".NET Backend Developer",
+        "where":"ReImagine",
+        "tasks":[
+          "Backend development using .NET and Entity Framework.",
+          "Managment of PostgreSQL databases.",
+          "Clean Architecture implementation to ensure scalable projects."
+        ],
+        "from":"April 2024",
+        "to":"Now"
+      },
+      {
         "job": "DevOps Developer",
         "where": "Internship at Labtory S.A.",
         "tasks": [

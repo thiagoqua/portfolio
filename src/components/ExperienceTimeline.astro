@@ -34,6 +34,10 @@ const { experience: data }: Props = Astro.props;
 </div>
 
 <style>
+  ul{
+    z-index: 111;
+  }
+
   li {
     margin-bottom: 10px;
   }
@@ -85,7 +89,7 @@ const { experience: data }: Props = Astro.props;
   .card:nth-child(odd)::before {
     left: 0px;
     top: -4.5px;
-    bottom: -4.5px;
+    bottom: -5px;
     border-width: 5px 0 5px 5px;
     border-radius: 50px 0 0 50px;
   }

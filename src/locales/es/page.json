@@ -4,13 +4,24 @@
     "title":"Experiencia",
     "content": [
       {
+        "job":"Desarrollador Backend .NET",
+        "where":"ReImagine",
+        "tasks":[
+          "Desarrollo APIs usando .NET y Entity Framework.",
+          "Administro bases de datos PostgreSQL.",
+          "Implemento Clean Architecture con el fin de realizar proyectos fáciles de escalar."
+        ],
+        "from":"Abril 2024",
+        "to":"Actualidad"
+      },
+      {
         "job":"Desarrollador DevOps",
         "where":"Pasantía en Labtory S.A.",
         "tasks":[
-          "Trabajé en la creación y ajuste de contenedores Docker para mejorar tanto los ambientes de desarrollo como los de despliegue.",
-          "Contribuí de manera activa en la planificación y ejecución de estrategias para realizar copias de seguridad de bases de datos.",
+          "Trabajé en la creación y ajuste de contenedores Docker.",
+          "Contribuí en la planificación y ejecución de estrategias para realizar copias de seguridad de bases de datos.",
           "Llevé a cabo con éxito la migración y el respaldo de bases de datos MongoDB.",
-          "Lleve a cabo diversas tareas en entornos AWS, colaborando en la implementación y administración de recursos en la nube."
+          "Realicé diversas tareas en entornos AWS, colaborando en la implementación y administración de recursos en la nube."
         ],
         "from":"Octubre 2023",
         "to":"Enero 2024"
