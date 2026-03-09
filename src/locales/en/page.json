@@ -7,9 +7,9 @@
         "job":".NET Backend Developer",
         "where":"ReImagine",
         "tasks":[
-          "Backend development using .NET and Entity Framework.",
-          "Managment of PostgreSQL databases.",
-          "Clean Architecture implementation to ensure scalable projects."
+          "I design and develop backend solutions that connect different systems and automate business processes.",
+          "I am involved from requirements analysis to technical implementation, always aiming for efficient and scalable solutions.",
+          "I also lead backend development teams, supporting technical decisions and promoting good engineering practices."
         ],
         "from":"April 2024",
         "to":"Now"
@@ -18,10 +18,10 @@
         "job": "DevOps Developer",
         "where": "Internship at Labtory S.A.",
         "tasks": [
-          "Worked on the creation and adjustment of Docker containers to enhance both development and deployment environments.",
-          "Actively contributed to the planning and execution of database backup strategies.",
-          "Successfully carried out the migration and backup of MongoDB databases.",
-          "Performed various tasks in AWS environments, collaborating in the implementation and management of cloud resources."
+          "I worked on improving and standardizing development and deployment environments using containers.",
+          "I performed database administration tasks, including migrations and backups.",
+          "I collaborated on configuring and maintaining infrastructure in orchestrated environments and cloud services.",
+          "I worked with the technical team to improve deployment processes and service operations."
         ],
         "from": "October 2023",
         "to": "January 2024"
@@ -76,7 +76,5 @@
   },
   "skills": {
     "title": "Skills"
-  },
-  "see_project": "see project",
-  "see_all": "see all"
+  }
 }

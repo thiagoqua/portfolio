@@ -33,6 +33,6 @@ export interface Project {
 }
 
 export interface Skills {
-  lang: string;
   db:   string;
+  messaging: string;
 }

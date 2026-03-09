@@ -1,5 +1,3 @@
-import projectsBriefES from "../locales/es/projects_brief.json";
-import projectsBriefEN from "../locales/en/projects_brief.json";
 import extraES from "../locales/es/extra.json";
 import extraEN from "../locales/en/extra.json";
 import type { ProjectsBrief } from "../types/projectsBriefType";
@@ -27,19 +25,6 @@ export function evalNavbarLang(lang:string):NavbarLang{
     return extraES.navbar;
   else 
     return extraEN.navbar;
-}
-
-export function evalGalleryLang(lang:string):GalleryLang{
-  if(lang == 'es')
-    return {
-      data: projectsBriefES,
-      ...extraES.gallery
-    }
-  else 
-    return {
-      data: projectsBriefEN,
-      ...extraEN.gallery
-    }
 }
 
 export function evalDownloadCVLang(lang:string):CvLang{

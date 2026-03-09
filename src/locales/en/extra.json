@@ -22,7 +22,7 @@
     "downloadLink":"/cvs/CV_ThiagoQuaglia_ENG.pdf"
   },
   "skills":{
-    "lang":"Languages",
-    "db":"Databases"
+    "db":"Database",
+    "messaging": "Communication"
   }
 }

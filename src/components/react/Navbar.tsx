@@ -30,17 +30,15 @@ export default function Navbar(props:Props) {
     }
   }, []);
 
-  return !(props.inProjectPage) ? 
-        <div className="navbar blur_in" id="navbar">
-          <a href="#about">{about}</a>
-          <a href="#experience">{experience}</a>
-          <a href="#skills">{skills}</a>
-          <a href="#projects">{projects}</a>
-        </div> : 
-        
-        <div className="navbar blur_in">
-          <a href={`/${props.lang}/`} id="navbar">
-            home
-          </a>
-        </div>
+  return !(props.inProjectPage) 
+        ? <div className="navbar blur_in" id="navbar">
+            <a href="#about">{about}</a>
+            <a href="#experience">{experience}</a>
+            <a href="#skills">{skills}</a>
+          </div> 
+        : <div className="navbar blur_in">
+            <a href={`/${props.lang}/`} id="navbar">
+              home
+            </a>
+          </div>
 }

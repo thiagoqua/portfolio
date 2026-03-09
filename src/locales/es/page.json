@@ -7,9 +7,9 @@
         "job":"Desarrollador Backend .NET",
         "where":"ReImagine",
         "tasks":[
-          "Desarrollo APIs usando .NET y Entity Framework.",
-          "Administro bases de datos PostgreSQL.",
-          "Implemento Clean Architecture con el fin de realizar proyectos fáciles de escalar."
+          "Trabajo diseñando y desarrollando soluciones backend que conectan distintos sistemas y automatizan procesos de negocio.",
+          "Me involucro desde el análisis de requerimientos hasta la implementación técnica, buscando siempre soluciones eficientes y escalables.",
+          "También lidero equipos de desarrollo backend, acompañando decisiones técnicas y promoviendo buenas prácticas."
         ],
         "from":"Abril 2024",
         "to":"Actualidad"
@@ -18,10 +18,9 @@
         "job":"Desarrollador DevOps",
         "where":"Pasantía en Labtory S.A.",
         "tasks":[
-          "Trabajé en la creación y ajuste de contenedores Docker.",
-          "Contribuí en la planificación y ejecución de estrategias para realizar copias de seguridad de bases de datos.",
-          "Llevé a cabo con éxito la migración y el respaldo de bases de datos MongoDB.",
-          "Realicé diversas tareas en entornos AWS, colaborando en la implementación y administración de recursos en la nube."
+          "Realicé tareas de administración y mantenimiento de bases de datos, incluyendo migraciones y respaldos.",
+          "Colaboré en la configuración y mantenimiento de infraestructura en entornos orquestados y servicios en la nube.",
+          "Participé junto al equipo técnico en la optimización de procesos de despliegue y operación de servicios."
         ],
         "from":"Octubre 2023",
         "to":"Enero 2024"
@@ -29,7 +28,7 @@
       {
         "job":"Desarrollo FullStack",
         "tasks":[
-          "Realización de proyectos personales para ampliar mis conocimientos y mejorar mis habilidades."
+          "Desarrollo de proyectos personales como forma de seguir aprendiendo y explorar nuevas tecnologías."
         ],
         "from":"2021",
         "to":"2023"
@@ -76,7 +75,5 @@
   },
   "skills": {
     "title": "Habilidades"
-  },
-  "see_project": "ver proyecto",
-  "see_all": "ver todos"
+  }
 }

@@ -6,8 +6,6 @@ export interface LangContent {
   interests:     Interests;
   disponibility: Disponibility;
   skills:        Skills;
-  see_project:   string;
-  see_all:       string;
 }
 
 export interface Experience{

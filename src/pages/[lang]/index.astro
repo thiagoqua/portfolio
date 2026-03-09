@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layout/layout.astro";
-import Projects from "../../components/react/Projects";
 import ExperienceTimeline from "../../components/ExperienceTimeline.astro";
 import type {LangContent} from "../../types/pageInfoType";
 import "../../styles/home.css";
@@ -86,10 +85,7 @@ const langData:LangContent = lang == 'es' ? es : en;
         <SkillsGallery/>
       </div>
     </div>
-
-    <!-- Projects brief -->
-    <Projects client:load lang={lang!} />
-
+    
     <!-- Contact -->
     <Contact/>
 </Layout>

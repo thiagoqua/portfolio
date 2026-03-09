@@ -22,7 +22,7 @@
     "downloadLink":"/cvs/CV_ThiagoQuaglia.pdf"
   },
   "skills":{
-    "lang":"Lenguajes",
-    "db":"Bases de datos"
+    "db":"Bases de datos",
+    "messaging": "Mensajeria"
   }
 }

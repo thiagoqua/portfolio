@@ -97,21 +97,14 @@ h2 {
   max-height: 200px;
 }
 
-.skill[src="/skills/lang-ts.webp"],
-.skill[src="/skills/frame-angular.webp"] {
-  width: 13%;
-  padding: 10px;
-}
-
 .skill[src="/skills/tech-docker.webp"] {
   width: 16%;
   max-height: initial;
 }
 
-.skill[src="/skills/db-mysql.webp"],
-.skill[src="/skills/db-sqlsrv.webp"] {
-  width: 13%;
-  max-height: initial;
+.skill[src="/skills/db-postgress.webp"],
+.skill[src="/skills/db-mongo.webp"] {
+  width: 20%;
 }
 
 .skill-section {
@@ -211,6 +204,11 @@ h2 {
     width: 100%;
     text-align: center;
   }
+
+  .skill[src="/skills/db-postgress.webp"],
+  .skill[src="/skills/db-mongo.webp"] {
+    width: 18%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -222,14 +220,9 @@ h2 {
     width: 20%;
   }
 
-  .skill[src="/skills/lang-ts.webp"],
-  .skill[src="/skills/frame-angular.webp"] {
-    width: 17%;
-  }
-
-  .skill[src="/skills/db-mysql.webp"],
-  .skill[src="/skills/db-sqlsrv.webp"] {
-    width: 20%;
+  .skill[src="/skills/db-postgress.webp"],
+  .skill[src="/skills/db-mongo.webp"] {
+    width: 18%;
   }
 
   .skill[src="/skills/tech-docker.webp"] {
@@ -267,13 +260,6 @@ h2 {
 
   .skill {
     width: 40%;
-  }
-
-  .skill[src="/skills/lang-ts.webp"],
-  .skill[src="/skills/frame-angular.webp"],
-  .skill[src="/skills/db-mysql.webp"],
-  .skill[src="/skills/db-sqlsrv.webp"] {
-    width: 35%;
   }
 
   .skill[src="/skills/tech-docker.webp"] {
