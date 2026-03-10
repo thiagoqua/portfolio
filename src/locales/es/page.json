@@ -1,5 +1,5 @@
 {
-  "about": "<p>Hola! Soy Thiago Quaglia. Desde pequeño he sido un gran aficionado de la tecnología y el desarrollo, lo que me ha permitido inclinarme hacia el lado de la programación a la hora de comenzar mis estudios.</p><p>Soy <b class='grade'>Analista Universitario en Sistemas</b>.</p><p>Me apasiona el desarrollo backend, es mi área preferida, aunque de todas formas me defiendo cómodamente en el frontend. Adicionalmente, disfruto de las tareas relacionadas con DevOps, siempre entusiasmado con adentrarme más y más a este mundo.</p><p>Siendo una persona comprometida, autodidacta y con un fuerte deseo de aprendizaje constante, busco siempre dar lo mejor de mí en cada proyecto. Mi objetivo es continuar creciendo y contribuyendo al equipo, siempre abierto a aprender de cada experiencia y de quienes me rodean.</p>",
+  "about": "<p>Hola! Soy Thiago Quaglia. Desde chico siempre tuve una gran curiosidad por la tecnología, lo que naturalmente me llevó al mundo de la programación cuando comencé mis estudios.</p><p>Soy <b class='grade'>Analista Universitario en Sistemas</b> y actualmente trabajo como <b class='grade'>desarrollador backend</b>, participando en el diseño y desarrollo de soluciones que conectan distintos sistemas y ayudan a automatizar procesos de negocio. También tengo la oportunidad de acompañar equipos de desarrollo en decisiones técnicas y buenas prácticas.</p><p>Disfruto especialmente del área backend, donde más me especializo, aunque también me siento cómodo trabajando en frontend cuando el proyecto lo requiere. Además, me interesa mucho el mundo de DevOps y la infraestructura, siempre con ganas de seguir aprendiendo y entendiendo cómo funcionan los sistemas de punta a punta.</p><p>Me considero una persona curiosa, comprometida y muy orientada al aprendizaje continuo. Me gusta involucrarme en los proyectos, proponer mejoras y seguir creciendo junto a los equipos con los que trabajo.</p>",
   "experience":{
     "title":"Experiencia",
     "content": [
@@ -43,7 +43,7 @@
         "content": "<b>Instituto Santa María Goretti E.E.S.O.P.I. 8097</b> , Arroyo Seco, Santa Fe, Argentina.<br /><b>2015</b> - <b>2019</b>.<br /><b>Bachiller en Ciencias Sociales.</b>"
       },
       "tertirary": {
-        "title": "Terciario",
+        "title": "Universitario",
         "content": "<b>Instituto Politécnico Superior – UNR</b>, Rosario, Santa Fe,Argentina.<br /><b>2020</b> - <b>2023</b>.<br /><b class='grade'>Analista Universitario en Sistemas</b>.",
         "academic_history": "Historia académica"
       }
