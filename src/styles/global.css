@@ -8,6 +8,7 @@
   --light-touch: #3e4266;
   --light-selection-color: var(--light-primary);
   --light-selection-bground: var(--light-background);
+  --light-primary-hue: 60deg;
   
   --dark-primary: #dff8eb;
   --dark-secondary: #409162;
@@ -17,6 +18,7 @@
   --dark-touch: var(--dark-secondary);
   --dark-selection-color: var(--dark-secondary);
   --dark-selection-bground: var(--dark-background);
+  --dark-primary-hue: 217deg;
 }
 
 html {
@@ -40,6 +42,7 @@ body {
   --extra: var(--dark-extra);
   --disabled: var(--dark-disabled);
   --touch: var(--dark-touch);
+  --hue: var(--dark-primary-hue);
 
   --selection-color:var(--dark-selection-color);
   --selection-bground:var(--dark-selection-bground);
@@ -49,13 +52,13 @@ body {
   /* invert skills colors for black theme */
   .skill[src="/skills/tech-aws.webp"],
   .skill[src="/skills/os-linux.webp"]{
-    filter: grayscale(100%) invert();
+    filter: invert() grayscale(100%) sepia(100%) hue-rotate(var(--hue)) saturate(80%);
     transition: filter 0.3s ease;
   }
 
   .skill[src="/skills/tech-aws.webp"]:hover,
   .skill[src="/skills/os-linux.webp"]:hover {
-    filter: grayscale(0%) invert();
+    filter: invert() grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
   }
 }
 
@@ -68,19 +71,21 @@ body.light {
   --extra: var(--light-extra);
   --disabled: var(--light-disabled);
   --touch: var(--light-touch);
+  --hue: var(--light-primary-hue);
+
   --selection-color:var(--light-selection-color);
   --selection-bground:var(--light-selection-bground);
 
   /* invert skills colors for black theme */
   .skill[src="/skills/tech-aws.webp"],
   .skill[src="/skills/os-linux.webp"]{
-    filter: grayscale(100%);
+    filter: grayscale(100%) sepia(100%) hue-rotate(var(--hue)) saturate(80%);
     transition: filter 0.3s ease;
   }
 
   .skill[src="/skills/tech-aws.webp"]:hover,
   .skill[src="/skills/os-linux.webp"]:hover {
-    filter: grayscale(0%);
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
   }
 }
 

@@ -95,12 +95,12 @@ h2 {
   width: 100%;
   max-width: 180px;
   object-fit: contain;
-  filter: grayscale(100%);
+  filter: grayscale(100%) sepia(100%) hue-rotate(var(--hue)) saturate(80%);
   transition: filter 0.3s ease;
 }
 
 .skill:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0%) sepia(0%) hue-rotate(0deg) saturate(100%);
 }
 
 .skill-section {
