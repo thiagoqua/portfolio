@@ -49,7 +49,13 @@ body {
   /* invert skills colors for black theme */
   .skill[src="/skills/tech-aws.webp"],
   .skill[src="/skills/os-linux.webp"]{
-    filter: invert();
+    filter: grayscale(100%) invert();
+    transition: filter 0.3s ease;
+  }
+
+  .skill[src="/skills/tech-aws.webp"]:hover,
+  .skill[src="/skills/os-linux.webp"]:hover {
+    filter: grayscale(0%) invert();
   }
 }
 
@@ -65,10 +71,16 @@ body.light {
   --selection-color:var(--light-selection-color);
   --selection-bground:var(--light-selection-bground);
 
-  /* de-invert skills colors for black theme */
+  /* invert skills colors for black theme */
   .skill[src="/skills/tech-aws.webp"],
   .skill[src="/skills/os-linux.webp"]{
-    filter: none;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .skill[src="/skills/tech-aws.webp"]:hover,
+  .skill[src="/skills/os-linux.webp"]:hover {
+    filter: grayscale(0%);
   }
 }
 

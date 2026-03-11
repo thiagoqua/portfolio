@@ -48,6 +48,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .block-info {
@@ -79,6 +80,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills-group {
@@ -89,22 +92,15 @@ h2 {
 }
 
 .skill {
-  width: 15%;
+  width: 100%;
+  max-width: 180px;
   object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
-.skill[src="/skills/lang-java.webp"]{
-  max-height: 200px;
-}
-
-.skill[src="/skills/tech-docker.webp"] {
-  width: 16%;
-  max-height: initial;
-}
-
-.skill[src="/skills/db-postgress.webp"],
-.skill[src="/skills/db-mongo.webp"] {
-  width: 20%;
+.skill:hover {
+  filter: grayscale(0%);
 }
 
 .skill-section {
@@ -196,7 +192,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width:100%;
+    width: 100%;
   }
 
   .block-info,
@@ -204,29 +200,11 @@ h2 {
     width: 100%;
     text-align: center;
   }
-
-  .skill[src="/skills/db-postgress.webp"],
-  .skill[src="/skills/db-mongo.webp"] {
-    width: 18%;
-  }
 }
 
 @media (max-width: 850px) {
   .start {
     height: 100vh;
-  }
-
-  .skill {
-    width: 20%;
-  }
-
-  .skill[src="/skills/db-postgress.webp"],
-  .skill[src="/skills/db-mongo.webp"] {
-    width: 18%;
-  }
-
-  .skill[src="/skills/tech-docker.webp"] {
-    width: 25%;
   }
 
   .contacts {
@@ -246,6 +224,10 @@ h2 {
   .project_things_container {
     width: 22%;
   }
+
+  .skill {
+    max-width: 125px;
+  }
 }
 
 /* phone screen */
@@ -256,14 +238,6 @@ h2 {
 
   .start {
     height: 100vh;
-  }
-
-  .skill {
-    width: 40%;
-  }
-
-  .skill[src="/skills/tech-docker.webp"] {
-    width: 45%;
   }
 
   .skills {
