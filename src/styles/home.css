@@ -36,6 +36,16 @@ h2 {
   font-weight: 500;
   font-family: "Outfit", sans-serif;
   color: var(--secondary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.profession-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-end; 
+  gap: 4px;
 }
 
 .sections {

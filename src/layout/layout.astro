@@ -8,7 +8,6 @@ import TopPage from "../components/TopPage.astro";
 
 const inProjectPage:boolean = Astro.url.href.includes("project");
 const {lang} = Astro.params;
-const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
 ---
 <html lang="en">
   <head>
@@ -39,7 +38,6 @@ const {downloadText,downloadLink} = evalDownloadCVLang(lang!);
       { "lang-down": !inProjectPage },
     ]}>
       <LangChanger inProjectPage={inProjectPage}/>
-      <a class="down-cv blur_in" href={downloadLink} target="_blank">{downloadText}</a>
     </div>
     <div class="theme">
       <ThemeChanger inProjectPage={inProjectPage}/>

@@ -1,10 +1,10 @@
 {
-  "about": "<p>Hello! I'm Thiago Quaglia. Since I was young, I've always been very curious about technology, which naturally led me into the world of programming when I started my studies.</p><p>I am a <b class='grade'>University Systems Analyst</b> and currently work as a <b class='grade'>backend developer</b>, participating in the design and development of solutions that connect different systems and help automate business processes. I also have the opportunity to support development teams in technical decisions and best practices.</p><p>I particularly enjoy working in the backend area, where I specialize the most, although I’m also comfortable working on frontend tasks when a project requires it. In addition, I’m very interested in the world of DevOps and infrastructure, always eager to keep learning and better understand how systems work end to end.</p><p>I consider myself a curious, committed person with a strong focus on continuous learning. I enjoy getting involved in projects, proposing improvements, and continuing to grow alongside the teams I work with.</p>",
+  "about": "<p>Hello! I'm Thiago Quaglia. Since I was young, I've always been very curious about technology, which naturally led me into the world of programming when I started my studies.</p><p>I am a <b class='grade'>University Systems Analyst</b> currently working in a hybrid role as a <b class='grade'>backend developer</b> and <b class='grade'>functional analyst</b>, participating in the design and development of solutions that connect different systems and help automate business processes. I also have the opportunity to support development teams in technical decisions and best practices.</p><p>I particularly enjoy working in the backend area, where I specialize the most, although I’m also comfortable working on frontend tasks when a project requires it. In addition, I’m very interested in the world of DevOps and infrastructure, always eager to keep learning and better understand how systems work end to end.</p><p>I consider myself a curious, committed person with a strong focus on continuous learning. I enjoy getting involved in projects, proposing improvements, and continuing to grow alongside the teams I work with.</p>",
   "experience":{
     "title":"Experience",
     "content":[
       {
-        "job":".NET Backend Developer",
+        "job":".NET Backend Developer & Functional Analyst",
         "where":"ReImagine",
         "tasks":[
           "I design and develop backend solutions that connect different systems and automate business processes.",
