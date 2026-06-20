@@ -4,6 +4,17 @@
     "title":"Experience",
     "content":[
       {
+        "job":"Backend Developer",
+        "where":"FyO",
+        "tasks":[
+          "Development of microservices-based backend solutions.",
+          "Integration and continuous use of generative artificial intelligence and agentic paradigms to optimize the development cycle.",
+          "Modeling, management, and consumption of relational databases."
+        ],
+        "from":"June 2026",
+        "to":"Now"
+      },
+      {
         "job":".NET Backend Developer & Functional Analyst",
         "where":"ReImagine",
         "tasks":[
@@ -12,7 +23,7 @@
           "I also lead backend development teams, supporting technical decisions and promoting good engineering practices."
         ],
         "from":"April 2024",
-        "to":"Now"
+        "to":"June 2026"
       },
       {
         "job": "DevOps Developer",

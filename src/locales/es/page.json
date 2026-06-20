@@ -4,6 +4,17 @@
     "title":"Experiencia",
     "content": [
       {
+        "job":"Desarrollador Backend",
+        "where":"FyO",
+        "tasks":[
+          "Desarrollo de soluciones backend basadas en microservicios.",
+          "Integración y uso continuo de inteligencia artificial generativa y paradigmas agénticos para optimizar el ciclo de desarrollo.",
+          "Modelado, gestión y consumo de bases de datos relacionales."
+        ],
+        "from":"Junio 2026",
+        "to":"Actualidad"
+      },
+      {
         "job":"Desarrollador Backend .NET & Analista Funcional",
         "where":"ReImagine",
         "tasks":[
@@ -12,7 +23,7 @@
           "También lidero equipos de desarrollo backend, acompañando decisiones técnicas y promoviendo buenas prácticas."
         ],
         "from":"Abril 2024",
-        "to":"Actualidad"
+        "to":"Junio 2026"
       },
       {
         "job":"Desarrollador DevOps",
